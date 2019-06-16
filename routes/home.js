@@ -1,0 +1,22 @@
+const express =require('express');
+const router = express.Router();
+
+//Index Route
+router.get('/', (req, res) => {
+  const title = 'Welcome to Snippets';
+  res.render('index', {
+    title: title
+  });
+});
+
+//About Route
+router.get('/about', (req, res) => {
+  const title = 'About Snippets';
+  res.render('about', {
+    title: title
+  });
+});
+
+
+
+module.exports = router;    
