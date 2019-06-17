@@ -92,6 +92,330 @@
 <!-- Snippet2 END -->
 
 
+<!-- Snippet3 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Button Sizes:</h3>
+</div>
+<div class="container" id="to-copy2">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy2')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary btn-md"&gt;Default&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small&lt;/button&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-white">&nbsp;
+    <div class="container">
+      <button type="button" class="btn btn-primary btn-lg">Large</button>
+      <button type="button" class="btn btn-primary btn-md">Default</button>
+      <button type="button" class="btn btn-primary btn-sm">Small</button>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet3 END -->
+
+<!-- Snippet4 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Block Level Buttons:</h3>
+</div>
+<div class="container" id="to-copy3">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy3')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;h2&gt;Block Level Buttons&lt;/h2&gt;
+  &lt;button type="button" class="btn btn-primary btn-block"&gt;Button 1&lt;/button&gt;
+  &lt;br&gt;
+
+  &lt;h2&gt;Large Block Level Buttons&lt;/h2&gt;
+  &lt;button type="button" class="btn btn-success btn-lg btn-block"&gt;Button 2&lt;/button&gt;
+  &lt;br&gt;
+
+  &lt;h2&gt;Small Block Level Buttons&lt;/h2&gt;
+  &lt;button type="button" class="btn btn-primary btn-sm btn-block"&gt;Button 3&lt;/button&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <h2>Block Level Buttons</h2>
+      <button type="button" class="btn btn-primary btn-block">Button 1</button>
+      <br>
+    
+      <h2>Large Block Level Buttons</h2>
+      <button type="button" class="btn btn-success btn-lg btn-block">Button 2</button>
+      <br>
+    
+      <h2>Small Block Level Buttons</h2>
+      <button type="button" class="btn btn-primary btn-sm btn-block">Button 3</button>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet4 END -->
+
+
+<!-- Snippet5 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Active/Disabled Buttons:</h3>
+</div>
+<div class="container" id="to-copy4">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy4')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary active"&gt;Active Primary&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary" disabled&gt;Disabled Primary&lt;/button&gt;
+  &lt;a href="#" class="btn btn-primary disabled"&gt;Disabled Link&lt;/a&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-primary active">Active Primary</button>
+      <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+      <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet5 END -->
+
+<!-- Snippet6 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Spinner Buttons:</h3>
+</div>
+<div class="container" id="to-copy5">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy5')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;button class="btn btn-primary"&gt;
+  &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;button class="btn btn-primary"&gt;
+  &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
+  Loading..
+  &lt;/button&gt;
+
+  &lt;button class="btn btn-primary" disabled&gt;
+  &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
+  Loading..
+  &lt;/button&gt;
+
+  &lt;button class="btn btn-primary" disabled&gt;
+  &lt;span class="spinner-grow spinner-grow-sm"&gt;&lt;/span&gt;
+  Loading..
+  &lt;/button&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+      </button>
+    
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+      </button>
+    
+      <button class="btn btn-primary" disabled>
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+      </button>
+    
+      <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+      </button>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet6 END -->
+
+<!-- Snippet7 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Button Groups:</h3>
+</div>
+<div class="container" id="to-copy6">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy6')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet7 END -->
+
+
+<!-- Snippet8 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Nesting Button Groups & Dropdown Menus:</h3>
+</div>
+<div class="container" id="to-copy7">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy7')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+  &lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;Sony&lt;/button&gt;
+  &lt;div class="dropdown-menu"&gt;
+  &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
+  &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Tablet</a>
+            <a class="dropdown-item" href="#">Smartphone</a>
+          </div>
+        </div>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet8 END -->
+
+
+<!-- Snippet9 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Split Button Dropdowns:</h3>
+</div>
+<div class="container" id="to-copy8">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy8')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+  &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class="dropdown-menu"&gt;
+  &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
+  &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Sony</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tablet</a>
+          <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet9 END -->
+
+
+
+
 
 
 
