@@ -1,6 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
+
+//Alert Route:
+router.get("/alerts",(req,res) => {
+  res.render('alerts');
+});
+
 //Content Route
 router.get("/content", (req, res) => {
   res.render("content");
