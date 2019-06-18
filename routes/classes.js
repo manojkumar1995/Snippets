@@ -6,6 +6,11 @@ router.get("/content", (req, res) => {
   res.render("content");
 });
 
+//Colors Route
+router.get("/colors",(req,res) =>{
+  res.render('colors');
+});
+
 //Containers Route
 router.get("/containers", (req, res) => {
   res.render("containers");
