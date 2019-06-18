@@ -451,5 +451,81 @@
     <!-- Snippet12 END -->
 
 
+    <!-- Snippet13 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Text Formats:</h3>
+        <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy12">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy12')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
+    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
+    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
+    &lt;p&gt;Default text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container">
+                <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
+                <p class="text-lowercase">Lowercased text.</p>
+                <p class="text-uppercase">Uppercased text.</p>
+                <p class="text-capitalize">Capitalized text.</p>
+                <p class="text-monospace">Monospaced text.</p>
+                <p>Default text.</p>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet13 END -->
+
+
+    <!-- Snippet14 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Initialism:</h3>
+        <p><code>.initialism</code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy13">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy13')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
+        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container">
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
+                <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
+                    was founded in 1948.(slightly smaller abbr)</p>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet14 END -->
+
+
 
 </div>
