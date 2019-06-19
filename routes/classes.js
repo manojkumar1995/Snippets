@@ -32,4 +32,9 @@ router.get("/typography", (req, res) => {
   res.render("typography");
 });
 
+//Images Routes:
+router.get("/images",(req, res)=>{
+  res.render("images");
+});
+
 module.exports = router;
