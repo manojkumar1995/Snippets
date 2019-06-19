@@ -1,6 +1,6 @@
 const express=require('express');
 const exphbs =require('express-handlebars');
-
+const path =require('path');
 
 const app=express();
 
@@ -15,6 +15,10 @@ app.engine('handlebars',exphbs({
 }));
 
 app.set('view engine','handlebars');
+
+//Static folder 
+app.use(express.static(path.join(__dirname,'public')));
+
 
 //Use Routes
 app.use('/',home);
