@@ -1,0 +1,127 @@
+<div class="container">&nbsp;
+    <!-- Snippet1 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Badges(Color with Size):</h3>
+        <p><code>.badge .badge-primary .badge-success .badge-danger </code></p>
+    </div>
+    <div class="container" id="to-copy">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;h1&gt;h1 primary Badge &lt;span class="badge badge-primary"&gt;New&lt;/span&gt;&lt;/h1&gt;
+  &lt;h2&gt;h2 secondary Badge &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt;
+  &lt;h3&gt;h3 success Badge &lt;span class="badge badge-success"&gt;New&lt;/span&gt;&lt;/h3&gt;
+  &lt;h4&gt;h4 danger Badge &lt;span class="badge badge-danger"&gt;New&lt;/span&gt;&lt;/h4&gt;
+  &lt;h5&gt;h5 warning Badge &lt;span class="badge badge-warning"&gt;New&lt;/span&gt;&lt;/h5&gt;
+  &lt;h6&gt;h6 info Badge &lt;span class="badge badge-info"&gt;New&lt;/span&gt;&lt;/h6&gt;
+  &lt;h6&gt;h6 light Badge &lt;span class="badge badge-light"&gt;New&lt;/span&gt;&lt;/h6&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-dark  text-white">&nbsp;
+            <div class="container">
+                <h1>h1 primary Badge <span class="badge badge-primary">New</span></h1>
+                <h2>h2 secondary Badge <span class="badge badge-secondary">New</span></h2>
+                <h3>h3 success Badge <span class="badge badge-success">New</span></h3>
+                <h4>h4 danger Badge <span class="badge badge-danger">New</span></h4>
+                <h5>h5 warning Badge <span class="badge badge-warning">New</span></h5>
+                <h6>h6 info Badge <span class="badge badge-info">New</span></h6>
+                <h6>h6 light Badge <span class="badge badge-light">New</span></h6>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet1 END -->
+
+    <!-- Snippet2 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Pill Badges:</h3>
+        <p><code>.badge-pill</code></p>
+    </div>
+    <div class="container" id="to-copy1">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy1')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-secondary"&gt;Secondary&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-success"&gt;Success&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-danger"&gt;Danger&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-warning"&gt;Warning&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-info"&gt;Info&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-light"&gt;Light&lt;/span&gt;
+  &lt;span class="badge badge-pill badge-dark"&gt;Dark&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container">
+                <span class="badge badge-pill badge-primary">Primary</span>
+                <span class="badge badge-pill badge-secondary">Secondary</span>
+                <span class="badge badge-pill badge-success">Success</span>
+                <span class="badge badge-pill badge-danger">Danger</span>
+                <span class="badge badge-pill badge-warning">Warning</span>
+                <span class="badge badge-pill badge-info">Info</span>
+                <span class="badge badge-pill badge-light">Light</span>
+                <span class="badge badge-pill badge-dark">Dark</span>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+
+    <!-- Snippet2 END -->
+
+
+    <!-- Snippet3 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Badge inside an Element:</h3>
+        <p><code>.mx-auto  and .d-block</code></p>
+    </div>
+    <div class="container" id="to-copy2">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy2')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;
+    Messages &lt;span class="badge badge-light"&gt;4&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button type="button" class="btn btn-danger"&gt;
+    Notifications &lt;span class="badge badge-light"&gt;7&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-center text-dark">&nbsp;
+            <div class="container">
+                <button type="button" class="btn btn-primary">
+                    Messages <span class="badge badge-light">4</span>
+                </button>
+                <button type="button" class="btn btn-danger">
+                    Notifications <span class="badge badge-light">7</span>
+                </button>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+
+    <!-- Snippet3 END -->
+</div>
