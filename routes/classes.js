@@ -1,10 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-
 //Alert Route:
-router.get("/alerts",(req,res) => {
-  res.render('alerts');
+router.get("/alerts", (req, res) => {
+  res.render("alerts");
+});
+
+//Badges Route:
+router.get("/badges", (req, res) => {
+  res.render("badges");
 });
 
 //Content Route
@@ -13,8 +17,8 @@ router.get("/content", (req, res) => {
 });
 
 //Colors Route
-router.get("/colors",(req,res) =>{
-  res.render('colors');
+router.get("/colors", (req, res) => {
+  res.render("colors");
 });
 
 //Containers Route
@@ -33,7 +37,7 @@ router.get("/typography", (req, res) => {
 });
 
 //Images Routes:
-router.get("/images",(req, res)=>{
+router.get("/images", (req, res) => {
   res.render("images");
 });
 
