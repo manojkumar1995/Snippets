@@ -41,4 +41,9 @@ router.get("/images", (req, res) => {
   res.render("images");
 });
 
+//Modal Routes:
+router.get("/modal", (req, res) => {
+  res.render("modal");
+});
+
 module.exports = router;
