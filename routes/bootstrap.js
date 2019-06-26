@@ -12,10 +12,6 @@ router.get("/badges", (req, res) => {
     res.render("Bootstrap/classes/badges");
 });
 
-//Content Route
-router.get("/content", (req, res) => {
-    res.render("Bootstrap/classes/content");
-});
 
 //Colors Route
 router.get("/colors", (req, res) => {
