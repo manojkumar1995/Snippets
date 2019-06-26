@@ -1,31 +1,33 @@
-const express=require('express');
-const exphbs =require('express-handlebars');
-const path =require('path');
+const express = require("express");
+const exphbs = require("express-handlebars");
+const path = require("path");
 
-const app=express();
+const app = express();
+
 
 //Load Routes
-
-const home= require('./routes/home');
-const classes = require('./routes/classes');
+const home = require("./routes/home");
+const bootstrap = require("./routes/bootstrap");
 
 //Handlebars MiddleWare
-app.engine('handlebars',exphbs({
-  defaultLayout: 'main'
-}));
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main"
+  })
+);
 
-app.set('view engine','handlebars');
+app.set("view engine", "handlebars");
 
-//Static folder 
-app.use(express.static(path.join(__dirname,'public')));
-
+//Static folder
+app.use(express.static(path.join(__dirname, "public")));
 
 //Use Routes
-app.use('/',home);
-app.use('/', classes);
+app.use("/", home);
+app.use("/bootstrap/classes", bootstrap)
 
 const port = 5000;
 
-app.listen(port,() => {
+app.listen(port, () => {
   console.log(`Server Started on port ${port}`);
 });
