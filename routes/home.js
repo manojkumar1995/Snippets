@@ -1,4 +1,4 @@
-const express =require('express');
+const express = require('express');
 const router = express.Router();
 
 //Index Route
@@ -15,6 +15,11 @@ router.get('/about', (req, res) => {
   res.render('about', {
     title: title
   });
+});
+
+//Content Route
+router.get("/content", (req, res) => {
+  res.render("content");
 });
 
 
