@@ -43,5 +43,9 @@ router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
+//Spinner Routes:
+router.get("/spinners", (req, res) => {
+    res.render("Bootstrap/classes/spinners");
+});
 
 module.exports = router;
