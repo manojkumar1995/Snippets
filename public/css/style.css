@@ -4,28 +4,29 @@ html {
 }
 /* Smooth scroll End  */
 
+.main-bg {
+  background-color: #f9461c;
+}
+
+.main-color {
+  color: #f9461c;
+}
+
 /* Move to top cursor Effects Begin */
 
 #myBtn {
   display: none;
   position: fixed;
   bottom: 5px;
-  right: 19px;
+  right: 5px;
   z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 110, 255, 0.534);
+  background-color: #f02f04;
+  border: oldlace;
+  border-radius: 50%;
   color: white;
+  padding: 5px 12px;
+  font-size: 16px;
   cursor: pointer;
-  padding: 15px;
-  height: 50px;
-  width: 50px;
-  border-radius: 55%;
-}
-
-#myBtn:hover {
-  background-color: rgb(0, 110, 255);
 }
 
 /* Move to top cursor Effects End */
