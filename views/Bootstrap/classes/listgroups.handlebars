@@ -1,0 +1,310 @@
+<div class="container">&nbsp;
+  <!-- Snippet1 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">List Groups:</h3>
+    <p><code>.list-group .list-group-item</code></p>
+  </div>
+  <div class="container" id="to-copy">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item"&gt;1st item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;2nd item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;3rd item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark ">&nbsp;
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item">1st item</li>
+          <li class="list-group-item">2nd item</li>
+          <li class="list-group-item">3rd item</li>
+        </ul>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet1 END -->
+
+  <!-- Snippet2 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Active & Disabled State:</h3>
+    <p><code>.active .disabled</code></p>
+  </div>
+  <div class="container" id="to-copy1">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy1')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item active"&gt;Active item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;2nd item&lt;/li&gt;
+    &lt;li class="list-group-item disabled"&gt;Disabled item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item active">Active item</li>
+          <li class="list-group-item">2nd item</li>
+          <li class="list-group-item disabled">Disabled item</li>
+        </ul>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet2 END -->
+
+
+  <!-- Snippet3 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">List Group With Links:</h3>
+    <p><code>.list-group-item-action</code></p>
+  </div>
+  <div class="container" id="to-copy2">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy2')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="list-group"&gt;
+    &lt;a href="https://www.google.com/" class="list-group-item list-group-item-action"&gt;Google.com&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;2nd item&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action"&gt;3rd item&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="list-group">
+          <a href="https://www.google.com/" target="_blank" class="list-group-item list-group-item-action">Google.com</a>
+          <a href="#" class="list-group-item list-group-item-action">2nd item</a>
+          <a href="#" class="list-group-item list-group-item-action">3rd item</a>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet3 END -->
+
+
+  <!-- Snippet4 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Borderless (or) Flush Borders:</h3>
+    <p><code>.list-group-flush</code></p>
+  </div>
+  <div class="container" id="to-copy3">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy3')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;1st item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;2nd item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;3rd item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1st item</li>
+          <li class="list-group-item">2nd item</li>
+          <li class="list-group-item">3rd item</li>
+        </ul>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet4 END -->
+
+
+  <!-- Snippet5 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Horizontal List Groups:</h3>
+    <p><code>.list-group .list-group-horizontal</code></p>
+  </div>
+  <div class="container" id="to-copy4">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy4')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;ul class="list-group list-group-horizontal"&gt;
+    &lt;li class="list-group-item"&gt;1st item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;2nd item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;3rd item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center text-dark">&nbsp;
+      <div class="container">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">1st item</li>
+          <li class="list-group-item">2nd item</li>
+          <li class="list-group-item">3rd item</li>
+        </ul>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet5 END -->
+
+  <!-- Snippet6 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Link items & Contextual Classes:</h3>
+  <p><code>.list-group-item-success .list-group-item-secondary
+    .list-group-item-info .list-group-item-warning
+  .list-group-item-danger .list-group-item-primary
+  .list-group-item-dark .list-group-item-light & .list-group-item-action</code></p>
+</div>
+<div class="container" id="to-copy5">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy5')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item list-group-item-success"&gt;Success item&lt;/li&gt;
+    &lt;li class="list-group-item list-group-item-secondary"&gt;Secondary item&lt;/li&gt;
+    &lt;li class="list-group-item list-group-item-info"&gt;Info item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class="container"&gt;
+  &lt;div class="list-group"&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action list-group-item-warning"&gt;Action item&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action list-group-item-danger"&gt;Success item&lt;/a&gt;
+    &lt;a href="#" class="list-group-item list-group-item-action list-group-item-dark"&gt;Secondary item&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Success item</li>
+        <li class="list-group-item list-group-item-secondary">Secondary item</li>
+        <li class="list-group-item list-group-item-info">Info item</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Action item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Success item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Secondary item</a>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet6 END -->
+
+
+<!-- Snippet7 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">List Group with Badges:</h3>
+  <p><code>.badge</code></p>
+</div>
+<div class="container" id="to-copy6">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy6')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    Emails
+    &lt;span class="badge badge-primary badge-pill"&gt;12&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    Messages
+    &lt;span class="badge badge-primary badge-pill"&gt;50&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    Chat
+    &lt;span class="badge badge-primary badge-pill"&gt;99&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-center text-dark">&nbsp;
+    <div class="container mt-3">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Emails
+          <span class="badge badge-primary badge-pill">12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Messages
+          <span class="badge badge-primary badge-pill">50</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Chat
+          <span class="badge badge-primary badge-pill">99</span>
+        </li>
+      </ul>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet7 END -->
+
+
+
+</div>
