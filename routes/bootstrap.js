@@ -43,6 +43,11 @@ router.get("/paginations", (req, res) => {
     res.render("Bootstrap/classes/paginations");
 });
 
+//List-Group Routes:
+router.get("/listgroups", (req, res) => {
+    res.render("Bootstrap/classes/listgroups");
+});
+
 //Modal Routes:
 router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
