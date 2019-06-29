@@ -1,7 +1,9 @@
 /* Smooth scroll Begin */
+
 html {
   scroll-behavior: smooth;
 }
+
 /* Smooth scroll End  */
 
 .main-bg {
@@ -30,3 +32,29 @@ html {
 }
 
 /* Move to top cursor Effects End */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ecc4bb;
+  border-radius: 0px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #f9461c;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f9461c;
+}
