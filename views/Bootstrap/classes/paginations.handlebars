@@ -1,8 +1,8 @@
 <div class="container">&nbsp;
   <!-- Snippet1 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Spinners:</h3>
-    <p><code>.spinner-border </code></p>
+    <h3 class="text-primary">Paginations:</h3>
+    <p><code>.pagination .page-item .page-link</code></p>
   </div>
   <div class="container" id="to-copy">
     <div class="float-right">
@@ -12,16 +12,28 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;                             
-  &lt;div class="spinner-border"&gt;&lt;/div&gt;
+&lt;div class="container"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white  text-dark ">&nbsp;
-      <div class="container text-center">
-        <div class="spinner-border"></div>
+    <div class="container bg-white text-dark ">&nbsp;
+      <div class="container">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
       </div>&nbsp;
     </div>
   </div>
@@ -30,8 +42,8 @@
 
   <!-- Snippet2 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Colored Spinners:</h3>
-    <p><code>.spinner-border text-primary</code></p>
+    <h3 class="text-primary">Active & Disabled:</h3>
+    <p><code>.active .disabled</code></p>
   </div>
   <div class="container" id="to-copy1">
     <div class="float-right">
@@ -41,32 +53,46 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;                     
-  &lt;div class="spinner-border text-muted"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-primary"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-success"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-info"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-warning"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-danger"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-secondary"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-dark"&gt;&lt;/div&gt;
-  &lt;div class="spinner-border text-light"&gt;&lt;/div&gt;
+&lt;div class="container"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="container"&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item disabled"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item disabled"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-dark text-center text-white">&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
       <div class="container">
-        <div class="spinner-border text-muted"></div>
-        <div class="spinner-border text-primary"></div>
-        <div class="spinner-border text-success"></div>
-        <div class="spinner-border text-info"></div>
-        <div class="spinner-border text-warning"></div>
-        <div class="spinner-border text-danger"></div>
-        <div class="spinner-border text-secondary"></div>
-        <div class="spinner-border text-dark"></div>
-        <div class="spinner-border text-light"></div>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
       </div>&nbsp;
     </div>
   </div>
@@ -77,8 +103,8 @@
 
   <!-- Snippet3 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Growing Spinners:</h3>
-    <p><code>.spinner-grow</code></p>
+    <h3 class="text-primary">Sizing:</h3>
+    <p><code>.pagination-lg .pagination-md .pagination-sm</code></p>
   </div>
   <div class="container" id="to-copy2">
     <div class="float-right">
@@ -89,31 +115,47 @@
     </div>
     <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="spinner-grow text-muted"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-primary"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-success"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-info"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-warning"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-danger"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-secondary"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-dark"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow text-light"&gt;&lt;/div&gt;
+  &lt;p&gt;Large Pagination:&lt;/p&gt;
+    &lt;ul class="pagination pagination-lg"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Small Pagination:&lt;/p&gt;
+  &lt;ul class="pagination pagination-sm"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-dark text-center text-white">&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
       <div class="container">
-        <div class="spinner-grow text-muted"></div>
-        <div class="spinner-grow text-primary"></div>
-        <div class="spinner-grow text-success"></div>
-        <div class="spinner-grow text-info"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text-danger"></div>
-        <div class="spinner-grow text-secondary"></div>
-        <div class="spinner-grow text-dark"></div>
-        <div class="spinner-grow text-light"></div>
+        <p>Large Pagination:</p>
+        <ul class="pagination pagination-lg">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      
+        <p>Small Pagination:</p>
+        <ul class="pagination pagination-sm">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
       </div>&nbsp;
     </div>
   </div>
@@ -124,8 +166,8 @@
 
   <!-- Snippet4 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Growing Spinners:</h3>
-    <p><code>.spinner-border-sm  .spinner-grow-sm</code></p>
+    <h3 class="text-primary">Alignment:</h3>
+    <p><code>.justify-content-center  .justify-content-end</code></p>
   </div>
   <div class="container" id="to-copy3">
     <div class="float-right">
@@ -136,17 +178,49 @@
     </div>
     <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="spinner-border spinner-border-sm"&gt;&lt;/div&gt;
-  &lt;div class="spinner-grow spinner-grow-sm"&gt;&lt;/div&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+    &lt;ul class="pagination justify-content-center"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class="pagination justify-content-end"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="javascript:void(0);"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-dark text-center text-white">&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
       <div class="container">
-        <div class="spinner-border spinner-border-sm"></div>
-        <div class="spinner-grow spinner-grow-sm"></div>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
       </div>&nbsp;
     </div>
   </div>
@@ -157,8 +231,8 @@
 
   <!-- Snippet5 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Growing Spinners:</h3>
-    <p><code>.spinner-border-sm  .spinner-grow-sm</code></p>
+    <h3 class="text-primary">Breadcrumbs:</h3>
+    <p><code>.breadcrumb .breadcrumb-item</code></p>
   </div>
   <div class="container" id="to-copy4">
     <div class="float-right">
@@ -168,25 +242,13 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;                                    
-  &lt;button class="btn btn-success"&gt;
-    &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-
-  &lt;button class="btn btn-success"&gt;
-    &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
-    Uploading..
-  &lt;/button&gt;
-  
-  &lt;button class="btn btn-success" disabled&gt;
-    &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
-    Downloading..
-  &lt;/button&gt;
-  
-  &lt;button class="btn btn-success" disabled&gt;
-    &lt;span class="spinner-grow spinner-grow-sm"&gt;&lt;/span&gt;
-    Processing..
-  &lt;/button&gt;
+&lt;div class="container"&gt;
+  &lt;ul class="breadcrumb"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Content&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active"&gt;Help&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
@@ -194,24 +256,12 @@
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-center text-dark">&nbsp;
       <div class="container">
-        <button class="btn btn-success">
-          <span class="spinner-border spinner-border-sm"></span>
-        </button>
-
-        <button class="btn btn-success">
-          <span class="spinner-border spinner-border-sm"></span>
-          Uploading..
-        </button>
-
-        <button class="btn btn-success" disabled>
-          <span class="spinner-border spinner-border-sm"></span>
-          Downloading..
-        </button>
-
-        <button class="btn btn-success" disabled>
-          <span class="spinner-grow spinner-grow-sm"></span>
-          Processing..
-        </button>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Content</a></li>
+          <li class="breadcrumb-item"><a href="#">About Us</a></li>
+          <li class="breadcrumb-item active">Help</li>
+        </ul>
       </div>&nbsp;
     </div>
   </div>
