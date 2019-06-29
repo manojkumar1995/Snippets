@@ -38,6 +38,11 @@ router.get("/images", (req, res) => {
     res.render("Bootstrap/classes/images");
 });
 
+//Pagination Routes:
+router.get("/paginations", (req, res) => {
+    res.render("Bootstrap/classes/paginations");
+});
+
 //Modal Routes:
 router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
