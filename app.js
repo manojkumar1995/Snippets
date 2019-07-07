@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(`Server Started on port ${port}`);
