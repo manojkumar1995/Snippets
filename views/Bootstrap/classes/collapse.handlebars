@@ -1,0 +1,208 @@
+<div class="container">&nbsp;
+  <!-- Snippet1 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Collapsibles</h3>
+    <p><code>data-toggle="collapse"</code></p>
+  </div>
+  <div class="container" id="to-copy">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"&gt;Click to
+  collapse&lt;/button&gt;
+    &lt;div id="demo" class="collapse"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center">&nbsp;
+      <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Click to
+          collapse</button>
+        <div id="demo" class="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <strong>Again Click to Hide Me...</strong>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet1 END -->
+
+  <!-- Snippet2 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Show Collapsibles (Default):</h3>
+    <p><code>.collapse show</code></p>
+  </div>
+  <div class="container" id="to-copy1">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy1')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1"&gt;Click to
+    collapse&lt;/button&gt;
+    &lt;div id="demo1" class="collapse show"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    &lt;/div&gt;  
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center">&nbsp;
+      <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Click to
+          collapse</button>
+        <div id="demo1" class="collapse show">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet2 END -->
+
+
+  <!-- Snippet3 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">List Collapsible (Accordion):</h3>
+  </div>
+  <div class="container" id="to-copy2">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy2')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div id="accordion"&gt;
+      &lt;div class="card"&gt;
+        &lt;div class="card-header"&gt;
+          &lt;a class="card-link" data-toggle="collapse" href="#collapseOne"&gt;
+            Collapsible List 1
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id="collapseOne" class="collapse show" data-parent="#accordion"&gt;
+            &lt;div class="card-body"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card"&gt;
+        &lt;div class="card-header"&gt;
+          &lt;a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo"&gt;
+            Collapsible List 2
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id="collapseTwo" class="collapse" data-parent="#accordion"&gt;
+          &lt;div class="card-body"&gt;
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card"&gt;
+        &lt;div class="card-header"&gt;
+          &lt;a class="collapsed card-link" data-toggle="collapse" href="#collapseThree"&gt;
+            Collapsible List 3
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id="collapseThree" class="collapse" data-parent="#accordion"&gt;
+        &lt;div class="card-body"&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+        eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat.
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center text-dark">&nbsp;
+      <div class="container">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                Collapsible List 1
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Collapsible List 2
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Collapsible List 3
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet3 END -->
+</div>
