@@ -53,6 +53,11 @@ router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
+//Toast Routes:
+router.get("/toast",(req,res) =>{
+    res.render("Bootstrap/classes/toast");
+})
+
 //Spinner Routes:
 router.get("/spinners", (req, res) => {
     res.render("Bootstrap/classes/spinners");
