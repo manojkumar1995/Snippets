@@ -18,6 +18,12 @@ router.get("/colors", (req, res) => {
     res.render("Bootstrap/classes/colors");
 });
 
+//Collapse Route
+router.get("/collapse", (req, res) => {
+    res.render("Bootstrap/classes/collapse");
+});
+
+
 //Containers Route
 router.get("/containers", (req, res) => {
     res.render("Bootstrap/classes/containers");
