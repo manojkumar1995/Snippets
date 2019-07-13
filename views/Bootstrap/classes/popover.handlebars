@@ -2,7 +2,7 @@
   <!-- Snippet1 BEGIN -->
   <div class="container">
     <h3 class="text-primary">Popover:</h3>
-    <p><code>.badge .badge-primary .badge-success .badge-danger </code></p>
+    <p><code>data-toggle="popover" </code></p>
   </div>
   <div class="container" id="to-copy">
     <div class="float-right">
@@ -13,28 +13,36 @@
     </div>
     <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;h1&gt;h1 primary Badge &lt;span class="badge badge-primary"&gt;New&lt;/span&gt;&lt;/h1&gt;
-  &lt;h2&gt;h2 secondary Badge &lt;span class="badge badge-secondary"&gt;New&lt;/span&gt;&lt;/h2&gt;
-  &lt;h3&gt;h3 success Badge &lt;span class="badge badge-success"&gt;New&lt;/span&gt;&lt;/h3&gt;
-  &lt;h4&gt;h4 danger Badge &lt;span class="badge badge-danger"&gt;New&lt;/span&gt;&lt;/h4&gt;
-  &lt;h5&gt;h5 warning Badge &lt;span class="badge badge-warning"&gt;New&lt;/span&gt;&lt;/h5&gt;
-  &lt;h6&gt;h6 info Badge &lt;span class="badge badge-info"&gt;New&lt;/span&gt;&lt;/h6&gt;
-  &lt;h6&gt;h6 light Badge &lt;span class="badge badge-light"&gt;New&lt;/span&gt;&lt;/h6&gt;
-&lt;/div&gt;</code></pre>
+  &lt;a href="#" data-toggle="popover" title="Popover Head" data-content="Content inside the
+  popover (body)"&gt;popover&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+  $("a").click(function (event) {
+  event.preventDefault();
+  });
+  });
+&lt;/script&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-dark  text-white">&nbsp;
+    <div class="container bg-white  text-center">&nbsp;
       <div class="container">
-        <h1>h1 primary Badge <span class="badge badge-primary">New</span></h1>
-        <h2>h2 secondary Badge <span class="badge badge-secondary">New</span></h2>
-        <h3>h3 success Badge <span class="badge badge-success">New</span></h3>
-        <h4>h4 danger Badge <span class="badge badge-danger">New</span></h4>
-        <h5>h5 warning Badge <span class="badge badge-warning">New</span></h5>
-        <h6>h6 info Badge <span class="badge badge-info">New</span></h6>
-        <h6>h6 light Badge <span class="badge badge-light">New</span></h6>
-      </div>&nbsp;
+        <a href="#" data-toggle="popover" title="Popover Head" data-content="Content inside the
+        popover (body)">popover</a>
+      </div>
+      
+      <script>
+        $(document).ready(function () {
+          $('[data-toggle="popover"]').popover();
+          $("a").click(function (event) {
+            event.preventDefault();
+          });
+        });
+      </script>&nbsp;
     </div>
   </div>
   <hr>&nbsp;
@@ -42,8 +50,8 @@
 
   <!-- Snippet2 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Pill Badges:</h3>
-    <p><code>.badge-pill</code></p>
+    <h3 class="text-primary">Position of Popovers:</h3>
+    <p><code>data-placement = top | bottom |left | right</code></p>
   </div>
   <div class="container" id="to-copy1">
     <div class="float-right">
@@ -54,30 +62,42 @@
     </div>
     <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-secondary"&gt;Secondary&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-success"&gt;Success&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-danger"&gt;Danger&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-warning"&gt;Warning&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-info"&gt;Info&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-light"&gt;Light&lt;/span&gt;
-  &lt;span class="badge badge-pill badge-dark"&gt;Dark&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+  &lt;a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content"&gt;Top&lt;/a&gt;
+  &lt;a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content"&gt;Bottom&lt;/a&gt;
+  &lt;a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content"&gt;Left&lt;/a&gt;
+  &lt;a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content"&gt;Right&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+  });
+  $("a").click(function (event) {
+  event.preventDefault();
+  });
+&lt;/script&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
+    <div class="container bg-white text-center">&nbsp;
       <div class="container">
-        <span class="badge badge-pill badge-primary">Primary</span>
-        <span class="badge badge-pill badge-secondary">Secondary</span>
-        <span class="badge badge-pill badge-success">Success</span>
-        <span class="badge badge-pill badge-danger">Danger</span>
-        <span class="badge badge-pill badge-warning">Warning</span>
-        <span class="badge badge-pill badge-info">Info</span>
-        <span class="badge badge-pill badge-light">Light</span>
-        <span class="badge badge-pill badge-dark">Dark</span>
-      </div>&nbsp;
+        <div class="row">
+          <div class="col-sm">
+            <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top (&#8593;)</a>
+          </div>
+          <div class="col-sm">
+            <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left (&#8592;)</a>
+          </div>
+          <div class="col-sm">
+            <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right (&#8594;)</a>
+          </div>
+          <div class="col-sm">
+            <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom (&#8595;)</a>
+          </div>
+        </div>
+      </div>
+      &nbsp;
     </div>
   </div>
   <hr>&nbsp;
@@ -87,7 +107,8 @@
 
   <!-- Snippet3 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Badge inside an Element:</h3>
+    <h3 class="text-primary">Closing Popovers:</h3>
+    <p><code>data-trigger="focus" || data-trigger="hover"</code></p>
   </div>
   <div class="container" id="to-copy2">
     <div class="float-right">
@@ -98,25 +119,28 @@
     </div>
     <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;
-    Messages &lt;span class="badge badge-light"&gt;4&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;button type="button" class="btn btn-danger"&gt;
-    Notifications &lt;span class="badge badge-light"&gt;7&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
+  &lt;a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" 
+    data-content="Click anywhere to close this popover"&gt;Click me&lt;/a&gt;&lt;br&gt;
+  &lt;a href="#" title="Header" data-toggle="popover" data-trigger="hover" 
+    data-content="Move the mouse to close me"&gt;Hover over me&lt;/a&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+  });
+  $("a").click(function (event) {
+  event.preventDefault();
+  });
+&lt;/script&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-center text-dark">&nbsp;
       <div class="container">
-        <button type="button" class="btn btn-primary">
-          Messages <span class="badge badge-light">4</span>
-        </button>
-        <button type="button" class="btn btn-danger">
-          Notifications <span class="badge badge-light">7</span>
-        </button>
+        <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus"
+          data-content="Click anywhere to close this popover">Click me</a><br>
+        <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Move the mouse to close me">Hover over me</a>
       </div>&nbsp;
     </div>
   </div>
