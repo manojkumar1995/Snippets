@@ -1,6 +1,7 @@
+&nbsp;
 <div class="container">
   <div class="container">
-    <h3 class="text-primary">Bootstrap CDN:</h3>
+    <h3 class="text-primary">Carousel:</h3>
   </div>
 
 
@@ -14,29 +15,69 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;title&gt;Snippets&lt;/title&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt;
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="container bg-dark"&gt;
-        &lt;p&gt;Basic Bootstrap CDN&lt;/p&gt;
+&lt;div id="demo" class="carousel slide" data-ride="carousel"&gt;
+  &lt;!-- Indicators --&gt;
+  &lt;ul class="carousel-indicators"&gt;
+    &lt;li data-target="#demo" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#demo" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#demo" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- The slideshow --&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="/imgs/nature.jpg" alt="Los Angeles" width="1100" height="500"&gt;
     &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="/imgs/eyeem.jpg" alt="Chicago" width="1100" height="500"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="/imgs/desert.jpg" alt="New York" width="1100" height="500"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Left and right controls --&gt;
+    &lt;a class="carousel-control-prev" href="#demo" data-slide="prev"&gt;
+      &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="carousel-control-next" href="#demo" data-slide="next"&gt;
+      &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>
     <div class="container bg-dark text-center text-white ">
-      <p>Basic Bootstrap CDN</p>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imgs/nature.jpg" alt="Los Angeles" width="900" height="400">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/eyeem.jpg" alt="Chicago" width="900" height="400">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/desert.jpg" alt="New York" width="900" height="400">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
   </div>
   <hr>&nbsp;
@@ -46,7 +87,8 @@
 
   <!-- Snippet2 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Container:</h3>
+    <h3 class="text-primary">Add Captions to Slides:</h3>
+    <p><code>&lt;div class="carousel-caption"&gt; <span class="text-dark">followed by</span> &lt;div class="carousel-caption"&gt;</div></code></p>
   </div>&nbsp;
   <div class="container" id="to-copy1">
     <div class="float-right">
@@ -56,15 +98,83 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-  &lt;div class="container"&gt;
-     &lt;p&gt;The .rounded class adds rounded corners to an image:&lt;/p&gt;
-  &lt;/div&gt;</code></pre>
+&lt;div id="demo" class="carousel slide" data-ride="carousel"&gt;
+  &lt;ul class="carousel-indicators"&gt;
+    &lt;li data-target="#demo" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#demo" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#demo" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="/imgs/nature.jpg" alt="Los Angeles" width="900" height="400"&gt;
+      &lt;div class="carousel-caption"&gt;
+        &lt;h3&gt;Los Angeles&lt;/h3&gt;
+        &lt;p&gt;We had such a great time in LA!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;img src="/imgs/eyeem.jpg" alt="Chicago" width="900" height="400"&gt;
+    &lt;div class="carousel-caption"&gt;
+      &lt;h3&gt;Chicago&lt;/h3&gt;
+      &lt;p&gt;Thank you, Chicago!&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;img src="desert.jpg" alt="New York" width="900" height="400"&gt;
+    &lt;div class="carousel-caption"&gt;
+      &lt;h3&gt;New York&lt;/h3&gt;
+      &lt;p&gt;We love the Big Apple!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class="carousel-control-prev" href="#demo" data-slide="prev"&gt;
+  &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="carousel-control-next" href="#demo" data-slide="next"&gt;
+  &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-dark text-center col-sm-10 text-white ">
-      <p>Bootstrap Container</p>
+    <div class="container bg-dark text-center">
+      <div id="demo1" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo1" data-slide-to="0" class="active"></li>
+          <li data-target="#demo1" data-slide-to="1"></li>
+          <li data-target="#demo1" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imgs/nature.jpg" alt="Los Angeles" width="900" height="400">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/eyeem.jpg" alt="Chicago" width="900" height="400">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="desert.jpg" alt="New York" width="900" height="400">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
   </div>
   <hr>&nbsp;
@@ -83,9 +193,8 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-  &lt;div class="container-fluid"&gt;
-      &lt;p&gt;The .rounded class adds rounded corners to an image:&lt;/p&gt;
-  &lt;/div&gt;</code></pre>
+
+  </code></pre>
   </div>
 
   <div class="container">
