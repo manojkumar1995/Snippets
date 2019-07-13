@@ -61,8 +61,8 @@ router.get("/modal", (req, res) => {
 
 
 //Popup Routes
-router.get("/popup",(req,res)=>{
-    res.render("Bootstrap/classes/popup");
+router.get("/popover",(req,res)=>{
+    res.render("Bootstrap/classes/popover");
 });
 
 //Toast Routes:
