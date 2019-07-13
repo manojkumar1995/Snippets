@@ -59,6 +59,12 @@ router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
+
+//Popup Routes
+router.get("/popup",(req,res)=>{
+    res.render("Bootstrap/classes/popup");
+});
+
 //Toast Routes:
 router.get("/toast",(req,res) =>{
     res.render("Bootstrap/classes/toast");
