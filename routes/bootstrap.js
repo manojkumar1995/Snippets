@@ -29,6 +29,11 @@ router.get("/containers", (req, res) => {
     res.render("Bootstrap/classes/containers");
 });
 
+//Carousel Route
+router.get("/carousel", (req, res) => {
+    res.render("Bootstrap/classes/carousels");
+});
+
 //Buttons Routes
 router.get("/buttons", (req, res) => {
     res.render("Bootstrap/classes/buttons");
