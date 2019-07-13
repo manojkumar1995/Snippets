@@ -60,10 +60,15 @@ router.get("/modal", (req, res) => {
 });
 
 
-//Popup Routes
+//Popup Routes:
 router.get("/popover",(req,res)=>{
     res.render("Bootstrap/classes/popover");
 });
+
+//ProgressBars Routes:
+router.get("/progressbars",(req,res)=>{
+    res.render("Bootstrap/classes/progressbars");
+})
 
 //Toast Routes:
 router.get("/toast",(req,res) =>{
