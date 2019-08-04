@@ -1,1 +1,603 @@
-<h1>Hello</h1>
+<div class="container">&nbsp;
+  <!-- Snippet1 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Basic Card:</h3>
+    <p><code>.card .card-body</code></p>
+  </div>
+  <div class="container" id="to-copy">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card">
+          <div class="card-body">Basic card</div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet1 END -->
+
+  <!-- Snippet2 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Card Header & Footer:</h3>
+    <p><code>.card-header .card-footer </code></p>
+  </div>
+  <div class="container" id="to-copy1">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy1')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;Card-Header&lt;/div&gt;
+      &lt;div class="card-body"&gt;Card-Content&lt;/div&gt;
+    &lt;div class="card-footer"&gt;Card-Footer&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card">
+          <div class="card-header">Card-Header</div>
+          <div class="card-body">Card-Content</div>
+          <div class="card-footer">Card-Footer</div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet2 END -->
+
+
+  <!-- Snippet3 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary"> Contextual Cards:</h3>
+    <p><code>.bg-primary .bg-success .bg-info .bg-warning .bg-danger .bg-secondary .bg-dark & .bg-light"</code></p>
+  </div>
+  <div class="container" id="to-copy2">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy2')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;Basic card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-primary text-white"&gt;
+    &lt;div class="card-body"&gt;Primary card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-success text-white"&gt;
+    &lt;div class="card-body"&gt;Success card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-info text-white"&gt;
+    &lt;div class="card-body"&gt;Info card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-warning text-white"&gt;
+    &lt;div class="card-body"&gt;Warning card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-danger text-white"&gt;
+    &lt;div class="card-body"&gt;Danger card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-secondary text-white"&gt;
+    &lt;div class="card-body"&gt;Secondary card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-dark text-white"&gt;
+    &lt;div class="card-body"&gt;Dark card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="card bg-light text-dark"&gt;
+    &lt;div class="card-body"&gt;Light card&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card">
+          <div class="card-body">Basic card</div>
+        </div>
+        <br>
+        <div class="card bg-primary text-white">
+          <div class="card-body">Primary card</div>
+        </div>
+        <br>
+        <div class="card bg-success text-white">
+          <div class="card-body">Success card</div>
+        </div>
+        <br>
+        <div class="card bg-info text-white">
+          <div class="card-body">Info card</div>
+        </div>
+        <br>
+        <div class="card bg-warning text-white">
+          <div class="card-body">Warning card</div>
+        </div>
+        <br>
+        <div class="card bg-danger text-white">
+          <div class="card-body">Danger card</div>
+        </div>
+        <br>
+        <div class="card bg-secondary text-white">
+          <div class="card-body">Secondary card</div>
+        </div>
+        <br>
+        <div class="card bg-dark text-white">
+          <div class="card-body">Dark card</div>
+        </div>
+        <br>
+        <div class="card bg-light text-dark">
+          <div class="card-body">Light card</div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet3 END -->
+
+
+  <!-- Snippet4 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Cards - titles, text, and links:</h3>
+    <p><code>.card-title .card-text .card-body .card-link</code></p>
+  </div>
+  <div class="container" id="to-copy3">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy3')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;
+      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+      &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+      &lt;a href="#" class="card-link"&gt;Card link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Card link 2</a>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet4 END -->
+
+  <!-- Snippet5 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Card Images:</h3>
+    <p><code>.card-img-top .card-img-bottom</code></p>
+  </div>
+  <div class="container" id="to-copy4">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy4')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+    
+&lt;div class="card" style="width:400px"&gt;
+  &lt;img class="card-img-top" src="/imgs/duck.png" alt="Card image" style="width:100%"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h4 class="card-title"&gt;John Doe&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;See Profile&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="card" style="width:400px"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h4 class="card-title"&gt;Jane Doe&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Some example text some example text. Jane Doe is an architect and engineer&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;See Profile&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;img class="card-img-bottom" src="/imgs/duck.png" alt="Card image" style="width:100%"&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+  
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="/imgs/duck.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+              <img class="card-img-bottom" src="/imgs/duck.png" alt="Card image" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  
+  <!-- Snippet5 END -->
+
+
+<!-- Snippet6 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Stretched Link for Cards:</h3>
+  <p><code>.stretched-link</code></p>
+</div>
+<div class="container" id="to-copy5">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy5')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}
+    
+&lt;div class="card" style="width:400px"&gt;
+  &lt;img class="card-img-top" src="/imgs/duck.png" alt="Card image" style="width:100%"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h4 class="card-title"&gt;John Doe&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary stretched-link"&gt;See Profile&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="card" style="width:400px"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h4 class="card-title"&gt;Jane Doe&lt;/h4&gt;
+    &lt;p class="card-text"&gt;Some example text some example text. Jane Doe is an architect and engineer&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary stretched-link"&gt;See Profile&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;img class="card-img-bottom" src="/imgs/duck.png" alt="Card image" style="width:100%"&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-dark">&nbsp;
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="/imgs/duck.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            </div>
+            <img class="card-img-bottom" src="/imgs/duck.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet6 END -->
+
+
+<!-- Snippet7 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Card Columns:</h3>
+  <p><code>.card-columns</code></p>
+</div>
+<div class="container" id="to-copy6">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy6')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}  
+&lt;div class="container"&gt;
+  &lt;div class="card-columns"&gt;
+    &lt;div class="card bg-primary"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the first card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-warning"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the second card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-success"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the third card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-danger"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the fourth card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-light"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the fifth card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-info"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the sixth card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-dark">&nbsp;
+    <div class="container">
+      <div class="card-columns">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the third card</p>
+          </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fourth card</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fifth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the sixth card</p>
+          </div>
+        </div>
+      </div>
+    </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet7 END -->
+
+<!-- Snippet8 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Card Deck:</h3>
+  <p><code>.card-deck</code></p>
+</div>
+<div class="container" id="to-copy7">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy7')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}  
+&lt;div class="container"&gt;
+  &lt;div class="card-deck"&gt;
+    &lt;div class="card bg-primary"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the first card&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-warning"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the second card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-success"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the third card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-danger"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the fourth card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card-deck">
+          <div class="card bg-primary">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the first card</p>
+              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text">Some more text to increase the height</p>
+            </div>
+          </div>
+          <div class="card bg-warning">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the second card</p>
+            </div>
+          </div>
+          <div class="card bg-success">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the third card</p>
+            </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the fourth card</p>
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet8 END -->
+
+<!-- Snippet9 BEGIN -->
+<div class="container">
+  <h3 class="text-primary">Card Group:</h3>
+  <p><code>.card-group</code></p>
+</div>
+<div class="container" id="to-copy8">
+  <div class="float-right">
+    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+      onClick="CopyToClipboard('to-copy8')">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+  </div>
+  <pre><code class="html">{{> _dots}}  
+&lt;div class="container"&gt;
+  &lt;div class="card-group"&gt;
+    &lt;div class="card bg-primary"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the first card&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;p class="card-text"&gt;Some more text to increase the height&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-warning"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the second card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-success"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the third card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card bg-danger"&gt;
+    &lt;div class="card-body text-center"&gt;
+    &lt;p class="card-text"&gt;Some text inside the fourth card&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<div class="container">
+  <h3 class="text-danger">Output:</h3>&nbsp;
+  <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="card-group">
+          <div class="card bg-primary">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the first card</p>
+              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text">Some more text to increase the height</p>
+            </div>
+          </div>
+          <div class="card bg-warning">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the second card</p>
+            </div>
+          </div>
+          <div class="card bg-success">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the third card</p>
+            </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the fourth card</p>
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+  </div>
+</div>
+<hr>&nbsp;
+
+<!-- Snippet9 END -->
+
+
+</div>
