@@ -39,6 +39,14 @@ router.get("/carousel", (req, res) => {
     res.render("Bootstrap/classes/carousels");
 });
 
+
+//Dropdown Route
+router.get("/dropdowns", (req, res) => {
+    res.render("Bootstrap/classes/dropdowns");
+});
+
+
+
 //Buttons Routes
 router.get("/buttons", (req, res) => {
     res.render("Bootstrap/classes/buttons");
