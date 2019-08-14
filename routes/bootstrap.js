@@ -77,6 +77,11 @@ router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
+//Spinner Routes:
+router.get("/spinners", (req, res) => {
+    res.render("Bootstrap/classes/spinners");
+});
+
 
 //Popup Routes:
 router.get("/popover",(req,res)=>{
@@ -86,16 +91,19 @@ router.get("/popover",(req,res)=>{
 //ProgressBars Routes:
 router.get("/progressbars",(req,res)=>{
     res.render("Bootstrap/classes/progressbars");
-})
+});
 
 //Toast Routes:
 router.get("/toast",(req,res) =>{
     res.render("Bootstrap/classes/toast");
-})
-
-//Spinner Routes:
-router.get("/spinners", (req, res) => {
-    res.render("Bootstrap/classes/spinners");
 });
+
+//tooltip Routes:
+router.get("/tooltip", (req, res) => {
+    res.render("Bootstrap/classes/tooltip");
+});
+
+
+
 
 module.exports = router;
