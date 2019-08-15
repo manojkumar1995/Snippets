@@ -82,6 +82,10 @@ router.get("/spinners", (req, res) => {
     res.render("Bootstrap/classes/spinners");
 });
 
+//Scroll Spy Routes:
+router.get("/scrollspy", (req, res) => {
+    res.render("Bootstrap/classes/scrollspy");
+});
 
 //Popup Routes:
 router.get("/popover",(req,res)=>{
