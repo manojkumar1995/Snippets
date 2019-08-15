@@ -1,9 +1,9 @@
 <div class="container">&nbsp;
   <!-- Snippet1 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Dropdowns:</h3>
+    <h3 class="text-primary">Scrollspy:</h3>
     <p>
-      <code>class="btn dropdown-toggle" || data-toggle="dropdown" || class="dropdown-menu" || class="dropdown-item"  </code>
+      <code>data-spy="scroll"</code>
     </p>
   </div>
   <div class="container" id="to-copy">
@@ -14,32 +14,141 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Basic Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    body {
+    position: relative;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body data-spy="scroll" data-target=".navbar" data-offset="50"&gt;
+  &lt;div class="container-fluid"&gt;
+
+    &lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"&gt;
+    &lt;ul class="navbar-nav"&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#section1"&gt;Section 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#section2"&gt;Section 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#section3"&gt;Section 3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item dropdown"&gt;
+      &lt;a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"&gt;
+      Section 4
+      &lt;/a&gt;
+      &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#section41"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#section42"&gt;Link 2&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px"&gt;
+    &lt;h1&gt;Section 1&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px"&gt;
+    &lt;h1&gt;Section 2&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px"&gt;
+    &lt;h1&gt;Section 3&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px"&gt;
+    &lt;h1&gt;Section 4 Submenu 1&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px"&gt;
+    &lt;h1&gt;Section 4 Submenu 2&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+    at the navigation bar while scrolling!&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/body&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Basic Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
+      <div class="container overflow-auto" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="container-fluid  h-25 d-inline-block">
+      
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Section 4
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#section41">Link 1</a>
+                  <a class="dropdown-item" href="#section42">Link 2</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+      
+          <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+          </div>
+          <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+          </div>
+          <div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+          </div>
+          <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 4 Submenu 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+          </div>
+          <div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 4 Submenu 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+              at the navigation bar while scrolling!</p>
           </div>
         </div>
       </div>&nbsp;
@@ -54,8 +163,8 @@
 
   <!-- Snippet2 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Dropdown Divider:</h3>
-    <p><code>.dropdown-divider</code></p>
+    <h3 class="text-primary">Scrollspy Vertical Menu:</h3>
+    <p><code></code></p>
   </div>
   <div class="container" id="to-copy1">
     <div class="float-right">
@@ -65,729 +174,127 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
+&lt;head&gt;
+  &lt;style&gt;
+    body {
+    position: relative;
+    }
+    ul.nav-pills {
+    top: 20px;
+    position: fixed;
+    }
+    div.col-8 div {
+    height: 500px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body data-spy="scroll" data-target="#myScrollspy1" data-offset="1"&gt;
 
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Another link</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet2 END -->
-
-
-
-  <!-- Snippet3 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Dropdown Header:</h3>
-    <p><code>.dropdown-header</code></p>
-  </div>
-  <div class="container" id="to-copy2">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy2')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <h5 class="dropdown-header">Dropdown header</h5>
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-            <h5 class="dropdown-header">Dropdown header</h5>
-            <a class="dropdown-item" href="#">Another link</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet4 END -->
-
-
-  <!-- Snippet4 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Disable and Active items:</h3>
-    <p><code>.active .disabled</code></p>
-  </div>
-  <div class="container" id="to-copy3">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy3')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Normal&lt;/a&gt;
-      &lt;a class="dropdown-item active" href="#"&gt;Active&lt;/a&gt;
-      &lt;a class="dropdown-item disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Normal</a>
-            <a class="dropdown-item active" href="#">Active</a>
-            <a class="dropdown-item disabled" href="#">Disabled</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet4 END -->
-
-
-  <!-- Snippet5 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Dropdown Position :</h3>
-    <p><code>.dropright .dropleft</code></p>
-  </div>
-  <div class="container" id="to-copy4">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy4')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container clearfix"&gt;
-  &lt;div class="dropdown dropright float-left"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-        Dropright button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="dropdown dropleft float-right"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropleft button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container clearfix">
-        <div class="dropdown dropright float-left">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropright button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown dropleft float-right">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropleft button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet5 END -->
-
-  <!-- Snippet6 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Dropdown Menu Right:</h3>
-    <p><code>.dropdown-menu-right</code></p>
-  </div>
-  <div class="container" id="to-copy5">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy5')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Wide dropdown button to demonstrate this example
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu dropdown-menu-right"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container overflow-auto">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Wide dropdown button to demonstrate this example
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet6 END -->
-
-
-  <!-- Snippet7 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Dropup :</h3>
-    <p><code>class="dropup"</code></p>
-  </div>
-  <div class="container" id="to-copy6">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy6')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropup"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropup button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropup">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropup button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet7 END -->
-
-  <!-- Snippet8 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Dropdown Text :</h3>
-    <p><code>.dropdown-item-text</code></p>
-  </div>
-  <div class="container" id="to-copy7">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy7')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item-text" href="#"&gt;Text Link&lt;/a&gt;
-      &lt;span class="dropdown-item-text"&gt;Just Text&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item-text" href="#">Text Link</a>
-            <span class="dropdown-item-text">Just Text</span>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet8 END -->
-
-  <!-- Snippet9 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Grouped Buttons with a Dropdown :</h3>
-    <p><code>class="btn-group"</code></p>
-  </div>
-  <div class="container" id="to-copy8">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy8')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-    &lt;/button&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;div class="row"&gt;
+    &lt;nav class="col-sm-3 col-4" id="myScrollspy1"&gt;
+    &lt;ul class="nav nav-pills flex-column"&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#section1"&gt;Section 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#section2"&gt;Section 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#section3"&gt;Section 3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item dropdown"&gt;
+      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"&gt;Section 4&lt;/a&gt;
       &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#section41"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#section42"&gt;Link 2&lt;/a&gt;
       &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;div class="col-sm-9 col-8"&gt;
+    &lt;div id="section1" class="bg-success"&gt;
+    &lt;h1&gt;Section 1&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation list while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section2" class="bg-warning"&gt;
+    &lt;h1&gt;Section 2&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation list while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section3" class="bg-secondary"&gt;
+    &lt;h1&gt;Section 3&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation list while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section41" class="bg-danger"&gt;
+    &lt;h1&gt;Section 4-1&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation list while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="section42" class="bg-info"&gt;
+    &lt;h1&gt;Section 4-2&lt;/h1&gt;
+    &lt;p&gt;Try to scroll this section and look at the navigation list while scrolling!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+
+&lt;/body&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-center">&nbsp;
-      <div class="container">
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary">Apple</button>
-          <button type="button" class="btn btn-primary">Samsung</button>
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-              Sony
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tablet</a>
-              <a class="dropdown-item" href="#">Smartphone</a>
+    <div class="container bg-white text-dark">&nbsp;
+      <body data-spy="scroll" data-target="#myScrollspy1" data-offset="1">
+      
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy1">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#section1">Section 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section2">Section 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">Section 3</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section41">Link 1</a>
+                    <a class="dropdown-item" href="#section42">Link 2</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+              <div id="section1" class="bg-success">
+                <h1>Section 1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+              <div id="section2" class="bg-warning">
+                <h1>Section 2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+              <div id="section3" class="bg-secondary">
+                <h1>Section 3</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+              <div id="section41" class="bg-danger">
+                <h1>Section 4-1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+              <div id="section42" class="bg-info">
+                <h1>Section 4-2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>&nbsp;
+      
+      </body>&nbsp;
     </div>
   </div>
   <hr>&nbsp;
-  <!-- Snippet9 END -->
-
-
-
-
-  <!-- Snippet10 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Split Button Dropdowns</h3>
-    <p><code>.dropdown-toggle-split</code></p>
-  </div>
-  <div class="container" id="to-copy9">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy9')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-    &lt;button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-    &lt;button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
-    &lt;button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-
-        <div class="btn-group">
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet10 END -->
-
-  <!-- Snippet11 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Vertical Button Group w/ Dropdown:</h3>
-    <p><code>class="btn-group-vertical"</code></p>
-  </div>
-  <div class="container" id="to-copy10">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy10')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group-vertical"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-    &lt;div class="btn-group"&gt;
-      &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-      &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-center">&nbsp;
-      <div class="container">
-        <div class="btn-group-vertical">
-          <button type="button" class="btn btn-primary">Apple</button>
-          <button type="button" class="btn btn-primary">Samsung</button>
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-              Sony
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tablet</a>
-              <a class="dropdown-item" href="#">Smartphone</a>
-            </div>
-          </div>
-        </div>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet11 END -->
-
-
-
-  <!-- Snippet12 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Font weight & italics</h3>
-    <p>
-      <code>.font-weight-bold .font-weight-bolder .font-weight-normal .font-weight-light .font-weight-lighter .font-italic</code>
-    </p>
-  </div>&nbsp;
-  <div class="container" id="to-copy11">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy11')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;p class="font-weight-bold"&gt;Bold text.&lt;/p&gt;
-  &lt;p class="font-weight-bolder"&gt;Bolder text.&lt;/p&gt;
-  &lt;p class="font-weight-normal"&gt;Normal weight text.&lt;/p&gt;
-  &lt;p class="font-weight-light"&gt;Light weight text.&lt;/p&gt;
-  &lt;p class="font-weight-lighter"&gt;Lighter weight text.&lt;/p&gt;
-  &lt;p class="font-italic"&gt;Italic text.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <p class="font-weight-bold">Bold text.</p>
-        <p class="font-weight-bolder">Bolder text.</p>
-        <p class="font-weight-normal">Normal weight text.</p>
-        <p class="font-weight-light">Light weight text.</p>
-        <p class="font-weight-lighter">Lighter weight text.</p>
-        <p class="font-italic">Italic text.</p>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet12 END -->
-
-
-  <!-- Snippet13 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Text Formats:</h3>
-    <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
-    </p>
-  </div>
-  <div class="container" id="to-copy12">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy12')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
-    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
-    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
-    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
-    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
-    &lt;p&gt;Default text.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
-        <p class="text-lowercase">Lowercased text.</p>
-        <p class="text-uppercase">Uppercased text.</p>
-        <p class="text-capitalize">Capitalized text.</p>
-        <p class="text-monospace">Monospaced text.</p>
-        <p>Default text.</p>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet13 END -->
-
-
-  <!-- Snippet14 BEGIN -->
-  <div class="container">
-    <h3 class="text-primary">Initialism:</h3>
-    <p><code>.initialism</code></p>
-    </p>
-  </div>
-  <div class="container" id="to-copy13">
-    <div class="float-right">
-      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
-        onClick="CopyToClipboard('to-copy13')">
-        <i class="fa fa-clone" aria-hidden="true"></i>
-      </button>
-    </div>
-    <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
-        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-  </div>
-
-  <div class="container">
-    <h3 class="text-danger">Output:</h3>&nbsp;
-    <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
-        <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
-          was founded in 1948.(slightly smaller abbr)</p>
-      </div>&nbsp;
-    </div>
-  </div>
-  <hr>&nbsp;
-  <!-- Snippet14 END -->
+  <!-- Snippet2 END --> 
 </div>
