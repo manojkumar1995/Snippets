@@ -1,9 +1,9 @@
 <div class="container">&nbsp;
   <!-- Snippet1 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Dropdowns:</h3>
+    <h3 class="text-primary">Filter Tables :</h3>
     <p>
-      <code>class="btn dropdown-toggle" || data-toggle="dropdown" || class="dropdown-menu" || class="dropdown-item"  </code>
+      <code>Case-Insensitive search for items in a table</code>
     </p>
   </div>
   <div class="container" id="to-copy">
@@ -14,35 +14,103 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Basic Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;div class="container mt-3"&gt;
+  &lt;input class="form-control" id="myInput" type="text" placeholder="Search.."&gt;
+  &lt;br&gt;
+  &lt;table class="table table-bordered"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Firstname&lt;/th&gt;
+      &lt;th&gt;Lastname&lt;/th&gt;
+      &lt;th&gt;Email&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody id="myTable"&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John&lt;/td&gt;
+      &lt;td&gt;Doe&lt;/td&gt;
+      &lt;td&gt;john@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mary&lt;/td&gt;
+      &lt;td&gt;Moe&lt;/td&gt;
+      &lt;td&gt;mary@mail.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;July&lt;/td&gt;
+      &lt;td&gt;Dooley&lt;/td&gt;
+      &lt;td&gt;july@greatstuff.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AJ&lt;/td&gt;
+      &lt;td&gt;Styles&lt;/td&gt;
+      &lt;td&gt;a_r@test.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+      });
+    });
+  });
+&lt;/script&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Basic Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-          </div>
-        </div>
-      </div>&nbsp;
+      <div class="container mt-3">
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@mail.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@greatstuff.com</td>
+            </tr>
+            <tr>
+              <td>AJ</td>
+              <td>Styles</td>
+              <td>a_r@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <script>
+        $(document).ready(function () {
+          $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+      </script>&nbsp;
     </div>
 
 
@@ -54,8 +122,8 @@
 
   <!-- Snippet2 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Dropdown Divider:</h3>
-    <p><code>.dropdown-divider</code></p>
+    <h3 class="text-primary">Filter Lists:</h3>
+    <p><code>Case-Insensitive search for items in a list</code></p>
   </div>
   <div class="container" id="to-copy1">
     <div class="float-right">
@@ -65,39 +133,57 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;div class="container mt-3"&gt;
+  &lt;h2&gt;Filterable List&lt;/h2&gt;
+  &lt;p&gt;Type something in the input field to search the list for specific items:&lt;/p&gt;
+  &lt;input class="form-control" id="myInput1" type="text" placeholder="Search ...."&gt;
+  &lt;br&gt;
+  &lt;ul class="list-group" id="myList"&gt;
+    &lt;li class="list-group-item"&gt;First item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Second item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Third item&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;Fourth&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+    $("#myInput1").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+        $("#myList li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+      });
+    });
+  });
+&lt;/script&gt;</code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Another link</a>
-          </div>
-        </div>
-      </div>&nbsp;
+      <div class="container mt-3">
+        <h2>Filterable List</h2>
+        <p>Type something in the input field to search the list for specific items:</p>
+        <input class="form-control" id="myInput1" type="text" placeholder="Search ....">
+        <br>
+        <ul class="list-group" id="myList">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+          <li class="list-group-item">Fourth</li>
+        </ul>
+      </div>
+      
+      <script>
+        $(document).ready(function () {
+          $("#myInput1").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myList li").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+      </script>&nbsp;
     </div>
   </div>
   <hr>&nbsp;
@@ -107,8 +193,8 @@
 
   <!-- Snippet3 BEGIN -->
   <div class="container">
-    <h3 class="text-primary">Dropdown Header:</h3>
-    <p><code>.dropdown-header</code></p>
+    <h3 class="text-primary">Filter Anything :</h3>
+    <p><code>Case-Insensitive search for text inside a div element</code></p>
   </div>
   <div class="container" id="to-copy2">
     <div class="float-right">
@@ -118,42 +204,54 @@
       </button>
     </div>
     <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;input class="form-control" id="myInput2" type="text" placeholder="Search.."&gt;
+  &lt;div id="myDIV" class="mt-3"&gt;
+    &lt;p&gt;I am a paragraph.&lt;/p&gt;
+    &lt;div&gt;I am a div element inside div.&lt;/div&gt;
+    &lt;button class="btn"&gt;I am a button&lt;/button&gt;
+    &lt;button class="btn btn-info"&gt;Another button&lt;/button&gt;
+    &lt;p&gt;Another paragraph.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;script&gt;
+  $(document).ready(function(){
+    $("#myInput2").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myDIV *").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+      });
+    });
+  });
+&lt;/script&gt;
 </code></pre>
   </div>
 
   <div class="container">
     <h3 class="text-danger">Output:</h3>&nbsp;
     <div class="container bg-white text-dark">&nbsp;
-      <div class="container">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
-          </button>
-          <div class="dropdown-menu">
-            <h5 class="dropdown-header">Dropdown header</h5>
-            <a class="dropdown-item" href="#">Link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-            <h5 class="dropdown-header">Dropdown header</h5>
-            <a class="dropdown-item" href="#">Another link</a>
-          </div>
+      <div class="container mt-3">
+        <input class="form-control" id="myInput2" type="text" placeholder="Search..">
+        <div id="myDIV" class="mt-3">
+          <p>I am a paragraph.</p>
+          <div>I am a div element inside div.</div>
+          <button class="btn">I am a button</button>
+          <button class="btn btn-info">Another button</button>
+          <p>Another paragraph.</p>
         </div>
-      </div>&nbsp;
+      </div>
+      
+      <script>
+        $(document).ready(function () {
+          $("#myInput2").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myDIV *").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+      </script>&nbsp;
     </div>
   </div>
   <hr>&nbsp;
