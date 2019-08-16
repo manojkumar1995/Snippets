@@ -45,6 +45,11 @@ router.get("/dropdowns", (req, res) => {
     res.render("Bootstrap/classes/dropdowns");
 });
 
+//Filters Route
+router.get("/filters",(req,res)=>{
+    res.render("Bootstrap/classes/filters");
+});
+
 
 
 //Buttons Routes
