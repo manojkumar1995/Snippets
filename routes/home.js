@@ -22,6 +22,11 @@ router.get("/content", (req, res) => {
   res.render("content");
 });
 
+//Content Route
+router.get("/display", (req, res) => {
+  res.render("display");
+});
+
 
 
 module.exports = router;    
