@@ -82,6 +82,11 @@ router.get("/modal", (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
+//Media Objects Routes:
+router.get("/media_objects", (req, res) => {
+    res.render("Bootstrap/classes/media_objects");
+});
+
 //Spinner Routes:
 router.get("/spinners", (req, res) => {
     res.render("Bootstrap/classes/spinners");
