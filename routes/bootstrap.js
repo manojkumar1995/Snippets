@@ -107,6 +107,11 @@ router.get("/progressbars",(req,res)=>{
     res.render("Bootstrap/classes/progressbars");
 });
 
+//Tables Routes:
+router.get("/tables", (req, res) => {
+    res.render("Bootstrap/classes/tables");
+});
+
 //Toast Routes:
 router.get("/toast",(req,res) =>{
     res.render("Bootstrap/classes/toast");
