@@ -1,0 +1,1119 @@
+<div class="container">&nbsp;
+  <!-- Snippet1 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Basic Table:</h3>
+    <p><code>.table</code></p>
+  </div>
+  <div class="container" id="to-copy">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+
+
+  </div>
+  <hr>&nbsp;
+
+  <!-- Snippet1 END -->
+
+
+  <!-- Snippet2 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Striped Rows with Border:</h3>
+    <p><code>.table-striped .table-bordered</code></p>
+  </div>
+  <div class="container" id="to-copy1">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy1')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table table-striped table-bordered"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet2 END -->
+
+
+
+  <!-- Snippet3 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Hover Rows:</h3>
+    <p><code>.table-hover</code></p>
+  </div>
+  <div class="container" id="to-copy2">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy2')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table table-hover"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark ">&nbsp;
+      <div class="container table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet3 END -->
+
+
+  <!-- Snippet4 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Black/Dark Table with Dark Striped & Hoverable effects :</h3>
+    <p><code>.table-dark .table-striped .table-hover</code></p>
+  </div>
+  <div class="container" id="to-copy3">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy3')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table table-dark table-striped table-hover"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table table-dark table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet4 END -->
+
+
+  <!-- Snippet5 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Borderless Table :</h3>
+    <p><code>.table-borderless</code></p>
+  </div>
+  <div class="container" id="to-copy4">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy4')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table table-borderless"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container text-center bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet5 END -->
+
+  <!-- Snippet6 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Contextual Classes:</h3>
+    <p><code>..table-primary .table-success .table-info ....</code></p>
+  </div>
+  <div class="container" id="to-copy5">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy5')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Default&lt;/td&gt;
+        &lt;td&gt;Defaultson&lt;/td&gt;
+        &lt;td&gt;def@somemail.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-primary"&gt;
+        &lt;td&gt;Primary&lt;/td&gt;
+        &lt;td&gt;Joe&lt;/td&gt;
+        &lt;td&gt;joe@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-success"&gt;
+        &lt;td&gt;Success&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-danger"&gt;
+        &lt;td&gt;Danger&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-info"&gt;
+        &lt;td&gt;Info&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-warning"&gt;
+        &lt;td&gt;Warning&lt;/td&gt;
+        &lt;td&gt;Refs&lt;/td&gt;
+        &lt;td&gt;bo@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-active"&gt;
+        &lt;td&gt;Active&lt;/td&gt;
+        &lt;td&gt;Activeson&lt;/td&gt;
+        &lt;td&gt;act@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-secondary"&gt;
+        &lt;td&gt;Secondary&lt;/td&gt;
+        &lt;td&gt;Secondson&lt;/td&gt;
+        &lt;td&gt;sec@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-light"&gt;
+        &lt;td&gt;Light&lt;/td&gt;
+        &lt;td&gt;Angie&lt;/td&gt;
+        &lt;td&gt;angie@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-dark text-dark"&gt;
+        &lt;td&gt;Dark&lt;/td&gt;
+        &lt;td&gt;Bo&lt;/td&gt;
+        &lt;td&gt;bo@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Defaultson</td>
+              <td>def@somemail.com</td>
+            </tr>
+            <tr class="table-primary">
+              <td>Primary</td>
+              <td>Joe</td>
+              <td>joe@example.com</td>
+            </tr>
+            <tr class="table-success">
+              <td>Success</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Danger</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr class="table-info">
+              <td>Info</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Warning</td>
+              <td>Refs</td>
+              <td>bo@example.com</td>
+            </tr>
+            <tr class="table-active">
+              <td>Active</td>
+              <td>Activeson</td>
+              <td>act@example.com</td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Secondary</td>
+              <td>Secondson</td>
+              <td>sec@example.com</td>
+            </tr>
+            <tr class="table-light">
+              <td>Light</td>
+              <td>Angie</td>
+              <td>angie@example.com</td>
+            </tr>
+            <tr class="table-dark text-dark">
+              <td>Dark</td>
+              <td>Bo</td>
+              <td>bo@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet6 END -->
+
+
+  <!-- Snippet7 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Table Head Colors :</h3>
+    <p><code>.thead-dark .thead-light</code></p>
+  </div>
+  <div class="container" id="to-copy6">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy6')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead class="thead-dark"&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;table class="table"&gt;
+      &lt;thead class="thead-light"&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Firstname&lt;/th&gt;
+          &lt;th&gt;Lastname&lt;/th&gt;
+          &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;John&lt;/td&gt;
+          &lt;td&gt;Doe&lt;/td&gt;
+          &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Mary&lt;/td&gt;
+          &lt;td&gt;Moe&lt;/td&gt;
+          &lt;td&gt;mary@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet7 END -->
+
+  <!-- Snippet8 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Small table & Responsive :</h3>
+    <p><code>.table-sm .table-responsive-sm || .table-responsive-md || .table-responsive-lg || .table-responsive-xl</code></p>
+  </div>
+  <div class="container" id="to-copy7">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy7')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;table class="table table-bordered table-sm table-responsive"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mary&lt;/td&gt;
+        &lt;td&gt;Moe&lt;/td&gt;
+        &lt;td&gt;mary@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;July&lt;/td&gt;
+        &lt;td&gt;Dooley&lt;/td&gt;
+        &lt;td&gt;july@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container table-responsive">
+        <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet8 END -->
+
+  <!-- Snippet9 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Grouped Buttons with a Dropdown :</h3>
+    <p><code>class="btn-group"</code></p>
+  </div>
+  <div class="container" id="to-copy8">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy8')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
+      Sony
+    &lt;/button&gt;
+      &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center">&nbsp;
+      <div class="container">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">Apple</button>
+          <button type="button" class="btn btn-primary">Samsung</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Sony
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tablet</a>
+              <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet9 END -->
+
+
+
+
+  <!-- Snippet10 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Split Button Dropdowns</h3>
+    <p><code>.dropdown-toggle-split</code></p>
+  </div>
+  <div class="container" id="to-copy9">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy9')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+    &lt;button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+    &lt;button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+    &lt;button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet10 END -->
+
+  <!-- Snippet11 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Vertical Button Group w/ Dropdown:</h3>
+    <p><code>class="btn-group-vertical"</code></p>
+  </div>
+  <div class="container" id="to-copy10">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy10')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;div class="btn-group-vertical"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;div class="btn-group"&gt;
+      &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
+      Sony
+      &lt;/button&gt;
+      &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-center">&nbsp;
+      <div class="container">
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-primary">Apple</button>
+          <button type="button" class="btn btn-primary">Samsung</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Sony
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tablet</a>
+              <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+          </div>
+        </div>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet11 END -->
+
+
+
+  <!-- Snippet12 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Font weight & italics</h3>
+    <p>
+      <code>.font-weight-bold .font-weight-bolder .font-weight-normal .font-weight-light .font-weight-lighter .font-italic</code>
+    </p>
+  </div>&nbsp;
+  <div class="container" id="to-copy11">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy11')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+  &lt;p class="font-weight-bold"&gt;Bold text.&lt;/p&gt;
+  &lt;p class="font-weight-bolder"&gt;Bolder text.&lt;/p&gt;
+  &lt;p class="font-weight-normal"&gt;Normal weight text.&lt;/p&gt;
+  &lt;p class="font-weight-light"&gt;Light weight text.&lt;/p&gt;
+  &lt;p class="font-weight-lighter"&gt;Lighter weight text.&lt;/p&gt;
+  &lt;p class="font-italic"&gt;Italic text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <p class="font-weight-bold">Bold text.</p>
+        <p class="font-weight-bolder">Bolder text.</p>
+        <p class="font-weight-normal">Normal weight text.</p>
+        <p class="font-weight-light">Light weight text.</p>
+        <p class="font-weight-lighter">Lighter weight text.</p>
+        <p class="font-italic">Italic text.</p>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet12 END -->
+
+
+  <!-- Snippet13 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Text Formats:</h3>
+    <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
+    </p>
+  </div>
+  <div class="container" id="to-copy12">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy12')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
+    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
+    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
+    &lt;p&gt;Default text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
+        <p class="text-lowercase">Lowercased text.</p>
+        <p class="text-uppercase">Uppercased text.</p>
+        <p class="text-capitalize">Capitalized text.</p>
+        <p class="text-monospace">Monospaced text.</p>
+        <p>Default text.</p>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet13 END -->
+
+
+  <!-- Snippet14 BEGIN -->
+  <div class="container">
+    <h3 class="text-primary">Initialism:</h3>
+    <p><code>.initialism</code></p>
+    </p>
+  </div>
+  <div class="container" id="to-copy13">
+    <div class="float-right">
+      <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+        onClick="CopyToClipboard('to-copy13')">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
+        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+  <div class="container">
+    <h3 class="text-danger">Output:</h3>&nbsp;
+    <div class="container bg-white text-dark">&nbsp;
+      <div class="container">
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
+        <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
+          was founded in 1948.(slightly smaller abbr)</p>
+      </div>&nbsp;
+    </div>
+  </div>
+  <hr>&nbsp;
+  <!-- Snippet14 END -->
+</div>
