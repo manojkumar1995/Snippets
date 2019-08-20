@@ -13,7 +13,7 @@ router.get("/badges", (req, res) => {
 });
 
 // Cards Route:
-router.get("/cards",(req,res) =>{
+router.get("/cards", (req, res) => {
     res.render("Bootstrap/classes/cards");
 });
 
@@ -46,7 +46,7 @@ router.get("/dropdowns", (req, res) => {
 });
 
 //Filters Route
-router.get("/filters",(req,res)=>{
+router.get("/filters", (req, res) => {
     res.render("Bootstrap/classes/filters");
 });
 
@@ -87,6 +87,11 @@ router.get("/media_objects", (req, res) => {
     res.render("Bootstrap/classes/media_objects");
 });
 
+//Nav & Navbar Routes:
+router.get("/navbar", (req, res) => {
+    res.render("Bootstrap/classes/navbar");
+});
+
 //Spinner Routes:
 router.get("/spinners", (req, res) => {
     res.render("Bootstrap/classes/spinners");
@@ -98,12 +103,12 @@ router.get("/scrollspy", (req, res) => {
 });
 
 //Popup Routes:
-router.get("/popover",(req,res)=>{
+router.get("/popover", (req, res) => {
     res.render("Bootstrap/classes/popover");
 });
 
 //ProgressBars Routes:
-router.get("/progressbars",(req,res)=>{
+router.get("/progressbars", (req, res) => {
     res.render("Bootstrap/classes/progressbars");
 });
 
@@ -113,7 +118,7 @@ router.get("/tables", (req, res) => {
 });
 
 //Toast Routes:
-router.get("/toast",(req,res) =>{
+router.get("/toast", (req, res) => {
     res.render("Bootstrap/classes/toast");
 });
 
