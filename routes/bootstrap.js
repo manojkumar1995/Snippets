@@ -88,8 +88,8 @@ router.get("/media_objects", (req, res) => {
 });
 
 //Nav & Navbar Routes:
-router.get("/navbar", (req, res) => {
-    res.render("Bootstrap/classes/navbar");
+router.get("/navbars", (req, res) => {
+    res.render("Bootstrap/classes/navbars");
 });
 
 //Spinner Routes:
