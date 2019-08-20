@@ -1,9 +1,9 @@
 <div class="container">&nbsp;
     <!-- Snippet1 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdowns:</h3>
+        <h3 class="text-primary">Nav Menus :</h3>
         <p>
-            <code>class="btn dropdown-toggle" || data-toggle="dropdown" || class="dropdown-menu" || class="dropdown-item"  </code>
+            <code>.nav  .nav-item .nav-link </code>
         </p>
     </div>
     <div class="container" id="to-copy">
@@ -15,16 +15,20 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Basic Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;ul class="nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -32,20 +36,22 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Basic Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
             </div>&nbsp;
         </div>
-
-
     </div>
     <hr>&nbsp;
 
@@ -54,8 +60,8 @@
 
     <!-- Snippet2 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Divider:</h3>
-        <p><code>.dropdown-divider</code></p>
+        <h3 class="text-primary">Aligned Nav:</h3>
+        <p><code>.justify-content-center .justify-content-end</code></p>
     </div>
     <div class="container" id="to-copy1">
         <div class="float-right">
@@ -66,37 +72,106 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;ul class="nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;p class="text-center"&gt;Center-aligned nav:&lt;/p&gt;
+  &lt;ul class="nav justify-content-center"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+    
+  &lt;p class="text-right"&gt;Right-aligned nav:&lt;/p&gt;
+  &lt;ul class="nav justify-content-end"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
+
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Another link</a>
-                    </div>
-                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
+
+                <p class="text-center">Center-aligned nav:</p>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
+
+                <p class="text-right">Right-aligned nav:</p>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
             </div>&nbsp;
         </div>
     </div>
@@ -107,8 +182,8 @@
 
     <!-- Snippet3 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Header:</h3>
-        <p><code>.dropdown-header</code></p>
+        <h3 class="text-primary">Vertical Nav:</h3>
+        <p><code>.flex-column</code></p>
     </div>
     <div class="container" id="to-copy2">
         <div class="float-right">
@@ -119,19 +194,20 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;ul class="nav flex-column"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -140,20 +216,22 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <h5 class="dropdown-header">Dropdown header</h5>
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                        <h5 class="dropdown-header">Dropdown header</h5>
-                        <a class="dropdown-item" href="#">Another link</a>
-                    </div>
-                </div>
-            </div>&nbsp;
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
+            </div>
+            &nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -162,8 +240,8 @@
 
     <!-- Snippet4 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Disable and Active items:</h3>
-        <p><code>.active .disabled</code></p>
+        <h3 class="text-primary">Justified Tabs/Pills :</h3>
+        <p><code>.nav-justified</code></p>
     </div>
     <div class="container" id="to-copy3">
         <div class="float-right">
@@ -174,16 +252,37 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Normal&lt;/a&gt;
-      &lt;a class="dropdown-item active" href="#"&gt;Active&lt;/a&gt;
-      &lt;a class="dropdown-item disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;p&gt;Justified pills:&lt;/p&gt;
+  &lt;ul class="nav nav-pills nav-justified"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active Pill&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;&lt;br&gt;&lt;hr&gt;
+
+  &lt;p&gt;Justified tabs:&lt;/p&gt;
+  &lt;ul class="nav nav-tabs nav-justified"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active Tab&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -191,16 +290,38 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Normal</a>
-                        <a class="dropdown-item active" href="#">Active</a>
-                        <a class="dropdown-item disabled" href="#">Disabled</a>
-                    </div>
-                </div>
+                <p>Justified pills:</p>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active Pill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul><br>
+                <hr>
+
+                <p>Justified tabs:</p>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active Tab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled Link</a>
+                    </li>
+                </ul>
             </div>&nbsp;
         </div>
     </div>
@@ -210,8 +331,8 @@
 
     <!-- Snippet5 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Position :</h3>
-        <p><code>.dropright .dropleft</code></p>
+        <h3 class="text-primary">Pills and Tabs with Dropdown :</h3>
+        <p><code>.nav-item dropdown .nav-link dropdown-toggle</code></p>
     </div>
     <div class="container" id="to-copy4">
         <div class="float-right">
@@ -221,54 +342,92 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container clearfix"&gt;
-  &lt;div class="dropdown dropright float-left"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-        Dropright button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="dropdown dropleft float-right"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropleft button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;div class="container"&gt;
+  &lt;p&gt;Pills with Dropdown :&lt;/p&gt;
+  &lt;ul class="nav nav-pills"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item dropdown"&gt;
+      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"&gt;Dropdown&lt;/a&gt;
+      &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;&lt;br&gt;
+  &lt;hr&gt;
+  &lt;p&gt;Tabs with Dropdown :&lt;/p&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item dropdown"&gt;
+      &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"&gt;Dropdown&lt;/a&gt;
+      &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container clearfix">
-                <div class="dropdown dropright float-left">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropright button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </div>
-                <div class="dropdown dropleft float-right">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropleft button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </div>
+            <div class="container">
+                <p>Pills with Dropdown :</p>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul><br>
+                <hr>
+                <p>Tabs with Dropdown :</p>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
             </div>&nbsp;
         </div>
     </div>
@@ -277,8 +436,8 @@
 
     <!-- Snippet6 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Menu Right:</h3>
-        <p><code>.dropdown-menu-right</code></p>
+        <h3 class="text-primary">Toggleable Tabs & Pills :</h3>
+        <p><code>data-toggle="tab" .tab-pane .tab-content .fade .tab-pane || data-toggle="pill"</code></p>
     </div>
     <div class="container" id="to-copy5">
         <div class="float-right">
@@ -289,33 +448,109 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Wide dropdown button to demonstrate this example
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu dropdown-menu-right"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+  &lt;p&gt;Toggleable Tabs :&lt;/p&gt;
+  &lt;br&gt;
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class="nav nav-tabs" role="tablist"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" data-toggle="tab" href="#home"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-toggle="tab" href="#menu1"&gt;Menu 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-toggle="tab" href="#menu2"&gt;Menu 2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;br&gt;
+  
+  &lt;!-- Tab panes --&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div id="home" class="container tab-pane active"&gt;&lt;br&gt;
+      &lt;h3&gt;HOME&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+               incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div id="menu1" class="container tab-pane fade"&gt;&lt;br&gt;
+      &lt;h3&gt;Menu 1&lt;/h3&gt;
+      &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="menu2" class="container tab-pane fade"&gt;&lt;br&gt;
+      &lt;h3&gt;Menu 2&lt;/h3&gt;
+      &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+               doloremque laudantium, totam rem aperiam.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;br&gt;
+  
+  &lt;!-- Nav pills --&gt;
+  &lt;ul class="nav nav-pills" role="tablist"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link active" data-toggle="pill" href="#home"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-toggle="pill" href="#menu1"&gt;Menu 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" data-toggle="pill" href="#menu2"&gt;Menu 2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;&lt;br&gt;
+  &lt;p&gt;Toggleable Pills :&lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container overflow-auto">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Wide dropdown button to demonstrate this example
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+            <div class="container">
+                <p>Toggleable Tabs :</p>
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+                    </li>
+                </ul>
+                <br>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                </div><br>
+
+                <!-- Nav pills -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+                    </li>
+                </ul><br>
+                <p>Toggleable Pills :</p>
             </div>&nbsp;
         </div>
     </div>
@@ -325,8 +560,10 @@
 
     <!-- Snippet7 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropup :</h3>
-        <p><code>class="dropup"</code></p>
+        <h3 class="text-primary">Basic Colored Navbars :</h3>
+        <p><code>.navbar .navbar-expand-xl|lg|md|sm. &lt;ul&gt; <span class="text-dark">element with</span> class="navbar-nav" 
+                 &lt;li&gt; <span class="text-dark"> elements with a</span> .nav-item <a> <span class="text-dark">and element with a</span> .nav-link</code>
+        </p>
     </div>
     <div class="container" id="to-copy6">
         <div class="float-right">
@@ -336,34 +573,283 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropup"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropup button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;nav class="navbar navbar-expand-sm bg-light navbar-light"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-primary navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-success navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-info navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-warning navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-danger navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-secondary navbar-dark"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item active"&gt;
+      &lt;a class="nav-link" href="#"&gt;Active&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 </code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <div class="dropup">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropup button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-            </div>&nbsp;
+
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </nav>&nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -371,7 +857,7 @@
 
     <!-- Snippet8 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Text :</h3>
+        <h3 class="text-primary">Navbar Brand / Logo :</h3>
         <p><code>.dropdown-item-text</code></p>
     </div>
     <div class="container" id="to-copy7">
@@ -382,37 +868,94 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item-text" href="#"&gt;Text Link&lt;/a&gt;
-      &lt;span class="dropdown-item-text"&gt;Just Text&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;p&gt;Brand / Logo Text :&lt;/p&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+  &lt;!-- Brand/logo --&gt;
+  &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;
+  
+  &lt;!-- Links --&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 3&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;br&gt;
+&lt;p&gt;Brand / Logo Image :&lt;/p&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+  &lt;!-- Brand/logo --&gt;
+  &lt;a class="navbar-brand" href="#"&gt;
+    &lt;img src="/imgs/nodejs.png" alt="logo" style="width:40px;"&gt;
+  &lt;/a&gt;
+  
+  &lt;!-- Links --&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 3&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item-text" href="#">Text Link</a>
-                        <span class="dropdown-item-text">Just Text</span>
-                    </div>
-                </div>
-            </div>&nbsp;
+
+            <p>Brand / Logo Text :</p>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <p>Brand / Logo Image :</p>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="/imgs/nodejs.png" alt="logo" style="width:40px;">
+                </a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>&nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -420,8 +963,9 @@
 
     <!-- Snippet9 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Grouped Buttons with a Dropdown :</h3>
-        <p><code>class="btn-group"</code></p>
+        <h3 class="text-primary">Collapsing The Navigation Bar :</h3>
+        <p><code>class="navbar-toggler", data-toggle="collapse" & data-target="#thetarget"  class="collapse navbar-collapse"</code>
+        </p>
     </div>
     <div class="container" id="to-copy8">
         <div class="float-right">
@@ -431,40 +975,64 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
+&lt;nav class="navbar navbar-expand-md bg-dark navbar-dark"&gt;
+  &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+  &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"&gt;
+    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class="collapse navbar-collapse" id="collapsibleNavbar"&gt;
+    &lt;ul class="navbar-nav"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;    
+    &lt;/ul&gt;
+  &lt;/div&gt;  
+&lt;/nav&gt;
+&lt;br&gt;
+
 &lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-    &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;h3&gt;Collapsible Navbar&lt;/h3&gt;
+  &lt;p&gt;In this example, the navigation bar is hidden on small screens and replaced by a button 
+     in the top right corner (try to re-size this window).&lt;/p&gt;
+  &lt;p&gt;Only when the button is clicked, the navigation bar will be displayed.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-center">&nbsp;
-            <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Apple</button>
-                    <button type="button" class="btn btn-primary">Samsung</button>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Sony
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tablet</a>
-                            <a class="dropdown-item" href="#">Smartphone</a>
-                        </div>
-                    </div>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <br>
+
+            <div class="container">
+                <h3>Collapsible Navbar</h3>
+                <p>In this example, the navigation bar is hidden on small screens and replaced by a button
+                    in the top right corner (try to re-size this window).</p>
+                <p>Only when the button is clicked, the navigation bar will be displayed.</p>
             </div>&nbsp;
         </div>
     </div>
@@ -476,8 +1044,8 @@
 
     <!-- Snippet10 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Split Button Dropdowns</h3>
-        <p><code>.dropdown-toggle-split</code></p>
+        <h3 class="text-primary">Navbar With Dropdown & Navbar Text</h3>
+        <p><code>.navbar-text</code></p>
     </div>
     <div class="container" id="to-copy9">
         <div class="float-right">
@@ -487,139 +1055,107 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;p&gt;Navbar With Dropdown:&lt;/p&gt;
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+  &lt;!-- Brand --&gt;
+  &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;!-- Links --&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-    &lt;button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;!-- Dropdown --&gt;
+    &lt;li class="nav-item dropdown"&gt;
+      &lt;a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"&gt;
+        Dropdown link
+      &lt;/a&gt;
+      &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;br&gt;
+&lt;p&gt;Navbar Text:&lt;/p&gt;
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;!-- Links --&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-    &lt;button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;!-- Navbar text--&gt;
+  &lt;span class="navbar-text"&gt;
+    Navbar Text
+  &lt;/span&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
-    &lt;button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/nav&gt;
+</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+            <p>Navbar With Dropdown:</p>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <p>Navbar Text:</p>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                </ul>
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-            </div>&nbsp;
+                <!-- Navbar text-->
+                <span class="navbar-text">
+                    Navbar Text
+                </span>
+
+            </nav>&nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -627,8 +1163,8 @@
 
     <!-- Snippet11 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Vertical Button Group w/ Dropdown:</h3>
-        <p><code>class="btn-group-vertical"</code></p>
+        <h3 class="text-primary">Fixed Navigation Bar (Navbar as Footer):</h3>
+        <p><code>.fixed-top .fixed-bottom</code></p>
     </div>
     <div class="container" id="to-copy10">
         <div class="float-right">
@@ -638,21 +1174,35 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group-vertical"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-    &lt;div class="btn-group"&gt;
-      &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-      &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"&gt;
+  &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link2&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;div class="container-fluid" style="margin-top:80px"&gt;
+  &lt;h3&gt;Top Fixed Navbar&lt;/h3&gt;
+  &lt;p&gt;A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.&lt;/p&gt;
+  &lt;h1&gt;Scroll this page to see the effect&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom"&gt;
+  &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
     </div>
 
     <div class="container">
