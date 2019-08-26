@@ -67,6 +67,11 @@ router.get("/images", (req, res) => {
     res.render("Bootstrap/classes/images");
 });
 
+//Inputs Routes:
+router.get("/iputs", (req, res) => {
+    res.render("Bootstrap/classes/inputs");
+});
+
 //Pagination Routes:
 router.get("/paginations", (req, res) => {
     res.render("Bootstrap/classes/paginations");
