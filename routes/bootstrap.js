@@ -68,7 +68,7 @@ router.get("/images", (req, res) => {
 });
 
 //Inputs Routes:
-router.get("/iputs", (req, res) => {
+router.get("/inputs", (req, res) => {
     res.render("Bootstrap/classes/inputs");
 });
 
