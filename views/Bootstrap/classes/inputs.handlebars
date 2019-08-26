@@ -1,9 +1,9 @@
 <div class="container">&nbsp;
     <!-- Snippet1 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdowns:</h3>
+        <h3 class="text-primary">Bootstrap Input :</h3>
         <p>
-            <code>class="btn dropdown-toggle" || data-toggle="dropdown" || class="dropdown-menu" || class="dropdown-item"  </code>
+            <code>.form-control   type="text" type="password"  </code>
         </p>
     </div>
     <div class="container" id="to-copy">
@@ -15,16 +15,17 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Basic Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="usr"&gt;Name:&lt;/label&gt;
+      &lt;input type="text" class="form-control" id="usr" name="username"&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="pwd"&gt;Password:&lt;/label&gt;
+      &lt;input type="password" class="form-control" id="pwd" name="password"&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -32,16 +33,17 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Basic Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr" name="username">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
 
@@ -54,7 +56,7 @@
 
     <!-- Snippet2 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Divider:</h3>
+        <h3 class="text-primary">Bootstrap Textarea:</h3>
         <p><code>.dropdown-divider</code></p>
     </div>
     <div class="container" id="to-copy1">
@@ -66,18 +68,13 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+      &lt;textarea class="form-control" rows="5" id="comment" name="text"&gt;&lt;/textarea&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -85,18 +82,13 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Another link</a>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
