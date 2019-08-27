@@ -3,7 +3,7 @@
     <div class="container">
         <h3 class="text-primary">Bootstrap Input :</h3>
         <p>
-            <code>.form-control   type="text" type="password"  </code>
+            <code>.form-control type="text" type="password"  </code>
         </p>
     </div>
     <div class="container" id="to-copy">
@@ -33,7 +33,7 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <form action="/action_page.php">
+                <form action="">
                     <div class="form-group">
                         <label for="usr">Name:</label>
                         <input type="text" class="form-control" id="usr" name="username">
@@ -56,7 +56,7 @@
 
     <!-- Snippet2 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Bootstrap Textarea:</h3>
+        <h3 class="text-primary">Textarea:</h3>
         <p><code>.dropdown-divider</code></p>
     </div>
     <div class="container" id="to-copy1">
@@ -82,7 +82,7 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <form action="/action_page.php">
+                <form action="">
                     <div class="form-group">
                         <label for="comment">Comment:</label>
                         <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -99,8 +99,8 @@
 
     <!-- Snippet3 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Header:</h3>
-        <p><code>.dropdown-header</code></p>
+        <h3 class="text-primary">Checkboxes:</h3>
+        <p><code>.form-check-label .form-check-input .form-check  class="form-check"</code></p>
     </div>
     <div class="container" id="to-copy2">
         <div class="float-right">
@@ -111,19 +111,24 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-      &lt;h5 class="dropdown-header"&gt;Dropdown header&lt;/h5&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Another link&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label" for="check1"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked&gt;Option 1
+      &lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label" for="check2"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="check2" name="option2" value="something"&gt;Option 2
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label"&gt;
+        &lt;input type="checkbox" class="form-check-input" disabled&gt;Option 3
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -132,20 +137,28 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <h5 class="dropdown-header">Dropdown header</h5>
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                        <h5 class="dropdown-header">Dropdown header</h5>
-                        <a class="dropdown-item" href="#">Another link</a>
+                <form action="">
+                    <div class="form-check">
+                        <label class="form-check-label" for="check1">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something"
+                                checked>Option 1
+                        </label>
                     </div>
-                </div>
-            </div>&nbsp;
+                    <div class="form-check">
+                        <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2"
+                                value="something">Option 2
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" disabled>Option 3
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            &nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -154,8 +167,8 @@
 
     <!-- Snippet4 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Disable and Active items:</h3>
-        <p><code>.active .disabled</code></p>
+        <h3 class="text-primary">Inline Checkboxes:</h3>
+        <p><code>.form-check-inline</code></p>
     </div>
     <div class="container" id="to-copy3">
         <div class="float-right">
@@ -166,16 +179,24 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Normal&lt;/a&gt;
-      &lt;a class="dropdown-item active" href="#"&gt;Active&lt;/a&gt;
-      &lt;a class="dropdown-item disabled" href="#"&gt;Disabled&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label" for="check1"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked&gt;Option 1
+      &lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label" for="check2"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something"&gt;Option 2
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label"&gt;
+        &lt;input type="checkbox" class="form-check-input" disabled&gt;Option 3
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -183,16 +204,26 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Normal</a>
-                        <a class="dropdown-item active" href="#">Active</a>
-                        <a class="dropdown-item disabled" href="#">Disabled</a>
+                <form action="">
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="check1">
+                            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1"
+                                value="something" checked>Option 1
+                        </label>
                     </div>
-                </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2"
+                                value="something">Option 2
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" disabled>Option 3
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -202,8 +233,8 @@
 
     <!-- Snippet5 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Position :</h3>
-        <p><code>.dropright .dropleft</code></p>
+        <h3 class="text-primary">Radio Buttons :</h3>
+        <p><code>class="form-check"</code></p>
     </div>
     <div class="container" id="to-copy4">
         <div class="float-right">
@@ -213,54 +244,52 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container clearfix"&gt;
-  &lt;div class="dropdown dropright float-left"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-        Dropright button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+&lt;div class="container"&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label" for="radio1"&gt;
+        &lt;input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked&gt;Option 1
+      &lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="dropdown dropleft float-right"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropleft button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label" for="radio2"&gt;
+        &lt;input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"&gt;Option 2
+      &lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-check"&gt;
+      &lt;label class="form-check-label"&gt;
+        &lt;input type="radio" class="form-check-input" disabled&gt;Option 3
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container clearfix">
-                <div class="dropdown dropright float-left">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropright button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+            <div class="container">
+                <form action="">
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                                checked>Option 1
+                        </label>
                     </div>
-                </div>
-                <div class="dropdown dropleft float-right">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropleft button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                value="option2">Option 2
+                        </label>
                     </div>
-                </div>
+                    <div class="form-check mb-2">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" disabled>Option 3
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -269,8 +298,8 @@
 
     <!-- Snippet6 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Menu Right:</h3>
-        <p><code>.dropdown-menu-right</code></p>
+        <h3 class="text-primary">Inline Radio Buttons:</h3>
+        <p><code>.form-check-inline</code></p>
     </div>
     <div class="container" id="to-copy5">
         <div class="float-right">
@@ -281,33 +310,51 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Wide dropdown button to demonstrate this example
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu dropdown-menu-right"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label" for="radio1"&gt;
+        &lt;input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked&gt;Option 1
+      &lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label" for="radio2"&gt;
+        &lt;input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"&gt;Option 2
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-check-inline"&gt;
+      &lt;label class="form-check-label"&gt;
+        &lt;input type="radio" class="form-check-input" disabled&gt;Option 3
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container overflow-auto">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Wide dropdown button to demonstrate this example
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+            <div class="container">
+                <form action="">
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                                checked>Option 1
+                        </label>
                     </div>
-                </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                value="option2">Option 2
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" disabled>Option 3
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -317,8 +364,8 @@
 
     <!-- Snippet7 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropup :</h3>
-        <p><code>class="dropup"</code></p>
+        <h3 class="text-primary">Select List : (Single / Multiple)</h3>
+        <p><code> &lt;select class="form-control"&gt; &lt;option&gt;1&lt;/option&gt; &lt;/select&gt;</code></p>
     </div>
     <div class="container" id="to-copy6">
         <div class="float-right">
@@ -329,15 +376,27 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropup"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropup button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="sel1"&gt;Select list (select one):&lt;/label&gt;
+      &lt;select class="form-control" id="sel1" name="sellist1"&gt;
+        &lt;option&gt;1&lt;/option&gt;
+        &lt;option&gt;2&lt;/option&gt;
+        &lt;option&gt;3&lt;/option&gt;
+        &lt;option&gt;4&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;br&gt;
+      &lt;label for="sel2"&gt;Mutiple select list (hold Control(Ctrl) to select more than one):&lt;/label&gt;
+      &lt;select multiple class="form-control" id="sel2" name="sellist2"&gt;
+        &lt;option&gt;1&lt;/option&gt;
+        &lt;option&gt;2&lt;/option&gt;
+        &lt;option&gt;3&lt;/option&gt;
+        &lt;option&gt;4&lt;/option&gt;
+        &lt;option&gt;5&lt;/option&gt;
+      &lt;/select&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -346,16 +405,30 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropup">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropup button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
+                <form action="">
+                    <div class="form-group">
+                        <label for="sel1">Select list (select one):</label>
+                        <select class="form-control" id="sel1" name="sellist1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <br>
+                        <label for="sel2">Mutiple select list (hold <kbd>Ctrl</kbd> key to select more than
+                            one):</label>
+                        <select multiple class="form-control" id="sel2" name="sellist2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
-                </div>
-            </div>&nbsp;
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            &nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -363,8 +436,8 @@
 
     <!-- Snippet8 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Text :</h3>
-        <p><code>.dropdown-item-text</code></p>
+        <h3 class="text-primary">Form Control Sizing & Plain Text:</h3>
+        <p><code>.form-control-sm .form-control-lg || .form-control-plaintext</code></p>
     </div>
     <div class="container" id="to-copy7">
         <div class="float-right">
@@ -375,17 +448,32 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item-text" href="#"&gt;Text Link&lt;/a&gt;
-      &lt;span class="dropdown-item-text"&gt;Just Text&lt;/span&gt;
+  &lt;h2&gt;Form Control Sizing&lt;/h2&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control form-control-sm" placeholder="Small form control" name="text1"&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control" placeholder="Default form control" name="text2"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control form-control-lg" placeholder="Large form control" name="text3"&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+  
+  &lt;hr&gt;
+  
+  &lt;h2&gt;Form Control Plain Text&lt;/h2&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control" placeholder="Default form control" name="text1"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control-plaintext" placeholder="Form control with plain text" name="text2"&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -393,17 +481,35 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item-text" href="#">Text Link</a>
-                        <span class="dropdown-item-text">Just Text</span>
+                <h2>Form Control Sizing</h2>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Small form control"
+                            name="text1">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Default form control" name="text2">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Large form control"
+                            name="text3">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <hr>
+
+                <h2>Form Control Plain Text</h2>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Default form control" name="text1">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-plaintext" placeholder="Form control with plain text"
+                            name="text2">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -412,8 +518,8 @@
 
     <!-- Snippet9 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Grouped Buttons with a Dropdown :</h3>
-        <p><code>class="btn-group"</code></p>
+        <h3 class="text-primary">Form Control File and Range :</h3>
+        <p><code>.form-control-range to input type"range" || .form-control-file to input type"file""</code></p>
     </div>
     <div class="container" id="to-copy8">
         <div class="float-right">
@@ -424,19 +530,15 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-    &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="range" class="form-control-range" name="range"&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="file" class="form-control-file border" name="file"&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -444,19 +546,15 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-center">&nbsp;
             <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Apple</button>
-                    <button type="button" class="btn btn-primary">Samsung</button>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Sony
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tablet</a>
-                            <a class="dropdown-item" href="#">Smartphone</a>
-                        </div>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <input type="range" class="form-control-range" name="range">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control-file border" name="file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -468,8 +566,8 @@
 
     <!-- Snippet10 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Split Button Dropdowns</h3>
-        <p><code>.dropdown-toggle-split</code></p>
+        <h3 class="text-primary">Bootstrap 4 Input Groups</h3>
+        <p><code>.input-group .input-group-prepend  .input-group-append  .input-group-text</code></p>
     </div>
     <div class="container" id="to-copy9">
         <div class="float-right">
@@ -479,138 +577,46 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;form action="/action_page.php"&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;@&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="Username" id="usr" name="username"&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;input type="text" class="form-control" placeholder="Your Email" id="mail" name="email"&gt;
+      &lt;div class="input-group-append"&gt;
+        &lt;span class="input-group-text"&gt;@example.com&lt;/span&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-    &lt;button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-    &lt;button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
-    &lt;button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
+            <div class="container mt-3">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
                     </div>
-                </div>
 
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+                        <div class="input-group-append">
+                            <span class="input-group-text">@example.com</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -619,8 +625,8 @@
 
     <!-- Snippet11 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Vertical Button Group w/ Dropdown:</h3>
-        <p><code>class="btn-group-vertical"</code></p>
+        <h3 class="text-primary">Input Group Sizing:</h3>
+        <p><code>.input-group-sm .input-group-lg</code></p>
     </div>
     <div class="container" id="to-copy10">
         <div class="float-right">
@@ -630,40 +636,62 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;div class="btn-group-vertical"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-    &lt;div class="btn-group"&gt;
-      &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-      &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mb-3 input-group-sm"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;Small&lt;/span&gt;
       &lt;/div&gt;
+      &lt;input type="text" class="form-control"&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;Default&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mb-3 input-group-lg"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;Large&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-center">&nbsp;
-            <div class="container">
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary">Apple</button>
-                    <button type="button" class="btn btn-primary">Samsung</button>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Sony
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tablet</a>
-                            <a class="dropdown-item" href="#">Smartphone</a>
+            <div class="container mt-3">
+                <form>
+                    <div class="input-group mb-3 input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Small</span>
                         </div>
+                        <input type="text" class="form-control">
                     </div>
-                </div>
+                </form>
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Default</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+                <form>
+                    <div class="input-group mb-3 input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Large</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -674,11 +702,8 @@
 
     <!-- Snippet12 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Font weight & italics</h3>
-        <p>
-            <code>.font-weight-bold .font-weight-bolder .font-weight-normal .font-weight-light .font-weight-lighter .font-italic</code>
-        </p>
-    </div>&nbsp;
+        <h3 class="text-primary">Multiple Inputs and Helpers</h3>
+    </div>
     <div class="container" id="to-copy11">
         <div class="float-right">
             <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
@@ -687,26 +712,54 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;p class="font-weight-bold"&gt;Bold text.&lt;/p&gt;
-  &lt;p class="font-weight-bolder"&gt;Bolder text.&lt;/p&gt;
-  &lt;p class="font-weight-normal"&gt;Normal weight text.&lt;/p&gt;
-  &lt;p class="font-weight-light"&gt;Light weight text.&lt;/p&gt;
-  &lt;p class="font-weight-lighter"&gt;Lighter weight text.&lt;/p&gt;
-  &lt;p class="font-italic"&gt;Italic text.&lt;/p&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;Person&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="First Name"&gt;
+      &lt;input type="text" class="form-control" placeholder="Last Name"&gt;
+    &lt;/div&gt;  
+  &lt;/form&gt;
+  
+  &lt;form&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;span class="input-group-text"&gt;One&lt;/span&gt;
+        &lt;span class="input-group-text"&gt;Two&lt;/span&gt;
+        &lt;span class="input-group-text"&gt;Three&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <p class="font-weight-bold">Bold text.</p>
-                <p class="font-weight-bolder">Bolder text.</p>
-                <p class="font-weight-normal">Normal weight text.</p>
-                <p class="font-weight-light">Light weight text.</p>
-                <p class="font-weight-lighter">Lighter weight text.</p>
-                <p class="font-italic">Italic text.</p>
+            <div class="container mt-3">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Person</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="First Name">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </form>
+
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">One</span>
+                            <span class="input-group-text">Two</span>
+                            <span class="input-group-text">Three</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -716,9 +769,7 @@
 
     <!-- Snippet13 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Text Formats:</h3>
-        <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
-        </p>
+        <h3 class="text-primary">Input Group with Checkboxes and Radios:</h3>
     </div>
     <div class="container" id="to-copy12">
         <div class="float-right">
@@ -728,26 +779,56 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
-    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
-    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
-    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
-    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
-    &lt;p&gt;Default text.&lt;/p&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;div class="input-group-text"&gt;
+          &lt;input type="checkbox"&gt; 
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="Some text"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  
+  &lt;form&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;div class="input-group-text"&gt;
+          &lt;input type="radio"&gt; 
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="Some text"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
-                <p class="text-lowercase">Lowercased text.</p>
-                <p class="text-uppercase">Uppercased text.</p>
-                <p class="text-capitalize">Capitalized text.</p>
-                <p class="text-monospace">Monospaced text.</p>
-                <p>Default text.</p>
+            <div class="container mt-3">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Some text">
+                    </div>
+                </form>
+
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Some text">
+                    </div>
+                </form>
             </div>&nbsp;
         </div>
     </div>
@@ -757,9 +838,7 @@
 
     <!-- Snippet14 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Initialism:</h3>
-        <p><code>.initialism</code></p>
-        </p>
+        <h3 class="text-primary">Input Group Buttons:</h3>
     </div>
     <div class="container" id="to-copy13">
         <div class="float-right">
@@ -769,23 +848,163 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
-        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;div class="input-group mb-3"&gt;
+    &lt;div class="input-group-prepend"&gt;
+      &lt;button class="btn btn-outline-primary" type="button"&gt;Basic Button&lt;/button&gt;  
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Some text"&gt;
+  &lt;/div&gt;
+
+  &lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Search"&gt;
+    &lt;div class="input-group-append"&gt;
+      &lt;button class="btn btn-success" type="submit"&gt;Go&lt;/button&gt;  
+     &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Something clever.."&gt;
+    &lt;div class="input-group-append"&gt;
+      &lt;button class="btn btn-primary" type="button"&gt;OK&lt;/button&gt;  
+      &lt;button class="btn btn-danger" type="button"&gt;Cancel&lt;/button&gt;  
+     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
-                <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
-                    was founded in 1948.(slightly smaller abbr)</p>
+            <div class="container mt-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-primary" type="button">Basic Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Some text">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit">Go</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Something clever..">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">OK</button>
+                        <button class="btn btn-danger" type="button">Cancel</button>
+                    </div>
+                </div>
             </div>&nbsp;
         </div>
     </div>
     <hr>&nbsp;
     <!-- Snippet14 END -->
+
+
+
+    <!-- Snippet15 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Input Group with Dropdown Button:</h3>
+    </div>
+    <div class="container" id="to-copy14">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy14')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;form&gt;
+    &lt;div class="input-group mt-3 mb-3"&gt;
+      &lt;div class="input-group-prepend"&gt;
+        &lt;button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"&gt;
+          Dropdown button
+        &lt;/button&gt;
+        &lt;div class="dropdown-menu"&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
+          &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;input type="text" class="form-control" placeholder="Username"&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white">&nbsp;
+            <div class="container mt-3">
+                <form>
+                    <div class="input-group mt-3 mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                                data-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </form>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet15 END -->
+
+
+    <!-- Snippet16 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Input Group Labels</h3>
+    </div>
+    <div class="container" id="to-copy15">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy15')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;form&gt;
+    &lt;label for="demo"&gt;Write your email here:&lt;/label&gt;
+    &lt;div class="input-group mb-3"&gt;
+      &lt;input type="text" class="form-control" placeholder="Email" id="demo" name="email"&gt;
+      &lt;div class="input-group-append"&gt;
+        &lt;span class="input-group-text"&gt;@example.com&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white">&nbsp;
+            <div class="container mt-3">
+                <form>
+                    <label for="demo">Write your email here:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+                        <div class="input-group-append">
+                            <span class="input-group-text">@example.com</span>
+                        </div>
+                    </div>
+                </form>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet16 END -->
 </div>
