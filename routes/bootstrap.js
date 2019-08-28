@@ -133,6 +133,15 @@ router.get("/tooltip", (req, res) => {
 });
 
 
+//Error Pages for 400,404,500
+router.use(function (req, res) {
+    c = res.status(404);
+    console.log(c);
+    res.status(404).render("Bootstrap/classes/error");
+});
+
+
+
 
 
 module.exports = router;
