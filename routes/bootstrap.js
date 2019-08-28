@@ -51,6 +51,12 @@ router.get("/filters", (req, res) => {
 });
 
 
+//Forms Route
+router.get("/forms", (req, res) => {
+    res.render("Bootstrap/classes/forms");
+});
+
+
 
 //Buttons Routes
 router.get("/buttons", (req, res) => {
