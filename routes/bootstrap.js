@@ -56,6 +56,10 @@ router.get("/forms", (req, res) => {
     res.render("Bootstrap/classes/forms");
 });
 
+//Flex Route
+router.get("/flex", (req, res) => {
+    res.render("Bootstrap/classes/flex");
+});
 
 
 //Buttons Routes
