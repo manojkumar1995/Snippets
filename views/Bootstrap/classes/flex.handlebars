@@ -1,0 +1,1238 @@
+<div class="container">&nbsp;
+    <!-- Snippet1 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Flex :</h3>
+        <p>
+            <code>d-flex d-inline-flex</code>
+        </p>
+    </div>
+    <div class="container" id="to-copy">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex p-3 bg-secondary text-white"&gt;  
+    &lt;div class="p-2 bg-warning"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-success"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;h2&gt;Inline Flex&lt;/h2&gt;
+  &lt;div class="d-inline-flex p-3 bg-secondary text-white"&gt;  
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex p-3 bg-secondary text-white">
+                    <div class="p-2 bg-warning">Flex item 1</div>
+                    <div class="p-2 bg-info">Flex item 2</div>
+                    <div class="p-2 bg-success">Flex item 3</div>
+                </div>
+            </div>
+            <br>
+            <div class="container mt-3">
+                <h2>Inline Flex</h2>
+                <div class="d-inline-flex p-3 bg-secondary text-white">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+
+
+    </div>
+    <hr>&nbsp;
+
+    <!-- Snippet1 END -->
+
+
+    <!-- Snippet2 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Horizontal Direction Flex:</h3>
+        <p><code>.flex-row .flex-row-reverse</code></p>
+    </div>
+    <div class="container" id="to-copy1">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy1')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex flex-row bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="d-flex flex-row-reverse bg-secondary"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex flex-row bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <br>
+                <div class="d-flex flex-row-reverse bg-secondary">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet2 END -->
+
+
+
+    <!-- Snippet3 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Vertical Direction Flex:</h3>
+        <p><code>.flex-column .flex-column-reverse</code></p>
+    </div>
+    <div class="container" id="to-copy2">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy2')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex flex-column mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="d-flex flex-column-reverse"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <br>
+                <div class="d-flex flex-column-reverse">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet3 END -->
+
+
+    <!-- Snippet4 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Justify Content:</h3>
+        <p><code>.justify-content-*  start (default), end, center, between or around</code></p>
+    </div>
+    <div class="container" id="to-copy3">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy3')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex justify-content-start bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex justify-content-end bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex justify-content-center bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex justify-content-between bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex justify-content-around bg-secondary mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+
+            <div class="container mt-3">
+                <div class="d-flex justify-content-start bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-end bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-center bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-between bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-around bg-secondary mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet4 END -->
+
+
+    <!-- Snippet5 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Fill / Equal Widths :</h3>
+        <p><code>.flex-fill</code></p>
+    </div>
+    <div class="container" id="to-copy4">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy4')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex mb-3"&gt;
+    &lt;div class="p-2 flex-fill bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 flex-fill bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 flex-fill bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Example without .flex-fill:&lt;/p&gt;
+  &lt;div class="d-flex mb-3 bg-secondary"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex mb-3">
+                    <div class="p-2 flex-fill bg-info">Flex item 1</div>
+                    <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+                    <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+                </div>
+                <p>Example without .flex-fill:</p>
+                <div class="d-flex mb-3 bg-secondary">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet5 END -->
+
+    <!-- Snippet6 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Flex Grow :</h3>
+        <p><code>.flex-grow-1  </code><strong>NOTE :-</strong> .flex-shrink-1 on a flex item to make it shrink if
+            necessary </p>
+    </div>
+    <div class="container" id="to-copy5">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy5')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex mb-3"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 flex-grow-1 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Example without .flex-grow-1:&lt;/p&gt;
+  &lt;div class="d-flex mb-3 bg-secondary"&gt;
+    &lt;div class="p-2 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex mb-3">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+                </div>
+                <p>Example without .flex-grow-1:</p>
+                <div class="d-flex mb-3 bg-secondary">
+                    <div class="p-2 bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet6 END -->
+
+
+    <!-- Snippet7 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Flex Order :</h3>
+        <p><code>.order</code></p>
+    </div>
+    <div class="container" id="to-copy6">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy6')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex mb-3"&gt;
+    &lt;div class="p-2 order-3 bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 order-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 order-1 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex mb-3">
+                    <div class="p-2 order-3 bg-info">Flex item 1</div>
+                    <div class="p-2 order-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 order-1 bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet7 END -->
+
+    <!-- Snippet8 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Auto Margins :</h3>
+        <p><code>.mr-auto  .ml-auto</code></p>
+    </div>
+    <div class="container" id="to-copy7">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy7')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex mb-3 bg-secondary"&gt;
+    &lt;div class="p-2 mr-auto bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex mb-3 bg-secondary"&gt;
+    &lt;div class="p-2  bg-info"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 bg-warning"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 ml-auto bg-primary"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex mb-3 bg-secondary">
+                    <div class="p-2 mr-auto bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 bg-primary">Flex item 3</div>
+                </div>
+                <div class="d-flex mb-3 bg-secondary">
+                    <div class="p-2  bg-info">Flex item 1</div>
+                    <div class="p-2 bg-warning">Flex item 2</div>
+                    <div class="p-2 ml-auto bg-primary">Flex item 3</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet8 END -->
+
+    <!-- Snippet9 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Flex Wrap :</h3>
+        <p><code>.flex-nowrap .flex-wrap .flex-wrap-reverse</code></p>
+    </div>
+    <div class="container" id="to-copy8">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy8')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex flex-wrap bg-light"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;&lt;code&gt;.flex-wrap-reverse:&lt;/code&gt;&lt;/p&gt;
+  &lt;div class="d-flex flex-wrap-reverse bg-light"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;&lt;code&gt;.flex-nowrap:&lt;/code&gt;&lt;/p&gt;
+  &lt;div class="d-flex flex-nowrap bg-light"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 26&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 27&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 28&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 29&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 30&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 31&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 32&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 33&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 34&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 35&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-center overflow-auto">&nbsp;
+            <div class="container mt-3">
+                <div class="d-flex flex-wrap bg-light">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p><code>.flex-wrap-reverse:</code></p>
+                <div class="d-flex flex-wrap-reverse bg-light">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p><code>.flex-nowrap:</code></p>
+                <div class="d-flex flex-nowrap bg-light">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                    <div class="p-2 border">Flex item 26</div>
+                    <div class="p-2 border">Flex item 27</div>
+                    <div class="p-2 border">Flex item 28</div>
+                    <div class="p-2 border">Flex item 29</div>
+                    <div class="p-2 border">Flex item 30</div>
+                    <div class="p-2 border">Flex item 31</div>
+                    <div class="p-2 border">Flex item 32</div>
+                    <div class="p-2 border">Flex item 33</div>
+                    <div class="p-2 border">Flex item 34</div>
+                    <div class="p-2 border">Flex item 35</div>
+                </div>
+                <br>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet9 END -->
+
+
+
+
+    <!-- Snippet10 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Align Content :</h3>
+        <p><code>.align-content-* .align-content-end
+         .align-content-center .align-content-between
+         .align-content-around .align-content-stretch</code></p>
+    </div>
+    <div class="container" id="to-copy9">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy9')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex flex-wrap align-content-start bg-light" style="height:300px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-content-end:&lt;/p&gt;
+  &lt;div class="d-flex flex-wrap align-content-end bg-light" style="height:300px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-content-center:&lt;/p&gt;
+  &lt;div class="d-flex flex-wrap align-content-center bg-light" style="height:300px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-content-around:&lt;/p&gt;
+  &lt;div class="d-flex flex-wrap align-content-around bg-light" style="height:300px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-content-stretch:&lt;/p&gt;
+  &lt;div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 4&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 5&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 6&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 7&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 8&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 9&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 10&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 11&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 12&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 13 &lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 14&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 15&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 16&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 17&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 18&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 19&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 20&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 21&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 22&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 23&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 24&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 25&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark ">&nbsp;
+            <div class="container mt-3 overflow-auto">
+                <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p>.align-content-end:</p>
+                <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p>.align-content-center:</p>
+                <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p>.align-content-around:</p>
+                <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+                <p>.align-content-stretch:</p>
+                <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                </div>
+                <br>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet10 END -->
+
+    <!-- Snippet11 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Align Items:</h3>
+        <p><code>.align-items-* classes. Valid classes are .align-items-start
+                 .align-items-end .align-items-center .align-items-baseline 
+                 .align-items-stretch</code></p>
+    </div>
+    <div class="container" id="to-copy10">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy10')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3 overflow-auto"&gt;
+  &lt;div class="d-flex align-items-start bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-items-end:&lt;/p&gt;
+  &lt;div class="d-flex align-items-end bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-items-center:&lt;/p&gt;
+  &lt;div class="d-flex align-items-center bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-items-baseline:&lt;/p&gt;
+  &lt;div class="d-flex align-items-baseline bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-items-stretch (default):&lt;/p&gt;
+  &lt;div class="d-flex align-items-stretch bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-center">&nbsp;
+            <div class="container mt-3 overflow-auto">
+                <div class="d-flex align-items-start bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-items-end:</p>
+                <div class="d-flex align-items-end bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-items-center:</p>
+                <div class="d-flex align-items-center bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-items-baseline:</p>
+                <div class="d-flex align-items-baseline bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-items-stretch (default):</p>
+                <div class="d-flex align-items-stretch bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet11 END -->
+
+
+
+    <!-- Snippet12 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Align Self :</h3>
+        <p><code>.align-self-* .align-self-start .align-self-end .align-self-center 
+                 .align-self-baseline, and .align-self-stretch</code></p>
+    </div>&nbsp;
+    <div class="container" id="to-copy11">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy11')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;div class="d-flex bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border align-self-start"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-self-end:&lt;/p&gt;
+  &lt;div class="d-flex bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border align-self-end"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-self-center:&lt;/p&gt;
+  &lt;div class="d-flex bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border align-self-center"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-self-baseline:&lt;/p&gt;
+  &lt;div class="d-flex bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border align-self-baseline"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;.align-self-stretch (default):&lt;/p&gt;
+  &lt;div class="d-flex bg-light" style="height:150px"&gt;
+    &lt;div class="p-2 border"&gt;Flex item 1&lt;/div&gt;
+    &lt;div class="p-2 border align-self-stretch"&gt;Flex item 2&lt;/div&gt;
+    &lt;div class="p-2 border"&gt;Flex item 3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3 overflow-auto">
+                <div class="d-flex bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border align-self-start">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-self-end:</p>
+                <div class="d-flex bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border align-self-end">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-self-center:</p>
+                <div class="d-flex bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border align-self-center">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-self-baseline:</p>
+                <div class="d-flex bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border align-self-baseline">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+                <p>.align-self-stretch (default):</p>
+                <div class="d-flex bg-light" style="height:150px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border align-self-stretch">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+                <br>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet12 END -->
+
+
+    <!-- Snippet13 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Text Formats:</h3>
+        <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy12">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy12')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
+    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
+    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
+    &lt;p&gt;Default text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container">
+                <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
+                <p class="text-lowercase">Lowercased text.</p>
+                <p class="text-uppercase">Uppercased text.</p>
+                <p class="text-capitalize">Capitalized text.</p>
+                <p class="text-monospace">Monospaced text.</p>
+                <p>Default text.</p>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet13 END -->
+
+
+    <!-- Snippet14 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Initialism:</h3>
+        <p><code>.initialism</code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy13">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy13')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container"&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
+    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
+        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container">
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
+                <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
+                    was founded in 1948.(slightly smaller abbr)</p>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet14 END -->
+</div>
