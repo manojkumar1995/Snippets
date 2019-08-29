@@ -143,6 +143,11 @@ router.get("/tooltip", (req, res) => {
 });
 
 
+//utilities Routes:
+router.get("/utilities", (req, res) => {
+    res.render("Bootstrap/classes/utilities");
+});
+
 //Error Pages for 400,404,500
 router.use(function (req, res) {
     res.status(404).render("Bootstrap/classes/error");
