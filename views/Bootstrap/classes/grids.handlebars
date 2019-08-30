@@ -1,0 +1,167 @@
+<div class="container">
+    <hr>
+    <hr>
+    <h1 class="text-success text-center">Grids:</h1>
+    <hr>
+    <hr>&nbsp;
+    <!-- Snippet1 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Grid System:</h3>
+        <p>
+            <code>Grid system is built with flexbox and allows up to 12 columns</code>
+        </p>
+    </div>
+    <div class="container" id="to-copy">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;!-- Control the column width for different devices --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Automatically handle the layout --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-light text-dark overflow-auto">&nbsp;
+            <img class="image-responsive" src="/imgs/grids.png" alt="girds" width="980" height="250">&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+
+    <!-- Snippet1 END -->
+
+
+    <!-- Snippet2 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Three Equal Columns:</h3>
+        <p><code>.col</code></p>
+    </div>
+    <div class="container" id="to-copy1">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy1')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col" style="background-color:lavender;"&gt;.col&lt;/div&gt;
+    &lt;div class="col" style="background-color:orange;"&gt;.col&lt;/div&gt;
+    &lt;div class="col" style="background-color:lavender;"&gt;.col&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col" style="background-color:lavender;">.col</div>
+                    <div class="col" style="background-color:orange;">.col</div>
+                    <div class="col" style="background-color:lavender;">.col</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet2 END -->
+
+
+
+    <!-- Snippet3 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Responsive Columns:</h3>
+        <p><code>.col-sm-3</code></p>
+    </div>
+    <div class="container" id="to-copy2">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy2')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-3" style="background-color:lavender;"&gt;.col-sm-3&lt;/div&gt;
+    &lt;div class="col-sm-3" style="background-color:lavenderblush;"&gt;.col-sm-3&lt;/div&gt;
+    &lt;div class="col-sm-3" style="background-color:lavender;"&gt;.col-sm-3&lt;/div&gt;
+    &lt;div class="col-sm-3" style="background-color:lavenderblush;"&gt;.col-sm-3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+                    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+                    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+                    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+                </div>
+            </div>
+            &nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet3 END -->
+
+
+    <!-- Snippet4 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Two Unequal Responsive Columns :</h3>
+        <p><code>.col-sm-4 .col-sm-8</code></p>
+    </div>
+    <div class="container" id="to-copy3">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy3')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-4" style="background-color:lavender;"&gt;.col-sm-4&lt;/div&gt;
+    &lt;div class="col-sm-8" style="background-color:lavenderblush;"&gt;.col-sm-8&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+                    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet4 END -->
+</div>
