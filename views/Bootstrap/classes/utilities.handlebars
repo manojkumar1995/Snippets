@@ -172,7 +172,7 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <style>
-                .border {
+                .borders {
                     display: inline-block;
                     width: 70px;
                     height: 70px;
@@ -181,15 +181,15 @@
             </style>
 
             <div class="container">
-                <span class="rounded"></span>
-                <span class="border border-secondary"></span>
-                <span class="border border-success"></span>
-                <span class="border border-danger"></span>
-                <span class="border border-warning"></span>
-                <span class="border border-info"></span>
-                <span class="border border-light bg-success"></span>
-                <span class="border border-dark"></span>
-                <span class="border border-white"></span>
+                <span class="border border-dark bg-dark rounded-sm"></span>
+                <span class="border border-dark rounded"></span>
+                <span class="border border-dark bg-dark rounded-lg"></span>
+                <span class="border border-dark bg-dark rounded-top"></span>
+                <span class="border border-dark bg-dark rounded-right"></span>
+                <span class="border border-dark bg-dark rounded-bottom"></span>
+                <span class="border border-dark bg-dark rounded-left"></span>
+                <span class="border border-dark bg-dark rounded-circle"></span>
+                <span class="border border-dark rounded-0"></span>
             </div>&nbsp;
         </div>
     </div>
@@ -199,8 +199,8 @@
 
     <!-- Snippet4 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Disable and Active items:</h3>
-        <p><code>.active .disabled</code></p>
+        <h3 class="text-primary">Float and Clearfix:</h3>
+        <p><code>.float-right .float-left .clearfix</code></p>
     </div>
     <div class="container" id="to-copy3">
         <div class="float-right">
@@ -211,15 +211,9 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Normal&lt;/a&gt;
-      &lt;a class="dropdown-item active" href="#"&gt;Active&lt;/a&gt;
-      &lt;a class="dropdown-item disabled" href="#"&gt;Disabled&lt;/a&gt;
-    &lt;/div&gt;
+  &lt;div class="clearfix"&gt;
+    &lt;span class="float-left"&gt;Float left&lt;/span&gt;
+    &lt;span class="float-right"&gt;Float right&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
@@ -228,15 +222,9 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Normal</a>
-                        <a class="dropdown-item active" href="#">Active</a>
-                        <a class="dropdown-item disabled" href="#">Disabled</a>
-                    </div>
+                <div class="clearfix">
+                    <span class="float-left">Float left</span>
+                    <span class="float-right">Float right</span>
                 </div>
             </div>&nbsp;
         </div>
@@ -247,8 +235,8 @@
 
     <!-- Snippet5 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Position :</h3>
-        <p><code>.dropright .dropleft</code></p>
+        <h3 class="text-primary">Responsive Floats :</h3>
+        <p><code>.float-*-left|right</code></p>
     </div>
     <div class="container" id="to-copy4">
         <div class="float-right">
@@ -258,26 +246,13 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container clearfix"&gt;
-  &lt;div class="dropdown dropright float-left"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-        Dropright button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="dropdown dropleft float-right"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropleft button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
+&lt;div class="container"&gt; 
+  &lt;div class="clearfix"&gt;
+    &lt;div class="float-sm-right"&gt;Float right on small screens or wider&lt;/div&gt;&lt;br&gt;
+    &lt;div class="float-md-right"&gt;Float right on medium screens or wider&lt;/div&gt;&lt;br&gt;
+    &lt;div class="float-lg-right"&gt;Float right on large screens or wider&lt;/div&gt;&lt;br&gt;
+    &lt;div class="float-xl-right"&gt;Float right on extra large screens or wider&lt;/div&gt;&lt;br&gt;
+    &lt;div class="float-none"&gt;Float none&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
@@ -285,26 +260,13 @@
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container clearfix">
-                <div class="dropdown dropright float-left">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropright button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </div>
-                <div class="dropdown dropleft float-right">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropleft button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
+            <div class="container">
+                <div class="clearfix">
+                    <div class="float-sm-right">Float right on small screens or wider</div><br>
+                    <div class="float-md-right">Float right on medium screens or wider</div><br>
+                    <div class="float-lg-right">Float right on large screens or wider</div><br>
+                    <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+                    <div class="float-none">Float none</div>
                 </div>
             </div>&nbsp;
         </div>
@@ -314,8 +276,8 @@
 
     <!-- Snippet6 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Menu Right:</h3>
-        <p><code>.dropdown-menu-right</code></p>
+        <h3 class="text-primary">Center Align :</h3>
+        <p><code>.mx-auto</code></p>
     </div>
     <div class="container" id="to-copy5">
         <div class="float-right">
@@ -326,33 +288,15 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Wide dropdown button to demonstrate this example
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu dropdown-menu-right"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;div class="mx-auto bg-warning" style="width:150px"&gt;Centered&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container overflow-auto">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Wide dropdown button to demonstrate this example
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="mx-auto bg-warning" style="width:150px">Centered</div>
             </div>&nbsp;
         </div>
     </div>
@@ -362,8 +306,8 @@
 
     <!-- Snippet7 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropup :</h3>
-        <p><code>class="dropup"</code></p>
+        <h3 class="text-primary">Width :</h3>
+        <p><code>.w-25, .w-50, .w-75, .w-100, .mw-100</code></p>
     </div>
     <div class="container" id="to-copy6">
         <div class="float-right">
@@ -374,15 +318,11 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropup"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropup button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;div class="w-25 bg-warning"&gt;Width 25%&lt;/div&gt;
+  &lt;div class="w-50 bg-warning"&gt;Width 50%&lt;/div&gt;
+  &lt;div class="w-75 bg-warning"&gt;Width 75%&lt;/div&gt;
+  &lt;div class="w-100 bg-warning"&gt;Width 100%&lt;/div&gt;
+  &lt;div class="mw-100 bg-warning"&gt;Max Width 100%&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -391,16 +331,13 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropup">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropup button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-            </div>&nbsp;
+                <div class="w-25 bg-warning">Width 25%</div>
+                <div class="w-50 bg-warning">Width 50%</div>
+                <div class="w-75 bg-warning">Width 75%</div>
+                <div class="w-100 bg-warning">Width 100%</div>
+                <div class="mw-100 bg-warning">Max Width 100%</div>
+            </div>
+            &nbsp;
         </div>
     </div>
     <hr>&nbsp;
@@ -408,8 +345,8 @@
 
     <!-- Snippet8 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Dropdown Text :</h3>
-        <p><code>.dropdown-item-text</code></p>
+        <h3 class="text-primary">Height :</h3>
+        <p><code>.h-25, .h-50, .h-75, .h-100, .mh-100</code></p>
     </div>
     <div class="container" id="to-copy7">
         <div class="float-right">
@@ -420,16 +357,12 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="dropdown"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-    Dropdown button
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-      &lt;a class="dropdown-item-text" href="#"&gt;Text Link&lt;/a&gt;
-      &lt;span class="dropdown-item-text"&gt;Just Text&lt;/span&gt;
-    &lt;/div&gt;
+  &lt;div style="height:200px;background-color:#ddd"&gt;
+    &lt;div class="h-25 d-inline-block p-2 bg-warning"&gt;Height 25%&lt;/div&gt;
+    &lt;div class="h-50 d-inline-block p-2 bg-warning"&gt;Height 50%&lt;/div&gt;
+    &lt;div class="h-75 d-inline-block p-2 bg-warning"&gt;Height 75%&lt;/div&gt;
+    &lt;div class="h-100 d-inline-block p-2 bg-warning"&gt;Height 100%&lt;/div&gt;
+    &lt;div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px"&gt;Max Height 100%&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
@@ -438,16 +371,12 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item-text" href="#">Text Link</a>
-                        <span class="dropdown-item-text">Just Text</span>
-                    </div>
+                <div style="height:200px;background-color:#ddd">
+                    <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+                    <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+                    <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+                    <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+                    <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
                 </div>
             </div>&nbsp;
         </div>
@@ -457,8 +386,8 @@
 
     <!-- Snippet9 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Grouped Buttons with a Dropdown :</h3>
-        <p><code>class="btn-group"</code></p>
+        <h3 class="text-primary">Spacing :</h3>
+        <p><code>m*-* p*-*</code></p>
     </div>
     <div class="container" id="to-copy8">
         <div class="float-right">
@@ -469,19 +398,9 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-    &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;div class="pt-4 bg-warning"&gt;I only have a top padding (1.5rem = 24px)&lt;/div&gt;
+  &lt;div class="p-5 bg-success"&gt;I have a padding on all sides (3rem = 48px)&lt;/div&gt;
+  &lt;div class="m-5 pb-5 bg-info"&gt;I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -489,19 +408,10 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-center">&nbsp;
             <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Apple</button>
-                    <button type="button" class="btn btn-primary">Samsung</button>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Sony
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tablet</a>
-                            <a class="dropdown-item" href="#">Smartphone</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+                <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+                <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem =
+                    48px)</div>
             </div>&nbsp;
         </div>
     </div>
@@ -513,8 +423,8 @@
 
     <!-- Snippet10 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Split Button Dropdowns</h3>
-        <p><code>.dropdown-toggle-split</code></p>
+        <h3 class="text-primary">Shadows</h3>
+        <p><code>shadow-*</code></p>
     </div>
     <div class="container" id="to-copy9">
         <div class="float-right">
@@ -525,137 +435,21 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
-    &lt;button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-    &lt;button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-    &lt;button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-    &lt;button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
-    &lt;button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt;
-    &lt;/button&gt;
-    &lt;div class="dropdown-menu"&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 1&lt;/a&gt;
-      &lt;a class="dropdown-item" href="#"&gt;Link 2&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;div class="shadow-none p-4 mb-4 bg-light"&gt;No shadow&lt;/div&gt;
+  &lt;div class="shadow-sm p-4 mb-4 bg-white"&gt;Small shadow&lt;/div&gt;
+  &lt;div class="shadow p-4 mb-4 bg-white"&gt;Default shadow&lt;/div&gt;
+  &lt;div class="shadow-lg p-4 mb-4 bg-white"&gt;Large shadow&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
-        <div class="container bg-white text-dark">&nbsp;
+        <div class="container bg-warning text-dark">&nbsp;
             <div class="container">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                    </div>
-                </div>
+                <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+                <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+                <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+                <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
             </div>&nbsp;
         </div>
     </div>
@@ -664,8 +458,8 @@
 
     <!-- Snippet11 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Vertical Button Group w/ Dropdown:</h3>
-        <p><code>class="btn-group-vertical"</code></p>
+        <h3 class="text-primary">Vertical Align :</h3>
+        <p><code> align-* align-top align-text-top"</code></p>
     </div>
     <div class="container" id="to-copy10">
         <div class="float-right">
@@ -676,19 +470,12 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-  &lt;div class="btn-group-vertical"&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-    &lt;div class="btn-group"&gt;
-      &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;
-      Sony
-      &lt;/button&gt;
-      &lt;div class="dropdown-menu"&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Tablet&lt;/a&gt;
-        &lt;a class="dropdown-item" href="#"&gt;Smartphone&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;span class="align-baseline"&gt;baseline&lt;/span&gt;
+  &lt;span class="align-top"&gt;top&lt;/span&gt;
+  &lt;span class="align-middle"&gt;middle&lt;/span&gt;
+  &lt;span class="align-bottom"&gt;bottom&lt;/span&gt;
+  &lt;span class="align-text-top"&gt;text-top&lt;/span&gt;
+  &lt;span class="align-text-bottom"&gt;text-bottom&lt;/span&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -696,19 +483,12 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-center">&nbsp;
             <div class="container">
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary">Apple</button>
-                    <button type="button" class="btn btn-primary">Samsung</button>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Sony
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tablet</a>
-                            <a class="dropdown-item" href="#">Smartphone</a>
-                        </div>
-                    </div>
-                </div>
+                <span class="align-baseline">baseline</span>
+                <span class="align-top">top</span>
+                <span class="align-middle">middle</span>
+                <span class="align-bottom">bottom</span>
+                <span class="align-text-top">text-top</span>
+                <span class="align-text-bottom">text-bottom</span>
             </div>&nbsp;
         </div>
     </div>
@@ -719,9 +499,9 @@
 
     <!-- Snippet12 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Font weight & italics</h3>
+        <h3 class="text-primary">Responsive Embeds</h3>
         <p>
-            <code>.font-weight-bold .font-weight-bolder .font-weight-normal .font-weight-light .font-weight-lighter .font-italic</code>
+            <code>.embed-responsive .embed-responsive-item  .embed-responsive-4by3 .embed-responsive-16by9</code>
         </p>
     </div>&nbsp;
     <div class="container" id="to-copy11">
@@ -732,26 +512,58 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
-&lt;div class="container"&gt;
-  &lt;p class="font-weight-bold"&gt;Bold text.&lt;/p&gt;
-  &lt;p class="font-weight-bolder"&gt;Bolder text.&lt;/p&gt;
-  &lt;p class="font-weight-normal"&gt;Normal weight text.&lt;/p&gt;
-  &lt;p class="font-weight-light"&gt;Light weight text.&lt;/p&gt;
-  &lt;p class="font-weight-lighter"&gt;Lighter weight text.&lt;/p&gt;
-  &lt;p class="font-italic"&gt;Italic text.&lt;/p&gt;
+&lt;div class="container mt-3"&gt;
+  &lt;h2&gt;Aspect ratio 4:3&lt;/h2&gt;
+  &lt;div class="embed-responsive embed-responsive-4by3"&gt;
+    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"&gt;&lt;/iframe&gt;
+  &lt;/div&gt; 
+  &lt;br&gt;
+  
+  &lt;h2&gt;Aspect ratio 16:9&lt;/h2&gt;
+  &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+    
+  &lt;h2&gt;Aspect ratio 21:9&lt;/h2&gt;
+  &lt;div class="embed-responsive embed-responsive-21by9"&gt;
+    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;h2&gt;Aspect ratio 1:1&lt;/h2&gt;
+  &lt;div class="embed-responsive embed-responsive-1by1"&gt;
+    &lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="container">
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
-            <div class="container">
-                <p class="font-weight-bold">Bold text.</p>
-                <p class="font-weight-bolder">Bolder text.</p>
-                <p class="font-weight-normal">Normal weight text.</p>
-                <p class="font-weight-light">Light weight text.</p>
-                <p class="font-weight-lighter">Lighter weight text.</p>
-                <p class="font-italic">Italic text.</p>
+            <div class="container mt-3">
+                <h2>Aspect ratio 4:3</h2>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"></iframe>
+                </div>
+                <br>
+
+                <h2>Aspect ratio 16:9</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"></iframe>
+                </div>
+                <br>
+
+                <h2>Aspect ratio 21:9</h2>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"></iframe>
+                </div>
+                <br>
+                <h2>Aspect ratio 1:1</h2>
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v0KEMYmp4SE"></iframe>
+                </div>
+                <br>
             </div>&nbsp;
         </div>
     </div>
@@ -761,8 +573,8 @@
 
     <!-- Snippet13 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Text Formats:</h3>
-        <p><code>.text-decoration-none .text-lowercase .text-uppercase .text-capitalize .text-monospace</code></p>
+        <h3 class="text-primary">Visibility :</h3>
+        <p><code>.visible .invisible</code></p>
         </p>
     </div>
     <div class="container" id="to-copy12">
@@ -774,12 +586,8 @@
         </div>
         <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-    &lt;a href="#" class="text-decoration-none"&gt;A link without underline.&lt;/a&gt;
-    &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
-    &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
-    &lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
-    &lt;p class="text-monospace"&gt;Monospaced text.&lt;/p&gt;
-    &lt;p&gt;Default text.&lt;/p&gt;
+  &lt;div class="visible bg-success"&gt;I am visible&lt;/div&gt;
+  &lt;div class="invisible bg-warning"&gt;I am invisible&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -787,12 +595,8 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <p><a href="#" class="text-decoration-none">A link without underline.</a></p>
-                <p class="text-lowercase">Lowercased text.</p>
-                <p class="text-uppercase">Uppercased text.</p>
-                <p class="text-capitalize">Capitalized text.</p>
-                <p class="text-monospace">Monospaced text.</p>
-                <p>Default text.</p>
+                <div class="visible bg-success">I am visible</div>
+                <div class="invisible bg-warning">I am invisible</div>
             </div>&nbsp;
         </div>
     </div>
@@ -802,8 +606,8 @@
 
     <!-- Snippet14 BEGIN -->
     <div class="container">
-        <h3 class="text-primary">Initialism:</h3>
-        <p><code>.initialism</code></p>
+        <h3 class="text-primary">Close icon:</h3>
+        <p><code>.close .&times; symbol </code></p>
         </p>
     </div>
     <div class="container" id="to-copy13">
@@ -814,10 +618,77 @@
             </button>
         </div>
         <pre><code class="html">{{> _dots}}
+&lt;div class="container bg-info"&gt;
+  &lt;div class="clearfix"&gt;
+    &lt;button type="button" class="close"&gt;&amp;times;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container bg-info">
+                <div class="clearfix">
+                    <button type="button" class="close">&times;</button>
+                </div>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet14 END -->
+
+    <!-- Snippet15 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Screenreaders:</h3>
+        <p><code>.sr-only </code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy14">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy14')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;p&gt;.sr-only will hide an element on all devices, only visible in screen readers&lt;/p&gt;
+  &lt;span class="sr-only"&gt;I will be hidden on all screens except for screen readers.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <p>.sr-only will hide an element on all devices, only visible in screen readers</p>
+                <span class="sr-only">I will be hidden on all screens except for screen readers.</span>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet15 END -->
+
+
+    <!-- Snippet16 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Colors Opacity:</h3>
+        <p><code>.text-black-50  .text-white-50</code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy15">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy15')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
 &lt;div class="container"&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.(normal abbr)&lt;/p&gt;
-    &lt;p&gt;The &lt;abbr title="World Health Organization" class="initialism"&gt;WHO&lt;/abbr&gt; 
-        was founded in 1948.(slightly smaller abbr)&lt;/p&gt;
+  &lt;p&gt; 50% opacity &lt;/p&gt;
+  &lt;p class="text-black-50"&gt;Black text with 50% opacity on white background&lt;/p&gt;
+  &lt;p class="text-white-50 bg-dark"&gt;White text with 50% opacity on black background&lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -825,12 +696,53 @@
         <h3 class="text-danger">Output:</h3>&nbsp;
         <div class="container bg-white text-dark">&nbsp;
             <div class="container">
-                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(normal abbr)</p>
-                <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr>
-                    was founded in 1948.(slightly smaller abbr)</p>
+                <p> 50% opacity </p>
+                <p class="text-black-50">Black text with 50% opacity on white background</p>
+                <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
             </div>&nbsp;
         </div>
     </div>
     <hr>&nbsp;
-    <!-- Snippet14 END -->
+    <!-- Snippet16 END -->
+
+
+    <!-- Snippet17 BEGIN -->
+    <div class="container">
+        <h3 class="text-primary">Block Elements :</h3>
+        <p><code>.d-block d-*-block </code></p>
+        </p>
+    </div>
+    <div class="container" id="to-copy16">
+        <div class="float-right">
+            <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard"
+                onClick="CopyToClipboard('to-copy16')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+        <pre><code class="html">{{> _dots}}
+&lt;div class="container mt-3"&gt;
+  &lt;p&gt;Resize the window to see effect.&lt;/p&gt;
+  &lt;span class="d-block bg-success"&gt;d-block&lt;/span&gt;
+  &lt;span class="d-sm-block bg-success"&gt;d-sm-block&lt;/span&gt;
+  &lt;span class="d-md-block bg-success"&gt;d-md-block&lt;/span&gt;
+  &lt;span class="d-lg-block bg-success"&gt;d-lg-block&lt;/span&gt;
+  &lt;span class="d-xl-block bg-success"&gt;d-xl-block&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h3 class="text-danger">Output:</h3>&nbsp;
+        <div class="container bg-white text-dark">&nbsp;
+            <div class="container mt-3">
+                <p>Resize the window to see effect.</p>
+                <span class="d-block bg-success">d-block</span>
+                <span class="d-sm-block bg-success">d-sm-block</span>
+                <span class="d-md-block bg-success">d-md-block</span>
+                <span class="d-lg-block bg-success">d-lg-block</span>
+                <span class="d-xl-block bg-success">d-xl-block</span>
+            </div>&nbsp;
+        </div>
+    </div>
+    <hr>&nbsp;
+    <!-- Snippet17 END -->
 </div>
