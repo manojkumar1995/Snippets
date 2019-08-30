@@ -18,8 +18,8 @@ router.get('/about', (req, res) => {
 });
 
 //Content Route
-router.get("/content", (req, res) => {
-  res.render("content");
+router.get("/bootstrap_content", (req, res) => {
+  res.render("bootstrap_content");
 });
 
 //Content Route
