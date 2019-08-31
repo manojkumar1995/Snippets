@@ -3,7 +3,7 @@ const router = express.Router();
 
 //Index Route
 router.get('/', (req, res) => {
-  const title = 'Welcome to Snippets';
+  const title = 'Welcome to Code Snippets';
   res.render('index', {
     title: title
   });
