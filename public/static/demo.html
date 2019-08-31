@@ -11,9 +11,30 @@
 </head>
 
 <body>
-  <div class="container">
-    
+  <div class="container text-center">
+
+      <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="switch1" name="example" onclick="myFunction()">
+        <label class="custom-control-label" for="switch1"></label>
+      </div>
+      <br>
   </div>
+  <div class="container bg-white rounded">
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+  
+  <script>
+    function myFunction() {
+      var checkBox = document.getElementById("switch1");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true) {
+        document.body.style.backgroundColor = "black";
+        
+      } else {
+        document.body.style.backgroundColor = "white";
+      }
+    }
+  </script>
 </body>
 
 </html>
