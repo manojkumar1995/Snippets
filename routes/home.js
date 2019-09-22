@@ -9,6 +9,11 @@ router.get('/', (req, res) => {
   });
 });
 
+//Material Index Route
+router.get('/material', (req, res) => {
+  res.render('material_index', { layout: 'main.material.handlebars' });
+});
+
 //About Route
 router.get('/about', (req, res) => {
   const title = 'About Snippets';
