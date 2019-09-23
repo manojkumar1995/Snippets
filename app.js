@@ -8,6 +8,7 @@ const app = express();
 //Load Routes
 const home = require("./routes/home");
 const bootstrap = require("./routes/bootstrap");
+const materialize = require("./routes/materialize");
 
 //Handlebars MiddleWare
 app.engine(
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //Use Routes
 app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
+app.use("/materialize/classes", materialize)
 
 const port = process.env.PORT || 5000;
 
