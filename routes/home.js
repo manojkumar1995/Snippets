@@ -16,7 +16,7 @@ router.get('/material', (req, res) => {
 
 //About Route
 router.get('/about', (req, res) => {
-  const title = 'About Snippets';
+  const title = 'About CodeSnippets';
   res.render('about', {
     title: title
   });
@@ -31,6 +31,7 @@ router.get("/bootstrap_content", (req, res) => {
 router.get("/display", (req, res) => {
   res.render("display");
 });
+
 
 
 

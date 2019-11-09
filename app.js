@@ -27,6 +27,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
+//Page Not Found Route
+app.get('*', function (req, res) {
+  res.render("404-page");
+});
 
 const port = process.env.PORT || 5000;
 
