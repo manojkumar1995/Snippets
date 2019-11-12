@@ -9,6 +9,7 @@ const app = express();
 const home = require("./routes/home");
 const bootstrap = require("./routes/bootstrap");
 const materialize = require("./routes/materialize");
+const python = require("./routes/python");
 
 //Handlebars MiddleWare
 app.engine(
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
+app.use("/python/language", python)
 //Page Not Found Route
 app.get('*', function (req, res) {
   res.render("404-page");
