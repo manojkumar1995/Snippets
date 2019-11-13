@@ -22,6 +22,9 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"
       style="font-size:28px"></i></button>
   {{> _navbar}}
+  <span  style="position: fixed; top:700px;left:80px">
+    <h3><span class="badge badge-danger mt-2 rounded-lg" id="clip" >Copied to clipboard</span></h3>
+  </span>
   <div class="container">
     {{{body}}}
   </div>
@@ -32,6 +35,7 @@
 
   <script>
     function CopyToClipboard(containerid) {
+      $('#clip').show();
       var textarea = document.createElement('textarea')
       textarea.id = 'temp_element'
       textarea.style.height = 0
@@ -41,9 +45,12 @@
       selector.select()
       document.execCommand('copy')
       document.body.removeChild(textarea)
+      $('#clip').fadeOut(5000);
     }
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
+      $('#clip').hide();
+
     });
   </script>
 
