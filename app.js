@@ -15,7 +15,7 @@ mongoose.Promise= global.Promise;
 //Connect to Mongodb
 mongoose
   .connect(
-    'mongodb+srv://manoj:manoj123@mongonode-hdsog.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    'mongodb+srv://manoj:manoj123@mongonode-hdsog.gcp.mongodb.net/Snippets?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true
