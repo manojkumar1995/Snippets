@@ -25,17 +25,17 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown show">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">User <i class="fa fa-user"
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Login / Register <i class="fa fa-user"
               style="font-size:18px"></i></a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" data-toggle="modal" data-target="#myModal">Login
+            <a href="/users/login" class="dropdown-item" >Login
               <i class="fa fa-sign-in main-color" style="font-size:18px;"></i></a>
-            <!-- <a class="dropdown-item" data-toggle="modal" data-target="#myModal1">Register
-                                <i class="fa fa-external-link-square" style="font-size:16px;color: #f0451d"></i></a> -->
-            <!-- <div class="dropdown-divider"></div>
+             <a href="/users/registration" class="dropdown-item">Register
+                                <i class="fa fa-external-link-square" style="font-size:16px;color: #f0451d"></i></a> 
+             {{!-- <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Logout
                                         <i class="fa fa-sign-out" style="font-size:18px; color: #f0451d;"></i></a>
-                                </div> -->
+                                </div>  --}}
         </li>
       </ul>
     </div>
