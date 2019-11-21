@@ -13,12 +13,16 @@ const app = express();
 mongoose.Promise= global.Promise;
 
 //Connect to Mongodb
-mongoose.connect('mongodb://localhost/Snippets',{
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(()=> console.log('Mongodb connected ..'))
-.catch(err => console.log(err));
+mongoose
+  .connect(
+    'mongodb+srv://manoj:manoj123@mongonode-hdsog.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }
+  )
+  .then(() => console.log('Mongodb connected ..'))
+  .catch(err => console.log(err));
 
 //Load Routes
 const home = require("./routes/home");
