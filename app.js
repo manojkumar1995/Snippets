@@ -32,6 +32,7 @@ const materialize = require("./routes/materialize");
 const python = require("./routes/python");
 
 const users = require("./routes/users");
+const location = require("./routes/location");
 
 //Passport Config
 
@@ -82,6 +83,7 @@ app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
 app.use("/python/language", python)
 app.use("/users/", users)
+app.use("/", location)
 
 //Page Not Found Route
 app.get('*', function (req, res) {
