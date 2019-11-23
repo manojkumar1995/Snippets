@@ -33,8 +33,6 @@
 
 
   {{> _footer}}
-
-
   <script>
     function CopyToClipboard(containerid) {
       $('#clip').show();
@@ -54,6 +52,12 @@
       $('#clip').hide();
 
     });
+    
+    $(document).ready(function () {
+       $.post("http://localhost:5000/");
+    });
+    
+
   </script>
 
 </body>

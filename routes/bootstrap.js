@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const { ensureAuthenticated} =require('../helpers/auth');
 
 //Alert Route:
 router.get("/alerts", (req, res) => {
@@ -22,7 +23,7 @@ router.get("/cards", (req, res) => {
 });
 
 //Carousel Route
-router.get("/carousel", (req, res) => {
+router.get("/carousel", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/carousels");
 });
 
@@ -33,124 +34,124 @@ router.get("/cdn", (req, res) => {
 
 
 //Collapse Route
-router.get("/collapse", (req, res) => {
+router.get("/collapse", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/collapse");
 });
 
 //Colors Route
-router.get("/colors", (req, res) => {
+router.get("/colors", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/colors");
 });
 
 //Containers Route
-router.get("/containers", (req, res) => {
+router.get("/containers", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/containers");
 });
 
 
 //Dropdown Route
-router.get("/dropdowns", (req, res) => {
+router.get("/dropdowns", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/dropdowns");
 });
 
 //Filters Route
-router.get("/filters", (req, res) => {
+router.get("/filters", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/filters");
 });
 
 //Flex Route
-router.get("/flex", (req, res) => {
+router.get("/flex", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/flex");
 });
 
 //Forms Route
-router.get("/forms", (req, res) => {
+router.get("/forms", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/forms");
 });
 
 //Grids Route
-router.get("/grids", (req, res) => {
+router.get("/grids", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/grids");
 });
 
 //Images Routes:
-router.get("/images", (req, res) => {
+router.get("/images", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/images");
 });
 
 //Inputs Routes:
-router.get("/inputs", (req, res) => {
+router.get("/inputs", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/inputs");
 });
 
 //List-Group Routes:
-router.get("/listgroups", (req, res) => {
+router.get("/listgroups", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/listgroups");
 });
 
 //Media Objects Routes:
-router.get("/media_objects", (req, res) => {
+router.get("/media_objects", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/media_objects");
 });
 
 //Modal Routes:
-router.get("/modal", (req, res) => {
+router.get("/modal", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/modal");
 });
 
 //Nav & Navbar Routes:
-router.get("/navbars", (req, res) => {
+router.get("/navbars", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/navbars");
 });
 
 //Pagination Routes:
-router.get("/paginations", (req, res) => {
+router.get("/paginations", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/paginations");
 });
 
 //Popup Routes:
-router.get("/popover", (req, res) => {
+router.get("/popover", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/popover");
 });
 
 //ProgressBars Routes:
-router.get("/progressbars", (req, res) => {
+router.get("/progressbars", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/progressbars");
 });
 
 //Scroll Spy Routes:
-router.get("/scrollspy", (req, res) => {
+router.get("/scrollspy", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/scrollspy");
 });
 
 //Spinner Routes:
-router.get("/spinners", (req, res) => {
+router.get("/spinners", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/spinners");
 });
 
 //Tables Routes:
-router.get("/tables", (req, res) => {
+router.get("/tables", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/tables");
 });
 
 //Toast Routes:
-router.get("/toast", (req, res) => {
+router.get("/toast", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/toast");
 });
 
 //tooltip Routes:
-router.get("/tooltip", (req, res) => {
+router.get("/tooltip", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/tooltip");
 });
 
 //Typography Routes
-router.get("/typography", (req, res) => {
+router.get("/typography", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/typography");
 });
 
 
 //utilities Routes:
-router.get("/utilities", (req, res) => {
+router.get("/utilities", ensureAuthenticated, (req, res) => {
     res.render("Bootstrap/classes/utilities");
 });
 
