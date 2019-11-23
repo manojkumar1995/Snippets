@@ -53,8 +53,16 @@
 
     });
     
+
+
     $(document).ready(function () {
-       $.post("http://localhost:5000/");
+      $.ajaxSetup({
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      });
+      $.post(Access - Control - Allow - Headers:"http://localhost:5000/");
     });
     
 
