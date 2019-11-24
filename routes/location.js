@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const fetch = require("node-fetch");
+const bodyParser = require('body-parser')
 const router = express.Router();
 
 //Load User Model
@@ -10,42 +11,36 @@ const Location = mongoose.model('locations');
 
 
 router.post('/', (req, res) => {
-  fetch('https://geoip-db.com/json/')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      
-      var postal = data.postal;
-      var state = data.state;
-      var city = data.city;
-      var latitude = data.latitude;
-      var longitude = data.longitude;
-      var ip = data.IPv4;
+  
+  console.log(req.body.ip);
 
-      console.log(city, latitude, longitude, ip, state, postal);
+  var city= req.body.city;
+  var latitude = req.body.latitude;
+  var longitude = req.body.longitude;
+  var ip = req.body.ip;
+  var postal ="123456";
+  var state="Telan";
 
-      const newLocation = new Location({
-        city: city,
-        latitude: latitude,
-        longitude: longitude,
-        ip: ip,
-        state:state,
-        postal:postal
-      });
+  const newLocation = new Location({
+    city: city,
+    latitude: latitude,
+    longitude: longitude,
+    postal:postal,
+    ip: ip,
+    state:state
+  });
 
-      newLocation
-        .save()
-        .then(location => {
-          res.send('done');
-        })
-        .catch(err => {
-          console.log(err);
-          return;
-        });
-
+  newLocation
+    .save()
+    .then(location => {
+      res.send('done');
     })
-    .catch(err => console.log(err));
-
+    .catch(err => {
+      console.log(err);
+      return;
+    });
+  
+  
   
 });
       

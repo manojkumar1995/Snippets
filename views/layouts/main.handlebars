@@ -89,7 +89,7 @@
             var latitude = document.getElementById("latitude").textContent;
             var longitude = document.getElementById("longitude").textContent;
             var ip = document.getElementById("ip").textContent;
-            //var postal = location.postal;
+            
 
 
             data = {
@@ -100,6 +100,8 @@
               ip: ip
 
             }
+
+            console.log(data)
 
             var newData = JSON.stringify(data)
             console.log(typeof newData);
