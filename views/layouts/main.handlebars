@@ -30,7 +30,7 @@
     {{> _errors}}
     {{{body}}}
   </div>
-  <div class="container invisible" >
+  <div class="container " >
     <p>Country: <span id="country"></span></p>
     <p>State: <span id="state"></span></p>
     <p>City: <span id="city"></span></p>
@@ -81,39 +81,35 @@
           $('#latitude').html(location.latitude);
           $('#longitude').html(location.longitude);
           $('#ip').html(location.IPv4);
+      });
 
-          /*
-          var state= location.state;
-          var city = location.city;
-          var  latitude= location.latitude;
-          var longitude= location.longitude;
-          var ip =location.IPv4;
-          var postal= location.postal;
-          */
+        //var state = document.getElementById("state").textContent;
 
-          var state = $('#state').text() ;
-          var city = $('#city').text();
-          var latitude = $('#latitude').text();
-          var longitude = $('#longitude').text() ;
-          var ip = $('#ip').text();
+        function myfun(){
+          var state = $('#state').textContent;
+          var city = document.getElementById("city").textContent;
+          var latitude = document.getElementById("latitude").textContent;
+          var longitude = document.getElementById("longitude").textContent;
+          var ip = document.getElementById("ip").textContent;
           //var postal = location.postal;
+          
 
+          data = {
+            state: state,
+            city: city,
+            latitude: latitude,
+            longitude: longitude,
+            ip: ip
 
-          data={
-            state:state,
-            city:city,
-            latitude:latitude,
-            longitude:longitude,
-            ip:ip
-            
           }
 
-         var newData=JSON.stringify(data)
+          var newData = JSON.stringify(data)
           console.log(typeof newData);
           console.log(newData);
-
-         $.post("/location", newData,"json");
-      });
+          $.post("/location", newData);
+        }
+        setTimeout(function () { myfun();}, 1000);
+        
 
   </script>
 
