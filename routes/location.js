@@ -11,15 +11,13 @@ const Location = mongoose.model('locations');
 
 
 router.post('/', (req, res) => {
-  
-  console.log(req.body.ip);
-
+  // console.log(req.body.ip);
   var city= req.body.city;
   var latitude = req.body.latitude;
   var longitude = req.body.longitude;
   var ip = req.body.ip;
-  var postal ="123456";
-  var state="Telan";
+  var postal = req.body.postal;
+  var state = req.body.state;
 
   const newLocation = new Location({
     city: city,
@@ -39,9 +37,7 @@ router.post('/', (req, res) => {
       console.log(err);
       return;
     });
-  
-  
-  
+   
 });
       
 module.exports = router;

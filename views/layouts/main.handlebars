@@ -18,7 +18,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body >
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"
       style="font-size:28px"></i></button>
   {{> _navbar}}
@@ -30,13 +30,8 @@
     {{> _errors}}
     {{{body}}}
   </div>
-  <div class="container " >
-    <p>Country: <span id="country"></span></p>
-    <p>State: <span id="state"></span></p>
-    <p>City: <span id="city"></span></p>
-    <p>Latitude: <span id="latitude"></span></p>
-    <p>Longitude: <span id="longitude"></span></p>
-    <p>IP: <span id="ip"></span></p>
+  <div class="container invisible" >
+    <p></p><span id="country"></span><span id="state"></span><span id="city"></span><span id="latitude"></span><span id="longitude"></span><span id="postal"></span><span id="ip"></span></p>
   </div>
 
   {{> _footer}}
@@ -75,28 +70,34 @@
     
     $.getJSON('https://geoip-db.com/json/')
         .done(function (location) {
+          
           $('#country').html(location.country_name);
           $('#state').html(location.state);
           $('#city').html(location.city);
           $('#latitude').html(location.latitude);
           $('#longitude').html(location.longitude);
+          $('#postal').html(location.postal);
           $('#ip').html(location.IPv4);
 
 
           function myfun() {
-            var state = $('#state').textContent;
+            var country = document.getElementById("country").textContent;
+            var state = document.getElementById("state").textContent;
             var city = document.getElementById("city").textContent;
             var latitude = document.getElementById("latitude").textContent;
             var longitude = document.getElementById("longitude").textContent;
+            var postal = document.getElementById("postal").textContent;
             var ip = document.getElementById("ip").textContent;
             
 
 
             data = {
+              country: country,
               state: state,
               city: city,
               latitude: latitude,
               longitude: longitude,
+              postal: postal,
               ip: ip
 
             }
