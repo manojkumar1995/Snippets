@@ -30,7 +30,14 @@
     {{> _errors}}
     {{{body}}}
   </div>
-  
+  <div class="container invisible" >
+    <p>Country: <span id="country"></span></p>
+    <p>State: <span id="state"></span></p>
+    <p>City: <span id="city"></span></p>
+    <p>Latitude: <span id="latitude"></span></p>
+    <p>Longitude: <span id="longitude"></span></p>
+    <p>IP: <span id="ip"></span></p>
+  </div>
 
   {{> _footer}}
   <script>
@@ -68,14 +75,28 @@
     
     $.getJSON('https://geoip-db.com/json/')
         .done(function (location) {
-          
+          $('#country').html(location.country_name);
+          $('#state').html(location.state);
+          $('#city').html(location.city);
+          $('#latitude').html(location.latitude);
+          $('#longitude').html(location.longitude);
+          $('#ip').html(location.IPv4);
 
+          /*
           var state= location.state;
           var city = location.city;
           var  latitude= location.latitude;
           var longitude= location.longitude;
           var ip =location.IPv4;
           var postal= location.postal;
+          */
+
+          var state = $('#state').text() ;
+          var city = $('#city').text();
+          var latitude = $('#latitude').text();
+          var longitude = $('#longitude').text() ;
+          var ip = $('#ip').text();
+          //var postal = location.postal;
 
 
           data={
@@ -83,13 +104,13 @@
             city:city,
             latitude:latitude,
             longitude:longitude,
-            ip:ip,
-            postal:postal
+            ip:ip
+            
           }
 
          var newData=JSON.stringify(data)
-          //console.log(typeof newData);
-          //console.log(newData);
+          console.log(typeof newData);
+          console.log(newData);
 
          $.post("/location", newData,"json");
       });
