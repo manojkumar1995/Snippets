@@ -95,7 +95,7 @@ app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
 app.use("/python/language", python)
 app.use("/users/", users)
-app.use("/", location)
+app.use("/location", location)
 
 //Page Not Found Route
 app.get('*', function (req, res) {
