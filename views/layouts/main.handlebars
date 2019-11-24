@@ -81,34 +81,37 @@
           $('#latitude').html(location.latitude);
           $('#longitude').html(location.longitude);
           $('#ip').html(location.IPv4);
+
+
+          function myfun() {
+            var state = $('#state').textContent;
+            var city = document.getElementById("city").textContent;
+            var latitude = document.getElementById("latitude").textContent;
+            var longitude = document.getElementById("longitude").textContent;
+            var ip = document.getElementById("ip").textContent;
+            //var postal = location.postal;
+
+
+            data = {
+              state: state,
+              city: city,
+              latitude: latitude,
+              longitude: longitude,
+              ip: ip
+
+            }
+
+            var newData = JSON.stringify(data)
+            console.log(typeof newData);
+            console.log(newData);
+            $.post("/location", newData);
+          }
+          setTimeout(function () { myfun(); }, 1000);
       });
 
-        //var state = document.getElementById("state").textContent;
+        
 
-        function myfun(){
-          var state = $('#state').textContent;
-          var city = document.getElementById("city").textContent;
-          var latitude = document.getElementById("latitude").textContent;
-          var longitude = document.getElementById("longitude").textContent;
-          var ip = document.getElementById("ip").textContent;
-          //var postal = location.postal;
-          
-
-          data = {
-            state: state,
-            city: city,
-            latitude: latitude,
-            longitude: longitude,
-            ip: ip
-
-          }
-
-          var newData = JSON.stringify(data)
-          console.log(typeof newData);
-          console.log(newData);
-          $.post("/location", newData);
-        }
-        setTimeout(function () { myfun();}, 1000);
+        
         
 
   </script>
