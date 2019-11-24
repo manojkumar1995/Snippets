@@ -7,15 +7,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Code Snippets</title>
   <link rel="stylesheet" href="/css/dark.css">
+  <!-- higt Begin -->
   <script src="/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <!-- higt End -->
+  <!-- Bootstrap Begin -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Bootstrap End -->
+  <!-- font-awesome Begin -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font-awesome End -->
+  <!-- custom css Begin -->
   <link rel="stylesheet" href="/css/style.css">
+  <!-- custom css End -->
+  <!-- Acss Begin -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Acss End -->
+  <!-- Scripts Begin -->
   <script src="/js/style.js"></script>
+  <script src="/js/linkedin.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Scripts End -->
+
 </head>
 
 <body >
@@ -31,7 +47,10 @@
     {{{body}}}
   </div>
   <div class="container invisible" >
-    <p></p><span id="country"></span><span id="state"></span><span id="city"></span><span id="latitude"></span><span id="longitude"></span><span id="postal"></span><span id="ip"></span></p>
+    <p></p><span id="country"></span><span id="state"></span><span id="city"></span>
+    <br><span id="latitude"></span><span id="longitude">
+    <br>
+    </span><span id="postal"></span><span id="ip"></span></p>
   </div>
 
   {{> _footer}}
@@ -69,15 +88,15 @@
     });
     
     $.getJSON('https://geoip-db.com/json/')
-        .done(function (location) {
+        .done(function (demo) {
           
-          $('#country').html(location.country_name);
-          $('#state').html(location.state);
-          $('#city').html(location.city);
-          $('#latitude').html(location.latitude);
-          $('#longitude').html(location.longitude);
-          $('#postal').html(location.postal);
-          $('#ip').html(location.IPv4);
+          $('#country').html(demo.country_name);
+          $('#state').html(demo.state);
+          $('#city').html(demo.city);
+          $('#latitude').html(demo.latitude);
+          $('#longitude').html(demo.longitude);
+          $('#postal').html(demo.postal);
+          $('#ip').html(demo.IPv4);
 
 
           function myfun() {
@@ -102,21 +121,19 @@
 
             }
 
-            console.log(data)
+            //console.log(data)
 
             var newData = JSON.stringify(data)
-            console.log(typeof newData);
-            console.log(newData);
+            //console.log(typeof newData);
+            //console.log(newData);
             $.post("/location", newData);
           }
           setTimeout(function () { myfun(); }, 1000);
       });
+  </script>
 
-        
-
-        
-        
-
+  <script>
+    AOS.init();
   </script>
 
 </body>
