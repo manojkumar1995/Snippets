@@ -32,6 +32,14 @@ router.get("/display", (req, res) => {
   res.render("display");
 });
 
+//New Route
+router.get('/new', (req, res) => {
+  const title = 'Coming Soon';
+  res.render('new', {
+    title: title
+  });
+});
+
 
 
 

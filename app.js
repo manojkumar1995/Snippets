@@ -93,7 +93,7 @@ app.use(function(req, res, next) {
 app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
-app.use("/python/language", python)
+app.use("/python", python)
 app.use("/users/", users)
 app.use("/location", location)
 

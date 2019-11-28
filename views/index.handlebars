@@ -1,42 +1,69 @@
 &nbsp;<div class="jumbotron text-center">
-  <h2 class="display-3 text-secondary overflow-auto">{{title}}</h2>
+  <h2 class="display-3 text-secondary overflow-auto" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">{{title}}</h2>
   <p class="lead">Snippets for Programing</p>
-  <a href="/" class="btn btn-primary">Find a Snippet  </a>
+  <a href="/display" class="btn btn-primary">Find a Snippet  </a>
 </div>
 
 <div class="container bg-light">&nbsp;
-  <div class="card-deck mx-auto ">
-    <a href="/" data-aos="fade-down" data-aos-duration="2000" class="card bg-light shadow p-5 mb-4 bg-white rounded-lg text-decoration-none">
-      <div class="card-body text-center">
-        <div class="container">
-          <i class="fa fa-home" style="font-size:158px;color: #0077fd;"></i>
-        </div>
-        <h3 class="lable_text text-primary text-monospace">Home</h3>
-      </div>
-    </a>
-    <div data-aos="fade-right" data-aos-duration="2000" class="card bg-light shadow p-5 mb-4 bg-white rounded-lg">
-      <div class="card-body text-center">
-        <div class="container">
-          <i class="fa fa-file-code-o text-info" style="font-size:128px;"></i>
-        </div>
-        <br>
-        <h3 class="lable_text text-info text-monospace">Snippets</h3>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="card-deck bg-light">
+        <a href="/" class="text-decoration-none">
+          <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"
+            class="card bg-light shadow p-5 mb-4 bg-white rounded-lg text-decoration-none">
+            <div class="card-body text-center">
+              <div class="container">
+                <h1 class="display-1"><i class="fa fa-home"></i></h1>
+              </div>
+              <h3 class="lable_text text-primary text-monospace">Home</h3>
+            </div>
+          </div>
+        </a>
+        <a href="/display" class="text-decoration-none">
+          <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"
+            class="card bg-light shadow p-5 mb-4 bg-white rounded-lg text-decoration-none">
+            <div class="card-body text-center">
+              <div class="container">
+                <h1 class="display-1"><i class="fa fa-file-code-o text-success"></i></h1>
+              </div>
+              <h3 class="lable_text text-success text-monospace">Snippets</h3>
+            </div>
+          </div>
+        </a>
+        <a href="/about" class="text-decoration-none">
+          <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"
+            class="card bg-light shadow p-5 mb-4 bg-white rounded-lg text-decoration-none">
+            <div class="card-body text-center">
+              <div class="container">
+                <h1 class="display-1"><i class="fa fa-address-card text-info"></i></h1>
+              </div>
+              <h3 class="lable_text text-info text-monospace">About</h3>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="card bg-light shadow p-5 mb-4 bg-white rounded-lg">
-      <div class="card-body text-center">
-        <div class="container">
-          <i class="fa fa-drivers-license" style="font-size:128px;color: #fd5000;"></i>
-        </div>
-        <br>
-        <h3 class="lable_text text-monospace" style="color: #fd5000;">About Me</h3>
-      </div>
-    </div>
+    <div class="col-sm-1"></div>
   </div>
 </div>
+
 <div class="container mt-3 text-center bg-light">&nbsp;
   <h3 class="text-center text-primary">My Approch to CSS</h3><br>
-  <img class="img-fluid" src="/imgs/UI.jpg" alt="" ><br><br>
+  <img data-aos="fade-right" data-aos-duration="2000" data-aos-once="true" class="img-fluid" src="/imgs/UI.jpg" alt="" ><br><br>
+</div>&nbsp;
+
+<div class="container  mt-3">&nbsp;
+  
+  <ul class="list-group">
+    <li class="list-group-item bg-success text-light text-center lead">New Updates Coming soon</li>
+    <li class="list-group-item text-center">Dark Mode</li>
+    <li class="list-group-item text-center">Registration / Login with Google , Github , Twitter</li>
+    <li class="list-group-item text-center">Search Bar on top of Snippets page </li>
+    <li class="list-group-item text-center">User profile with update functionality </li>
+    <li class="list-group-item text-center">Improved User Interface & Performance.</li>
+    <li class="list-group-item text-center">Suggestions Box & Comments Section</li>
+  </ul>&nbsp;
 </div>
 
 <div class="conatiner invisible  mb-3">
