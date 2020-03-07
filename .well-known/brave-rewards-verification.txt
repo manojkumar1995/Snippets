@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: codesnippets.co.in
+Token: b5a94e64bc28ab70128cc87163fe3ed716f1d211732675d1ec127af58f7f1816
