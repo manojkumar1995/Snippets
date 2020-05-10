@@ -1,5 +1,13 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+const fetch = require("node-fetch");
+const bodyParser = require('body-parser');
+const { ensureAuthenticated} =require('../helpers/auth');
+
+// Load Location models
+require('../models/Location');
+const Location = mongoose.model('locations');
 
 //Index Route
 router.get('/', (req, res) => {
@@ -31,6 +39,18 @@ router.get("/bootstrap_content", (req, res) => {
 router.get("/display", (req, res) => {
   res.render("display");
 });
+
+//List Route
+router.get("/list",ensureAuthenticated,(req, res)=>{
+  Location.find({})
+  .lean()
+  .sort({date:'desc'})
+  .then(locations=>{
+    res.render("lists",{
+      locations:locations
+    });
+  })
+})
 
 //New Route
 router.get('/new', (req, res) => {
