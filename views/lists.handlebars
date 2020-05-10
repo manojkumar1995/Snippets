@@ -1,0 +1,12 @@
+{{#each locations}}
+<div class="card card-body">
+    <span class="text-primary"><strong>{{@index}}</strong> .</span> <h4 class="text-success">Place:  <span class="text-danger "><small>{{city}},{{state}},{{postal}}</small></span> </h4>
+    
+    <p class="text-muted">Date : {{date}}</p>
+
+</div>
+
+
+{{ else }}
+<h3>No places found</h3>
+{{/each}}
