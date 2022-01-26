@@ -1,91 +1,16 @@
 &nbsp;
 <div class=" bg-light   mt-3">
-    <div class="row mb-3">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-            <div class="card">
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/1.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/2.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/4.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/6.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/8.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/9.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/10.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/11.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/12.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/13.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/14.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/15.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/16.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/17.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/18.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-                <div class="card bg-white shadow border border-0">
-                    <div class="card-body text-center">
-                            <img class="img-fluid" src="/imgs/Z/19.jpg" alt="" width="450" height="450">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
+    <h1 class="display-1 text-success">Hello </h1>
+    <h2 class="text-primary" id="time"></h2>
+    <br><br>
+    <br><br>
+    <br><br>
+
 </div>
+<script>
+    $(document).ready(function (){
+        let date = new Date();
+    newDate = date.toLocaleString('en-US')
+    document.getElementById('time').innerHTML= newDate;
+    })
+</script>
