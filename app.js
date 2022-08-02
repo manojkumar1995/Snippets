@@ -28,6 +28,7 @@ mongoose
 //Load Routes
 const home = require("./routes/home");
 const bootstrap = require("./routes/bootstrap");
+const nodejs = require("./routes/nodejs");
 const materialize = require("./routes/materialize");
 const python = require("./routes/python");
 
@@ -95,6 +96,7 @@ app.use("/", home);
 app.use("/bootstrap/classes", bootstrap)
 app.use("/materialize/classes", materialize)
 app.use("/python", python)
+app.use("/nodejs", nodejs)
 app.use("/users/", users)
 app.use("/location", location)
 app.use("/Z", zz)

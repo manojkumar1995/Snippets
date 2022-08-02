@@ -1,8 +1,8 @@
 <!-- Navbar End -->
-<nav class="navbar navbar-expand-md bgnav navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <div class="container">
     <a class="navbar-brand mb-2" href="/">
-      <h2 class="mr-5 mt-2">CodeSnippets</h2>
+      <h2 class="mr-5 mt-2 text-success">CodeSnippets</h2>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -10,14 +10,14 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown show mr-5">
-          <a class="nav-link" href="/"><i class="fa fa-home" style="font-size:18px"></i> Home</a>
+          <a class="nav-link text-success" href="/"><i class="fa fa-home" style="font-size:18px"></i> Home</a>
         </li>
         <li class="nav-item dropdown show mr-5">
-          <a class="nav-link" href="/display"><i class="fa fa-list-ul" style="font-size:18px"></i>
+          <a class="nav-link text-success" href="/nodejs"><i class="fa fa-list-ul" style="font-size:18px"></i>
             Contents</a>
         </li>
         <li class="nav-item dropdown show">
-          <a class="nav-link" href="/about"><i class="fa fa-info-circle" style="font-size:18px"></i>
+          <a class="nav-link text-success" href="/about"><i class="fa fa-info-circle" style="font-size:18px"></i>
             About
             us</a>
         </li>
@@ -26,13 +26,13 @@
       <ul class="navbar-nav ml-auto">
         {{#if user}}
         <li class="nav-item dropdown show">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Welcome {{user.name}}   <i class="fa fa-user"
+          <a class="nav-link dropdown-toggle text-success" data-toggle="dropdown" href="#">Welcome {{user.name}}   <i class="fa fa-user"
               style="font-size:18px"></i></a>
           <div class="dropdown-menu">
-            <a href="/users/myprofile/{{user._id}}" class="dropdown-item">My Profile
-              <i class="fa fa-users main-color" style="font-size:18px;"></i></a>
-            <a href="/users/logout" class="dropdown-item">Logout
-              <i class="fa fa-sign-out" style="font-size:16px;color: #f0451d"></i></a>
+            <a href="/users/myprofile/{{user._id}}" class="dropdown-item text-success">My Profile
+              <i class="fa fa-users text-success" style="font-size:18px;"></i></a>
+            <a href="/users/logout" class="dropdown-item text-success">Logout
+              <i class="fa fa-sign-out text-success"></i></a>
             {{!-- <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Logout
                                                 <i class="fa fa-sign-out" style="font-size:18px; color: #f0451d;"></i></a>
@@ -40,15 +40,15 @@
         </li>
         {{else}}
           <li class="nav-item dropdown show">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Login / Register <i class="fa fa-user"
+            <a class="nav-link dropdown-toggle text-success" data-toggle="dropdown" href="#">Login / Register <i class="fa fa-user"
                 style="font-size:18px"></i></a>
             <div class="dropdown-menu">
-              <a href="/users/login" class="dropdown-item">Login
-                <i class="fa fa-user main-color" style="font-size:18px;"></i></a>
+              <a href="/users/login" class="dropdown-item text-success">Login
+                <i class="fa fa-user text-success" style="font-size:18px;"></i></a>
               {{!-- <a href="/users/registration" class="dropdown-item">Register
-                <i class="fa fa-user-plus main-color" style="font-size:16px;"></i></a> --}}
-              <a href="/users/login" class="dropdown-item">Register
-                <i class="fa fa-user-plus main-color" style="font-size:16px;"></i></a>
+                <i class="fa fa-user-plus text-success" style="font-size:16px;"></i></a> --}}
+              <a href="/users/login" class="dropdown-item text-success">Register
+                <i class="fa fa-user-plus text-success" style="font-size:16px;"></i></a>
               {{!-- <div class="dropdown-divider"></div>
                                               <a class="dropdown-item" href="#">Logout
                                                   <i class="fa fa-sign-out" style="font-size:18px; color: #f0451d;"></i></a>

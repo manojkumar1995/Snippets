@@ -8,6 +8,7 @@ const router = express.Router();
 require('../models/Users');
 
 const User= mongoose.model('users');
+const { ensureAuthenticated} =require('../helpers/auth');
 
 
 //User Login Route
@@ -85,6 +86,12 @@ router.post('/register', (req, res) => {
     })
 
   }
+});
+
+// My Profile
+router.get('/myprofile/:id',ensureAuthenticated,  (req,res) => {
+  console.log(req.params.id,"LLLLLKLKLKLK")
+  res.render('users/myprofile');
 });
 
 //Logout User

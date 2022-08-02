@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Snippets</title>
+    <link rel="stylesheet" href="/css/dark.css">
+    <!-- higt Begin -->
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- higt End -->
+    <!-- Bootstrap Begin -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(to left, #ccffe5, #ccffe5, #ccffe5) !important;
+        }
+    </style>
+    <!-- Bootstrap End -->
+    <!-- font-awesome Begin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font-awesome End -->
+    <!-- custom css Begin -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- custom css End -->
+    <!-- Acss Begin -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Acss End -->
+    <!-- Scripts Begin -->
+    <script src="/js/style.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scripts End -->
+
+</head>
+
+<body >
+<button class="bg-success text-dark" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"
+        style="font-size:28px"></i></button>
+    {{> _navbar_nodejs}}
+    <span  style="position: fixed; top:700px;left:80px">
+    <h3><span class="badge badge-danger mt-2 rounded-lg" id="clip" >Copied to clipboard</span></h3>
+    </span>
+    <div class="container">
+        {{> _msg}}
+        {{> _errors}}
+        {{{body}}}
+    </div>
+    <div class="container invisible" >
+        <p></p><span id="country"></span><span id="state"></span><span id="city"></span>
+        <br><span id="latitude"></span><span id="longitude">
+        <br>
+        </span><span id="postal"></span><span id="ip"></span></p>
+    </div>
+
+    {{> _footer_nodejs}}
+    <script>
+    function CopyToClipboard(containerid) {
+        $('#clip').show();
+        var textarea = document.createElement('textarea')
+        textarea.id = 'temp_element'
+        textarea.style.height = 0
+        document.body.appendChild(textarea)
+        textarea.value = document.getElementById(containerid).innerText
+        var selector = document.querySelector('#temp_element')
+        selector.select()
+        document.execCommand('copy')
+        document.body.removeChild(textarea)
+        $('#clip').fadeOut(5000);
+    }
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#clip').hide();
+    });
+    
+
+
+    $(document).ready(function () {
+        $.ajaxSetup({
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Access-Control-Allow-Origin': '*'  
+            }
+        });
+    //$.post("/");
+    });
+    
+    $.getJSON('https://geoip-db.com/json/')
+        .done(function (demo) {
+        $('#country').html(demo.country_name);
+        $('#state').html(demo.state);
+        $('#city').html(demo.city);
+        $('#latitude').html(demo.latitude);
+        $('#longitude').html(demo.longitude);
+        $('#postal').html(demo.postal);
+        $('#ip').html(demo.IPv4);
+
+
+        function myfun() {
+            var country = document.getElementById("country").textContent;
+            var state = document.getElementById("state").textContent;
+            var city = document.getElementById("city").textContent;
+            var latitude = document.getElementById("latitude").textContent;
+            var longitude = document.getElementById("longitude").textContent;
+            var postal = document.getElementById("postal").textContent;
+            var ip = document.getElementById("ip").textContent;
+            
+
+
+            data = {
+                country: country,
+                state: state,
+                city: city,
+                latitude: latitude,
+                longitude: longitude,
+                postal: postal,
+                ip: ip
+
+            }
+
+            //console.log(data)
+
+            var newData = JSON.stringify(data)
+            //console.log(typeof newData);
+            //console.log(newData);
+            $.post("/location", newData);
+            }
+            setTimeout(function () { myfun(); }, 1000);
+    });
+</script>
+
+<script>
+    AOS.init({});
+    
+</script>
+
+</body>
+
+</html>
