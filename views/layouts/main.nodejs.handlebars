@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Snippets</title>
+    <title>My Snippets</title>
     <link rel="stylesheet" href="/css/dark.css">
     <!-- higt Begin -->
     <script src="/js/highlight.pack.js"></script>
@@ -16,6 +16,16 @@
     <style>
         body {
             background-image: linear-gradient(to left, #ccffe5, #ccffe5, #ccffe5) !important;
+        }
+        .button1 {
+            background-color: #28a645;
+            color: black;
+            border: 1px solid #ccffe5;
+        }
+
+        .button1:hover {
+            background-color: #ccffe5;
+            color: black;
         }
     </style>
     <!-- Bootstrap End -->
@@ -36,6 +46,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/jquery.ui.sound.js"></script>
     <!-- Scripts End -->
 
 </head>
@@ -44,25 +55,20 @@
 <button class="bg-success text-dark" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"
         style="font-size:28px"></i></button>
     {{> _navbar_nodejs}}
-    <span  style="position: fixed; top:700px;left:80px">
-    <h3><span class="badge badge-danger mt-2 rounded-lg" id="clip" >Copied to clipboard</span></h3>
+    <span  style="position: fixed; top:650px;left:40px">
+    <h3><span class="badge badge-success mt-2 rounded-lg" id="clip" >Copied to clipboard</span></h3>
     </span>
     <div class="container">
         {{> _msg}}
         {{> _errors}}
         {{{body}}}
     </div>
-    <div class="container invisible" >
-        <p></p><span id="country"></span><span id="state"></span><span id="city"></span>
-        <br><span id="latitude"></span><span id="longitude">
-        <br>
-        </span><span id="postal"></span><span id="ip"></span></p>
-    </div>
 
     {{> _footer_nodejs}}
     <script>
     function CopyToClipboard(containerid) {
         $('#clip').show();
+        $(this).uiSound({play: "scifi-beap"});
         var textarea = document.createElement('textarea')
         textarea.id = 'temp_element'
         textarea.style.height = 0
@@ -81,59 +87,6 @@
     
 
 
-    $(document).ready(function () {
-        $.ajaxSetup({
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'Access-Control-Allow-Origin': '*'  
-            }
-        });
-    //$.post("/");
-    });
-    
-    $.getJSON('https://geoip-db.com/json/')
-        .done(function (demo) {
-        $('#country').html(demo.country_name);
-        $('#state').html(demo.state);
-        $('#city').html(demo.city);
-        $('#latitude').html(demo.latitude);
-        $('#longitude').html(demo.longitude);
-        $('#postal').html(demo.postal);
-        $('#ip').html(demo.IPv4);
-
-
-        function myfun() {
-            var country = document.getElementById("country").textContent;
-            var state = document.getElementById("state").textContent;
-            var city = document.getElementById("city").textContent;
-            var latitude = document.getElementById("latitude").textContent;
-            var longitude = document.getElementById("longitude").textContent;
-            var postal = document.getElementById("postal").textContent;
-            var ip = document.getElementById("ip").textContent;
-            
-
-
-            data = {
-                country: country,
-                state: state,
-                city: city,
-                latitude: latitude,
-                longitude: longitude,
-                postal: postal,
-                ip: ip
-
-            }
-
-            //console.log(data)
-
-            var newData = JSON.stringify(data)
-            //console.log(typeof newData);
-            //console.log(newData);
-            $.post("/location", newData);
-            }
-            setTimeout(function () { myfun(); }, 1000);
-    });
 </script>
 
 <script>

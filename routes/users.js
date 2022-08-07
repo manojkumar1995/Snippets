@@ -90,8 +90,14 @@ router.post('/register', (req, res) => {
 
 // My Profile
 router.get('/myprofile/:id',ensureAuthenticated,  (req,res) => {
-  console.log(req.params.id,"LLLLLKLKLKLK")
-  res.render('users/myprofile');
+  let userid = req.params.id;
+  res.render('users/myprofile', { layout: 'main.nodejs.handlebars' });
+});
+
+// My profile Settings
+router.get('/myprofile/:id/settings',ensureAuthenticated,  (req,res) => {
+  
+  res.render('users/settings', { layout: 'main.nodejs.handlebars' });
 });
 
 //Logout User

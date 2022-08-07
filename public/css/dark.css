@@ -110,10 +110,3 @@ body {
 .bgnav {
   background-color: #f9461c;
 }
-
-.dot {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  display: inline-block;
-}

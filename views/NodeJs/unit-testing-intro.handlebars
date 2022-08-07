@@ -1,0 +1,62 @@
+<div class="card bg-dark mt-4 mb-4">
+    <div class="card-body">
+        <div class="container">
+            <div class="clearfix">
+                {{> _dots}}
+                <div class="float-right">
+                    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard" onClick="CopyToClipboard('to-copy1')">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-success mt-4 mb-4">Unit Testing in NodeJs</h3>
+                <ul>
+                    <li class="text-warning">Unit Testing is a process of testing the individual units of source code,functions, modules, together with associated test/mock/controlled data, are tested to determine whether functionalities,procedures are working as excepted or not.</li>
+                    <li class="text-warning">
+                        Unit Tests are mostly used in development phase.To write unit tests in NodeJS there are multiple test frameworks are available.Ex: Mocha, Jest, Jasmine, etc.
+                    </li>
+                </ul>
+                <ul>
+                    <li class="text-warning">
+                        The main aim of unit testing is to seperate each individual unit of the program and determine that the individual part are correct.A unit test provides a strict, written contract that the piece of code must satisfy. As a result, it affords several benefits.
+                    </li>
+                    <li class="text-warning">
+                        Unit testing finds problems early in the development cycle. This includes both bugs in the programmer's implementation and flaws or missing parts of the specification for the unit.
+                    </li>
+                    <li class="text-warning">
+                        The cost of finding a bug before coding begins or when the code is first written is considerably lower than the cost of detecting, identifying, and correcting the bug later.
+                    </li>
+                    <li class="text-warning">
+                        Bugs in released code may also cause costly problems for the end-users of the software.
+                    </li>
+                </ul>
+            </div>
+            <pre>
+            <h4 class="text-danger">Sample Test Code</h4>
+<code class="javascript" id="to-copy1">
+const expect = require('chai').expect;
+
+describe("Sample Test Case in chai", () => {
+    it("Divison of two numbers", () => {
+        expect(2 / 2).to.equal(0);
+    });
+    it("Verifying string", () => {
+        expect("Hello World!").to.equal('Hello World!');
+    });
+});
+</code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-3">
+    <div class="clearfix">
+        <a href="#" class="btn btn-outline-dark float-left disabled">Previous</a>
+        <a href="unit-testing-node" class="btn btn-outline-dark float-right">Next</a>
+    </div>
+    
+</div>
+
+
