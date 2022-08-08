@@ -67,7 +67,7 @@
                 <div class="card-body">
                     <h4 class="text-white">Notification Sounds <i class="fa fa-bell text-success" style="font-size:22px;"></i></h4><br>
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="notification_sound" onclick="triggerAction('notification_sound')">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="card-body">
                     <h4 class="text-white">Dark Mode <i class="fa fa-moon-o text-success" style="font-size:22px;"></i></h4><br>
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="darkmode" onclick="triggerAction('darkmode')">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -91,7 +91,7 @@
                 <div class="card-body">
                     <h4 class="text-white">Email Notications <i class="fa fa-envelope text-success" style="font-size:22px;"></i></h4><br>
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="email_notification" onclick="triggerAction('email_notification')">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -102,7 +102,7 @@
                 <div class="card-body">
                     <h4 class="text-white">Telegram Notications <i class="fa fa-paper-plane text-success" style="font-size:22px;"></i></h4><br>
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="telegram_notification" onclick="triggerAction('telegram_notification')">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -110,3 +110,43 @@
             </div>
         </div>
 </div>
+
+<script>
+    const updateStatus = (data)=>{
+        if(data.notification_sound == true){
+            $('#notification_sound').attr('checked',true)
+        }
+        if(data.darkmode == true){
+            $('#darkmode').attr('checked',true)
+        }
+        if(data.email_notification == true){
+            $('#email_notification').attr('checked',true)
+        }
+        if(data.telegram_notification == true){
+            $('#telegram_notification').attr('checked',true)
+        }
+    }
+
+    $(document).ready(function(){
+        const response = fetch('/users/myprofile/{{user._id}}/settings-json')
+        .then((response)=>{return response.json()})
+        .then((data)=>{updateStatus(data)})
+    })
+</script>
+<script>
+    function triggerAction(task){
+        const taskname = task;
+        const taskstatus = $('#'+task).is(':checked');
+        const url = '/users/myprofile/{{user._id}}/settings-json';
+        fetch(url,
+        {
+            method:'POST',
+            mode: 'cors',
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({'task':[taskname],'taskstatus':taskstatus})
+        })
+        .then((response)=>{return response.json()})
+        .then((data)=>{updateStatus(data)})
+        .catch((err)=>console.log(err))
+    }
+</script>

@@ -6,8 +6,11 @@ const router = express.Router();
 
 //Load User Model
 require('../models/Users');
+require('../models/UserSettings');
 
 const User= mongoose.model('users');
+const Usersettings= mongoose.model('usersettings');
+
 const { ensureAuthenticated} =require('../helpers/auth');
 
 
@@ -72,11 +75,23 @@ router.post('/register', (req, res) => {
 
               newUser
                 .save()
-                .then(user => {
+                .then()
+                .catch(err => {
+                  console.log(err);
+                  return;
+                });
+                const newUserSettings = new Usersettings({
+                  userid: newUser._id,
+                  notification_sound: true,
+                  darkmode: true,
+                  email_notification: true,
+                  telegram_notification: true,
+                })
+                newUserSettings.save().then(obj =>{
                   req.flash('success_msg', 'You are Registered .Please Login');
                   res.redirect('/users/login');
                 })
-                .catch(err => {
+                .catch(err =>{
                   console.log(err);
                   return;
                 });
@@ -90,14 +105,41 @@ router.post('/register', (req, res) => {
 
 // My Profile
 router.get('/myprofile/:id',ensureAuthenticated,  (req,res) => {
-  let userid = req.params.id;
   res.render('users/myprofile', { layout: 'main.nodejs.handlebars' });
 });
 
 // My profile Settings
-router.get('/myprofile/:id/settings',ensureAuthenticated,  (req,res) => {
-  
-  res.render('users/settings', { layout: 'main.nodejs.handlebars' });
+router.get('/myprofile/:id/settings',ensureAuthenticated,(req,res) => {
+  res.render('users/settings',{ layout: 'main.nodejs.handlebars'});
+});
+
+router.get('/myprofile/:id/settings-json',ensureAuthenticated,(req,res) => {
+  const id = req.params.id.trim()
+  Usersettings.findOne({userid:id}).then(settingobj=>{
+    const {notification_sound, darkmode,email_notification,telegram_notification} = settingobj;
+    res.json({
+      notification_sound,
+      darkmode,
+      email_notification,
+      telegram_notification
+    });
+  })
+});
+
+// Update Usersettings
+router.post('/myprofile/:id/settings-json',ensureAuthenticated,(req,res) => {
+  const id = req.params.id.trim()
+  const {task,taskstatus} = req.body;
+  const update = {[task]:taskstatus}
+  Usersettings.findOneAndUpdate({userid:id},update,{new: true}).then(userobj=>{
+    const {notification_sound,darkmode,email_notification,telegram_notification} = userobj;
+    res.json({
+      notification_sound,
+      darkmode,
+      email_notification,
+      telegram_notification
+    })
+  })
 });
 
 //Logout User
