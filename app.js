@@ -75,6 +75,7 @@ app.use(function(req,res,next){
 });
 
 app.set("view engine", "handlebars");
+app.set('views', path.join(__dirname, 'views'));
 
 //Static folder
 app.use(express.static(path.join(__dirname, "public")));
