@@ -68,7 +68,10 @@
     <script>
     function CopyToClipboard(containerid) {
         $('#clip').show();
-        $(this).uiSound({play: "scifi-beap"});
+        notification_status = localStorage.getItem("notification_sound")
+        if(notification_status == 'true'){
+            $(this).uiSound({play: "scifi-beap"});
+        }
         var textarea = document.createElement('textarea')
         textarea.id = 'temp_element'
         textarea.style.height = 0

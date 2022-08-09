@@ -113,6 +113,7 @@
 
 <script>
     const updateStatus = (data)=>{
+        localStorage.setItem("notification_sound",data.notification_sound );
         if(data.notification_sound == true){
             $('#notification_sound').attr('checked',true)
         }
