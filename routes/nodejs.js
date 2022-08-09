@@ -8,7 +8,7 @@ router.get("/content",(req,res)=>{
 })
 
 router.get("/installation",(req,res)=>{
-    res.render("NodeJS/installation", { layout: 'main.nodejs.handlebars' });
+    res.render("NodeJS/installation");
 })
 
 router.get("/unit-testing-node",(req,res)=>{
