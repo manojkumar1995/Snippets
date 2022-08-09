@@ -1,24 +1,24 @@
-<div class="card bg-dark mt-4 mb-4">
-    <div class="card-body">
-        <div class="container" id="to-copy">
-            <div class="clearfix">
-                {{> _dots}}
-                <div class="float-right">
-                    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard" onClick="CopyToClipboard('to-copy')">
-                        <i class="fa fa-clone" aria-hidden="true"></i>
-                    </button>
+<div class="container">
+    <div class="card bg-dark mt-4 mb-4">
+        <div class="card-body">
+            <div class="container" id="to-copy">
+                <div class="clearfix">
+                    {{> _dots}}
+                    <div class="float-right">
+                        <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard" onClick="CopyToClipboard('to-copy')">
+                            <i class="fa fa-clone" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <pre>
-            <code class="javascript">
+                <pre>
+                <code class="javascript">
 const element = document.getElementById("demo");
 setInterval(function() {
     element.innerHTML += "Hello"
 }, 1000);
-            </code>
-            </pre>
+                </code>
+                </pre>
+            </div>
         </div>
     </div>
 </div>
-
-
