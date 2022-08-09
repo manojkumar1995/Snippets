@@ -13,6 +13,10 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
+    notification_status = localStorage.getItem("notification_sound")
+    if(notification_status == 'true'){
+        $(this).uiSound({play: "cursor-click"});
+    }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
