@@ -78,7 +78,7 @@ app.set("view engine", "handlebars");
 app.set('views', path.join(__dirname, 'views'));
 
 //Static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', req.headers.origin);
