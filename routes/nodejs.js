@@ -11,8 +11,12 @@ router.get("/installation",(req,res)=>{
     res.render("NodeJs/installation", { layout: 'main.nodejs.handlebars' });
 })
 
-router.get("/unit-testing-node",(req,res)=>{
+router.get("/unit-testing-node-intro",(req,res)=>{
     res.render("NodeJs/unit-testing-intro", { layout: 'main.nodejs.handlebars' });
+})
+
+router.get("/unit-testing-mocha",(req,res)=>{
+    res.render("NodeJs/unit-testing-mocha", { layout: 'main.nodejs.handlebars' });
 })
 
 module.exports = router;

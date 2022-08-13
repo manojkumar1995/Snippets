@@ -1,0 +1,88 @@
+<hr><h3 class="text-success text-center">Unit Testing with Mocha:</h3><hr>
+<div class="card bg-dark mt-4 mb-4">
+    <div class="card-body">
+        <div class="container">
+            <div class="clearfix">
+                {{> _dots}}
+                <div class="float-right">
+                    <button class="button button1" data-toggle="tooltip" data-placement="right" title="Copy to clipboard" onClick="CopyToClipboard('to-copy1')">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-success mt-4 mb-4">Mocha :</h3>
+                <ul>
+                    <li class="text-warning">Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.</li>
+                </ul>
+                <pre>
+                <code class="javascript">
+Global Installation :
+
+<span class="text-danger">npm install --global mocha</span>
+
+Dev-Dependency Installation:
+
+<span class="text-danger">npm install --save-dev mocha</span>
+                </code>
+                </pre>
+                <h3 class="text-success mt-4 mb-4">Test Assertion</h3>
+                <ul>
+                    <li class="text-warning">
+                        In software testing, a test assertion is an expression which encapsulates some testable logic specified about a target under test. The expression is formally presented as an assertion, along with some form of identifier, to help testers and engineers ensure that tests of the target relate properly and clearly to the corresponding specified statements about the target. 
+                    </li>
+                    <li class="text-warning">
+                        Usually the logic for each test assertion is limited to one single aspect specified. A test assertion may include prerequisites which must be true for the test assertion to be valid.
+                    </li>
+                    <li class="text-warning">
+                        NodeJs has built-in assertion library ,we can use it by importing as <br><span class="text-primary">const assert = require('node:assert');</span>
+                        Since the built-in assertion module is not power,so we can use any third-party assertion library alone with Mocha
+                    </li>
+                    <li class="text-warning">
+                        Bugs in released code may also cause costly problems for the end-users of the software.
+                    </li>
+                </ul>
+                <h3 class="text-success mt-4 mb-4">Chai :</h3>
+                <ul>
+                    <li class="text-warning">Chai is an assertion library, similar to Node's built-in assert. It makes testing much easier by giving you lots of assertions you can run against your code.</li>
+                </ul>
+                <pre>
+                <code class="javascript">
+Global Installation :
+
+<span class="text-danger">npm install --g chai</span>
+
+Dev-Dependency Installation:
+
+<span class="text-danger">npm install --D chai</span>
+                </code>
+                </pre>
+            </div>
+            <pre>
+            <h4 class="text-danger">Sample Test Code</h4>
+<code class="javascript" id="to-copy1">
+const expect = require('chai').expect;
+
+describe("Sample Test Case in chai", () => {
+    it("Divison of two numbers", () => {
+        expect(2 / 2).to.equal(0);
+    });
+    it("Verifying string", () => {
+        expect("Hello World!").to.equal('Hello World!');
+    });
+});
+</code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-3">
+    <div class="clearfix">
+        <a href="#" class="btn btn-outline-dark float-left disabled">Previous</a>
+        <a href="unit-testing-node" class="btn btn-outline-dark float-right">Next</a>
+    </div>
+    
+</div>
+
+
