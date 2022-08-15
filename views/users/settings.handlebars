@@ -113,7 +113,8 @@
 
 <script>
     const updateStatus = (data)=>{
-        localStorage.setItem("notification_sound",data.notification_sound );
+        localStorage.setItem("notification_sound",data.notification_sound);
+        localStorage.setItem("darkmode",data.darkmode);
         if(data.notification_sound == true){
             $('#notification_sound').attr('checked',true)
         }

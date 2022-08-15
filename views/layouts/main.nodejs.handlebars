@@ -66,11 +66,20 @@
 
     {{> _footer_nodejs}}
     <script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#clip').hide();
+        $(document.body).on('click',(function(){
+            $(this).uiSound({play: "connected"});
+        })());
+    });
     function CopyToClipboard(containerid) {
         $('#clip').show();
         notification_status = localStorage.getItem("notification_sound")
         if(notification_status == 'true'){
-            $(this).uiSound({play: "scifi-beap"});
+            $(document.body).on('click',(function(){
+                $(this).uiSound({play: "hover"});
+            })());
         }
         var textarea = document.createElement('textarea')
         textarea.id = 'temp_element'
@@ -83,13 +92,6 @@
         document.body.removeChild(textarea)
         $('#clip').fadeOut(5000);
     }
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $('#clip').hide();
-    });
-    
-
-
 </script>
 
 <script>

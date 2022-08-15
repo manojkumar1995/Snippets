@@ -57,6 +57,20 @@
 
   {{> _footer}}
   <script>
+    $(document).ready(function () {
+      notification_status = localStorage.getItem("notification_sound")
+      if(notification_status == 'true'){
+        $(document.body).on('click',(function(){
+          $(this).uiSound({play: "connected"});
+        })());
+      }
+      
+      $('[data-toggle="tooltip"]').tooltip();
+      $('#clip').hide();
+      darkmode = localStorage.getItem("darkmode")
+      if(darkmode === null){darkmode = true}
+
+    });
     function CopyToClipboard(containerid) {
       $('#clip').show();
       notification_status = localStorage.getItem("notification_sound")
@@ -74,25 +88,7 @@
       document.body.removeChild(textarea)
       $('#clip').fadeOut(5000);
     }
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('#clip').hide();
-
-    });
-    
-
-
-    $(document).ready(function () {
-      $.ajaxSetup({
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'Access-Control-Allow-Origin': '*'  
-        }
-      });
-      //$.post("/");
-    });
-    
+    /*
     $.getJSON('https://geoip-db.com/json/')
         .done(function (demo) {
           
@@ -136,12 +132,11 @@
           }
           setTimeout(function () { myfun(); }, 1000);
       });
+      */
   </script>
 
   <script>
-    AOS.init({
-       
-    });
+    AOS.init({});
     
   </script>
 

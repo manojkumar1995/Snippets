@@ -21,7 +21,7 @@
          'height' : '0',
          'overflow' : 'hidden',
          }).append($player).appendTo("body");
-         var $du = loc.dur*1000;
+         var $du = loc.dur*400;
          setTimeout(function(){
             $(soundBox).empty().remove(200);
          }, $du);
