@@ -24,7 +24,7 @@ router.get('/material', (req, res) => {
 
 //About Route
 router.get('/about', (req, res) => {
-  const title = 'About CodeSnippets';
+  const title = 'About My CodeSnippets';
   res.render('about', {
     title: title
   });
